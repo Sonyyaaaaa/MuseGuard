@@ -41,6 +41,8 @@ Core/Src/stm32c0xx_it.c \
 Core/Src/stm32c0xx_hal_msp.c \
 Core/Src/syscalls.c \
 Core/Src/sysmem.c \
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c \
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c \
 Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c \

@@ -56,6 +56,20 @@
 
 /* USER CODE BEGIN 0 */
 
+void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+{
+  if (hadc->Instance == ADC1)
+  {
+    GPIO_InitTypeDef pin = {0};
+    __HAL_RCC_ADC_CLK_ENABLE();
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    pin.Pin = GPIO_PIN_0;
+    pin.Mode = GPIO_MODE_ANALOG;
+    pin.Pull = GPIO_NOPULL;
+    HAL_GPIO_Init(GPIOA, &pin);
+  }
+}
+
 /* USER CODE END 0 */
 /**
   * Initializes the Global MSP.
