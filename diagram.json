@@ -67,7 +67,7 @@
       "left": 30,
       "attrs": {
         "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK",
-        "bufferSize": "1000000"
+        "bufferSize": "3000000"
       }
     }
   ],
@@ -86,7 +86,7 @@
     ],
     [
       "imu:VCC",
-      "nucleo:3V3",
+      "nucleo:3V3.1",
       "red",
       []
     ],
@@ -116,7 +116,7 @@
     ],
     [
       "pullscl:1",
-      "nucleo:3V3",
+      "nucleo:3V3.1",
       "red",
       []
     ],
@@ -128,7 +128,7 @@
     ],
     [
       "pullsda:1",
-      "nucleo:3V3",
+      "nucleo:3V3.1",
       "red",
       []
     ],
@@ -140,7 +140,7 @@
     ],
     [
       "pir:VCC",
-      "nucleo:5V",
+      "nucleo:5V.1",
       "red",
       []
     ],
@@ -158,7 +158,7 @@
     ],
     [
       "ldr:VCC",
-      "nucleo:3V3",
+      "nucleo:3V3.1",
       "red",
       []
     ],

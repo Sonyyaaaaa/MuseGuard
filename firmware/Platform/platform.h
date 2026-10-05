@@ -8,5 +8,5 @@ bool platform_pir(void);
 void platform_led(bool on);
 uint32_t platform_now(void);
 bool platform_command(char *command);
-void platform_start(void);
+mg_status_t platform_start(void);
 #endif

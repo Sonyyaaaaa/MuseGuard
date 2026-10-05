@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 
 #include <stdio.h>
+#include "runner.h"
 
 /* USER CODE END Includes */
 
@@ -110,7 +111,9 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_Delay(100);
   printf("STM32C031C6 ready\r\n");
+  runner_start();
 
   /* USER CODE END 2 */
 
@@ -121,9 +124,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-    printf("tick %lu\r\n", (unsigned long)(HAL_GetTick() / 1000U));
-    HAL_Delay(1000);
+    runner_poll();
   }
   /* USER CODE END 3 */
 }
@@ -180,7 +181,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0xB0420F13;
+  hi2c1.Init.Timing = 0x20303E5D;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;

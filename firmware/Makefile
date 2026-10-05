@@ -36,6 +36,11 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Platform/platform.c \
+Platform/runner.c \
+Devices/mpu6050.c \
+Devices/simple_sensors.c \
+App/museguard.c \
 Core/Src/main.c \
 Core/Src/stm32c0xx_it.c \
 Core/Src/stm32c0xx_hal_msp.c \
@@ -116,6 +121,9 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
+-IPlatform \
+-IDevices \
+-IApp \
 -ICore/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc \
 -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy \
@@ -127,6 +135,8 @@ C_INCLUDES =  \
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
 CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+# Treat warnings in project code as errors. ST/CMSIS sources keep their own flags.
+$(filter-out $(BUILD_DIR)/stm32c0xx_hal%.o $(BUILD_DIR)/system_stm32c0xx.o,$(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o)))): CFLAGS += -Wextra -Werror
 
 ifeq ($(DEBUG), 1)
 CFLAGS += -g -gdwarf-2
