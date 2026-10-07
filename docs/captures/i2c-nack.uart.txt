@@ -1,0 +1,1 @@
+ANOMALY t=20834 addr=0x69 status=BUS_ERROR

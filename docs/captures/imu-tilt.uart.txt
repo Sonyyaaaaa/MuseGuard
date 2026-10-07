@@ -1,0 +1,4 @@
+DATA t=74131 pir=0 adc_status=OK adc=1001 mv=806 imu_status=OK ax_mg=0 ay_mg=0 az_mg=1000 gx_mdps=0 gy_mdps=0 gz_mdps=0 temp_mc=24001 alarm=0
+DATA t=74631 pir=0 adc_status=OK adc=1001 mv=806 imu_status=OK ax_mg=599 ay_mg=0 az_mg=799 gx_mdps=0 gy_mdps=0 gz_mdps=0 temp_mc=24001 alarm=0
+EVENT t=74671 type=TILT alarm=1
+DATA t=75131 pir=0 adc_status=OK adc=1001 mv=806 imu_status=OK ax_mg=599 ay_mg=0 az_mg=799 gx_mdps=0 gy_mdps=0 gz_mdps=0 temp_mc=24001 alarm=1

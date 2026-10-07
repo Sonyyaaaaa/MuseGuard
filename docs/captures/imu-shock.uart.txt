@@ -1,0 +1,3 @@
+EVENT t=99511 type=SHOCK alarm=1
+DATA t=99631 pir=0 adc_status=OK adc=4063 mv=3274 imu_status=OK ax_mg=0 ay_mg=0 az_mg=1599 gx_mdps=0 gy_mdps=0 gz_mdps=0 temp_mc=24001 alarm=1
+DATA t=100131 pir=0 adc_status=OK adc=4063 mv=3274 imu_status=OK ax_mg=0 ay_mg=0 az_mg=1599 gx_mdps=0 gy_mdps=0 gz_mdps=0 temp_mc=24001 alarm=1
