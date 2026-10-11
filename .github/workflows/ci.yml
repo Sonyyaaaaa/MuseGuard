@@ -1,0 +1,19 @@
+name: firmware
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, feature/lab-2]
+permissions:
+  contents: read
+jobs:
+  build-and-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Firmware
+        run: make build
+      - name: Host tests and dependency rules
+        run: make test
+      - name: Coverage
+        run: make coverage

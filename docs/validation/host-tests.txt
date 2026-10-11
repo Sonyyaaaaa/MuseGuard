@@ -1,0 +1,48 @@
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+./build/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+make[1]: Leaving directory '/workspace/tests'
+make -C tests coverage
+make[1]: Entering directory '/workspace/tests'
+mkdir -p coverage/Linux-aarch64
+rm -f coverage/Linux-aarch64/*.gcda
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror --coverage test_museguard.c ../firmware/Devices/mpu6050.c ../firmware/Devices/simple_sensors.c ../firmware/App/museguard.c -o coverage/Linux-aarch64/test_museguard
+./coverage/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+gcov -b coverage/Linux-aarch64/*.gcno
+File '../firmware/Devices/mpu6050.c'
+Lines executed:100.00% of 34
+Branches executed:100.00% of 32
+Taken at least once:96.88% of 32
+Calls executed:100.00% of 7
+Creating 'mpu6050.c.gcov'
+
+File '../firmware/App/museguard.c'
+Lines executed:100.00% of 48
+Branches executed:100.00% of 64
+Taken at least once:98.44% of 64
+Calls executed:100.00% of 11
+Creating 'museguard.c.gcov'
+
+File '../firmware/Devices/simple_sensors.c'
+Lines executed:100.00% of 8
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+No calls
+Creating 'simple_sensors.c.gcov'
+
+File 'test_museguard.c'
+Lines executed:100.00% of 165
+Branches executed:100.00% of 224
+Taken at least once:52.68% of 224
+Calls executed:54.80% of 177
+Creating 'test_museguard.c.gcov'
+
+Lines executed:100.00% of 255
+mv *.gcov coverage/Linux-aarch64/
+make[1]: Leaving directory '/workspace/tests'
