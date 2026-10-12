@@ -1,27 +1,32 @@
 # MuseGuard
 
-Навчальний проєкт охорони музейної вітрини для Розпутньої Софії Михайлівни, ІО-31. Робота планується в Ubuntu 24 і Wokwi на STM32 HAL, без фізичної плати. [Словник подій](CONTEXT.md) відокремлює присутність людини, зміну світла та вплив на корпус. Вимоги до системи описано в [PRD](docs/PRD.md).
+Розпутня Софія Михайлівна, ІО-31. Середовище: Ubuntu 24.04, Docker, STM32 HAL, Wokwi. Проєкт спостерігає за музейною вітриною через PIR, фоторезистор та MPU6050. Присутність і світло є інформаційними подіями; механічна подія фіксує alarm. Намір людини чи факт крадіжки система не визначає.
 
-## Стартова основа
-
-Проєкт скопійовано з `~/Projects/university/SP-Boilerplate` без історії Git та результатів збірки. Основа для Nucleo-C031C6 містить STM32 HAL, конфігурацію CubeMX, UART2 і блимання вбудованого LED на PA5. I²C1 уже налаштовано, але датчиків MuseGuard поки немає.
-
-Основна навчальна копія зберігається тут, на Mac. Перед перенесенням в Ubuntu слід прочитати `Study/VM-transfer.md` і порівняти файли.
+ЛР1 збережена в історії main. ЛР2 продовжує той самий репозиторій на STM32C031C6. [Вимоги та стан перевірки](docs/PRD.md), [терміни](CONTEXT.md), [звіт ЛР2](docs/lab2-report.md).
 
 ## Збірка й запуск
 
-`make build` збирає Docker-образ з ARM GCC і створює `firmware/build/firmware.elf`, `.hex` та `.bin`. `make clean` прибирає лише згенеровану папку `firmware/build`. Команда збірки розрахована на Linux або macOS з Docker. На Windows зручно збирати в Ubuntu VM.
+```sh
+make build
+make test
+make coverage
+```
 
-Wokwi запускається там, де встановлено VS Code з розширенням Wokwi. Це може бути хост Windows або Linux; VS Code всередині VM не потрібен. Відкрийте **цю копію** проєкту в VS Code, переконайтеся, що до неї передано зібрані файли, і виберіть `Wokwi: Start Simulator`. На екрані мають з'явитися `STM32C031C6 ready`, послідовні `tick` і блимання LED. Для звичайного запуску Wokwi потрібне підключення до інтернету.
+Збірка потребує Docker, тести C compiler та Python 3. ELF/HEX/BIN зберігаються у firmware/build. `make clean` видаляє лише цю папку. На macOS для coverage використовуйте `make coverage GCOV='xcrun llvm-cov gcov'`. [Залежності](docs/dependencies.md), [тести](docs/testing.md), [справжні журнали](docs/validation/).
 
-## Подальші кроки MuseGuard
+Відкрийте цей каталог у VS Code з Wokwi extension, виконайте `Wokwi: Start Simulator`. Для запуску потрібен інтернет. Після зміни ELF закрийте старий simulator tab і запустіть знову. UART має показати BOOT, три SELFTEST, READY та DATA. Команди в terminal: `c` читає ID і 14 raw bytes, `n` створює адресний NACK, `r` скидає alarm і baseline. PIR запускається через Simulate motion, світло та IMU змінюються контролами сенсорів.
 
-Документація ЛР2: [компоненти](docs/hardware-components.md), [схема підключення](docs/pinout.md).
+Після Stop аналізатор зберігає wokwi.vcd; збережіть його до наступного запуску. [Записи і декодування](docs/captures/analysis.md) містять параметри імпорту та виміри.
 
-1. Відкрийте `firmware/firmware.ioc` у CubeMX і додайте потрібні піни та периферію. Після генерації коду звірте `firmware/Makefile` зі змінами CubeMX: генератор може його переписати.
-2. Додайте компоненти та з'єднання в `diagram.json`. Потім пишіть код у `firmware/Core/Src`.
-3. Доповніть [PRD](docs/PRD.md) після перевірки компонентів. Окремо підготуйте опис компонентів, звіт і докази запуску.
+## Структура
 
-Шаблон прив'язаний до **STM32C031C6**. Для F411RE/F446RE недостатньо змінити рядок у `diagram.json`: потрібні інші HAL-файли, параметри компілятора й симулятор із підтримкою цієї моделі.
+- firmware/Core і Drivers містять startup, HAL і CMSIS.
+- firmware/Platform містить pin/handle knowledge, адаптери та runner.
+- firmware/Devices містить переносимі драйвери, firmware/App правила подій.
+- tests містить fake bus, error scenarios та кадри зі справжніх VCD.
 
-Основа прошивки взята з [прикладу Wokwi для Nucleo-C031C6](https://github.com/wokwi/stm32-hello-wokwi) і змінена для Docker-збірки та регулярного UART/LED. Ліцензія прикладу збережена у `LICENSE`; ліцензії ST/CMSIS — у `firmware/Drivers`.
+[Component diagram](docs/architecture.md), [підключення](docs/pinout.md), [сенсори](docs/hardware-components.md). Перед CubeMX regeneration звірити .ioc і Makefile, зберегти власні каталоги. Перед перенесенням до VM прочитайте Study/VM-transfer.md і порівняйте файли.
+
+Перевірено simulator bring-up, обмін та host logic. Фізичні струми, шум, короткий удар і всі комбінації впливів ще не перевірені. Погодження моделі МК та незастосовності SPI-flash потребує підтвердження.
+
+Основа походить із [Wokwi Nucleo-C031C6 example](https://github.com/wokwi/stm32-hello-wokwi). Ліцензії збережено у LICENSE і firmware/Drivers.

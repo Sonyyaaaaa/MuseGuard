@@ -4,8 +4,8 @@
 
 ```mermaid
 flowchart TD
-  Core["Core: HAL init, main, IRQ"] --> Runner["App runner: опитування і UART"]
-  Runner --> Platform["Platform: HAL adapters"]
+  Core["Core: HAL init, main, IRQ"] --> Runner["Platform runner: опитування і UART"]
+  Runner --> Platform["Platform: HAL init, register I2C, GPIO/ADC/UART"]
   Runner --> Devices["Devices: MPU6050, PIR, LDR"]
   Runner --> Logic["App: правила подій"]
   Platform --> HAL["Drivers: ST HAL / CMSIS"]
