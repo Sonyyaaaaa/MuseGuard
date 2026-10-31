@@ -8,3 +8,6 @@ tests/coverage/
 *.gcno
 *.gcov
 __pycache__/
+
+# Generated firmware identity header
+firmware/Platform/build_id.h

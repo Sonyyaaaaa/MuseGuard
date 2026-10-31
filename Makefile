@@ -1,4 +1,4 @@
-IMAGE ?= stm32c0-wokwi-build:local
+IMAGE ?= museguard-build:lab3
 
 .PHONY: image build clean test check coverage toolchain
 
@@ -6,6 +6,7 @@ image:
 	docker build -t $(IMAGE) docker
 
 build: image
+	docker run --rm -v "$(CURDIR):/workspace" -w /workspace $(IMAGE) python3 tools/build_identity.py
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
 		make -C firmware all

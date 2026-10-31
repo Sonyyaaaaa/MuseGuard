@@ -38,6 +38,10 @@ BUILD_DIR = build
 C_SOURCES =  \
 Platform/platform.c \
 Platform/runner.c \
+Platform/lab3_io.c \
+App/exhibit.c \
+App/cadence.c \
+App/event_store.c \
 Devices/mpu6050.c \
 Devices/simple_sensors.c \
 App/museguard.c \
@@ -134,7 +138,7 @@ C_INCLUDES =  \
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
-CFLAGS += $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+CFLAGS += -fstack-usage -Wstack-usage=512 $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 # Treat warnings in project code as errors. ST/CMSIS sources keep their own flags.
 $(filter-out $(BUILD_DIR)/stm32c0xx_hal%.o $(BUILD_DIR)/system_stm32c0xx.o,$(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o)))): CFLAGS += -Wextra -Werror
 
@@ -156,7 +160,7 @@ LDSCRIPT = STM32C031C6Tx_FLASH.ld
 # libraries
 LIBS = -lc -lm -lnosys 
 LIBDIR = 
-LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections,--print-memory-usage
 
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).hex $(BUILD_DIR)/$(TARGET).bin

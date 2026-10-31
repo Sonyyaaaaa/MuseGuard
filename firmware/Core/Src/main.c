@@ -24,6 +24,7 @@
 
 #include <stdio.h>
 #include "runner.h"
+#include "lab3_io.h"
 
 /* USER CODE END Includes */
 
@@ -69,7 +70,7 @@ static void MX_USART2_UART_Init(void);
 int __io_putchar(int ch)
 {
   uint8_t byte = (uint8_t)ch;
-  if (HAL_UART_Transmit(&huart2, &byte, 1, HAL_MAX_DELAY) != HAL_OK)
+  if (HAL_UART_Transmit(&huart2, &byte, 1, 10) != HAL_OK)
   {
     return EOF;
   }
@@ -85,6 +86,7 @@ int __io_putchar(int ch)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+  lab3_paint_stack();
 
   /* USER CODE END 1 */
 
@@ -111,8 +113,6 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_Delay(100);
-  printf("STM32C031C6 ready\r\n");
   runner_start();
 
   /* USER CODE END 2 */
