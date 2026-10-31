@@ -66,7 +66,7 @@
       "top": 400,
       "left": 30,
       "attrs": {
-        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK",
+        "channelNames": "SCL,SDA,UART_TX,PIR,ADC_MARK,SAMPLE,FLASH,COMMAND",
         "bufferSize": "3000000"
       }
     }
@@ -208,6 +208,24 @@
       "logic:D4",
       "nucleo:PA4",
       "purple",
+      []
+    ],
+    [
+      "logic:D5",
+      "nucleo:PA6",
+      "grey",
+      []
+    ],
+    [
+      "logic:D6",
+      "nucleo:PA7",
+      "grey",
+      []
+    ],
+    [
+      "logic:D7",
+      "nucleo:PA8",
+      "grey",
       []
     ]
   ],
