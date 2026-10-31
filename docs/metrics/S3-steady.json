@@ -1,0 +1,947 @@
+{
+  "vcd_sha256": "ad4c04d51a8ac25f1f2067f4b986cab43a50f4810794cc31710150898a88b75f",
+  "timescale": "1ns",
+  "origin": "actual Wokwi logic analyzer, not synthesized",
+  "last_transition_s": 247.21463075,
+  "probe_serial_activity_permille": 225.66031191325962,
+  "analysis_window_s": [
+    5.0,
+    null
+  ],
+  "SAMPLE": {
+    "width_us": {
+      "n": 12108,
+      "min": 2345.725,
+      "avg": 2348.0005801949123,
+      "max": 2414.325,
+      "p99": 2353.85
+    },
+    "period_us": {
+      "n": 12107,
+      "min": 8448.425,
+      "avg": 20003.08151069629,
+      "max": 36664.6,
+      "p99": 26651.975
+    }
+  },
+  "FLASH": {
+    "width_us": {
+      "n": 90,
+      "min": 1398.15,
+      "avg": 1399.796388888889,
+      "max": 1454.225,
+      "p99": 1454.225
+    },
+    "period_us": {
+      "n": 89,
+      "min": 16905.75,
+      "avg": 1823052.6991573034,
+      "max": 21607828.35,
+      "p99": 21607828.35
+    }
+  },
+  "COMMAND": {
+    "width_us": {
+      "n": 2015,
+      "min": 31.0,
+      "avg": 11550.423014888338,
+      "max": 12268.725,
+      "p99": 12259.375
+    },
+    "period_us": {
+      "n": 2014,
+      "min": 7269.65,
+      "avg": 111477.6082795432,
+      "max": 61772308.4,
+      "p99": 2259784.3
+    }
+  },
+  "ADC_MARK": {
+    "width_us": {
+      "n": 12108,
+      "min": 69.425,
+      "avg": 70.68680624380575,
+      "max": 81.3,
+      "p99": 70.675
+    },
+    "period_us": {
+      "n": 12107,
+      "min": 8448.425,
+      "avg": 20003.08151069629,
+      "max": 36664.6,
+      "p99": 26651.975
+    }
+  },
+  "pir_to_next_sample_end_bound_us": {
+    "n": 30,
+    "min": 2381.1,
+    "avg": 16029.9375,
+    "max": 26760.9,
+    "p99": 26760.9
+  },
+  "pir_to_uart_event_us": {
+    "n": 30,
+    "min": 15144.15,
+    "avg": 26167.051666666666,
+    "max": 40765.425,
+    "p99": 40765.425
+  },
+  "pir_context": [
+    {
+      "pir_s": 22.72658165,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 24.6758049,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 27.1099342,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 29.28485825,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 31.69328755,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 39.574969275,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 42.10829715,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 44.533325575,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 47.235055575,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 50.208687775,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 66.6348448,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 69.635011775,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 72.626578,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 76.068246525,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 79.60981555,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 101.4843846,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 105.141453925,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 109.076456875,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 113.173360425,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 117.389795375,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 132.544664025,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 136.91323585,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 141.130704075,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 145.922012,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 150.3507488,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 165.474920525,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 170.484396,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 175.11110195,
+      "during_n_burst_drain": true,
+      "command_high": false,
+      "flash_high": false,
+      "sample_high": true,
+      "uart_line_active": false
+    },
+    {
+      "pir_s": 179.815142,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    },
+    {
+      "pir_s": 184.862651,
+      "during_n_burst_drain": true,
+      "command_high": true,
+      "flash_high": false,
+      "sample_high": false,
+      "uart_line_active": true
+    }
+  ],
+  "n_bursts": [
+    {
+      "start_s": 22.6692698,
+      "end_s": 23.5581249,
+      "commands": 64
+    },
+    {
+      "start_s": 24.628351475,
+      "end_s": 25.49408485,
+      "commands": 64
+    },
+    {
+      "start_s": 26.8218463,
+      "end_s": 27.68155305,
+      "commands": 64
+    },
+    {
+      "start_s": 29.238558925,
+      "end_s": 30.10512395,
+      "commands": 64
+    },
+    {
+      "start_s": 31.42203295,
+      "end_s": 32.2886638,
+      "commands": 64
+    },
+    {
+      "start_s": 39.463283425,
+      "end_s": 40.330267025,
+      "commands": 64
+    },
+    {
+      "start_s": 41.93872585,
+      "end_s": 42.8063023,
+      "commands": 64
+    },
+    {
+      "start_s": 44.4051777,
+      "end_s": 45.273119,
+      "commands": 64
+    },
+    {
+      "start_s": 47.080248225,
+      "end_s": 47.9484273,
+      "commands": 64
+    },
+    {
+      "start_s": 50.0881218,
+      "end_s": 50.959301825,
+      "commands": 64
+    },
+    {
+      "start_s": 66.34584635,
+      "end_s": 67.237861175,
+      "commands": 64
+    },
+    {
+      "start_s": 69.554111275,
+      "end_s": 70.42349885,
+      "commands": 64
+    },
+    {
+      "start_s": 72.380376875,
+      "end_s": 73.2496707,
+      "commands": 64
+    },
+    {
+      "start_s": 75.778661825,
+      "end_s": 76.6418665,
+      "commands": 64
+    },
+    {
+      "start_s": 79.1635293,
+      "end_s": 80.0331421,
+      "commands": 64
+    },
+    {
+      "start_s": 101.272634925,
+      "end_s": 102.166528775,
+      "commands": 64
+    },
+    {
+      "start_s": 104.8799373,
+      "end_s": 105.776540575,
+      "commands": 64
+    },
+    {
+      "start_s": 108.72241975,
+      "end_s": 109.619297925,
+      "commands": 64
+    },
+    {
+      "start_s": 112.9025399,
+      "end_s": 113.799349425,
+      "commands": 64
+    },
+    {
+      "start_s": 116.91073215,
+      "end_s": 117.8049485,
+      "commands": 64
+    },
+    {
+      "start_s": 132.23431915,
+      "end_s": 133.151423275,
+      "commands": 64
+    },
+    {
+      "start_s": 136.5343723,
+      "end_s": 137.4282039,
+      "commands": 64
+    },
+    {
+      "start_s": 140.810109975,
+      "end_s": 141.69802795,
+      "commands": 64
+    },
+    {
+      "start_s": 145.5343303,
+      "end_s": 146.428787575,
+      "commands": 64
+    },
+    {
+      "start_s": 149.8669898,
+      "end_s": 150.764629775,
+      "commands": 64
+    },
+    {
+      "start_s": 165.13638315,
+      "end_s": 166.031574925,
+      "commands": 64
+    },
+    {
+      "start_s": 170.031835425,
+      "end_s": 170.92755075,
+      "commands": 64
+    },
+    {
+      "start_s": 174.6820058,
+      "end_s": 175.58127635,
+      "commands": 64
+    },
+    {
+      "start_s": 179.43619625,
+      "end_s": 180.3351495,
+      "commands": 64
+    },
+    {
+      "start_s": 184.4420647,
+      "end_s": 185.34095345,
+      "commands": 64
+    }
+  ],
+  "flash_comparison": [
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1400.75,
+      "firmware_us": 2000,
+      "difference_us": 599.25
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1400.65,
+      "firmware_us": 2000,
+      "difference_us": 599.3499999999999
+    },
+    {
+      "gpio_us": 1398.45,
+      "firmware_us": 1000,
+      "difference_us": -398.45000000000005
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.65,
+      "firmware_us": 2000,
+      "difference_us": 599.3499999999999
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.35,
+      "firmware_us": 1000,
+      "difference_us": -398.3499999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.875,
+      "firmware_us": 2000,
+      "difference_us": 599.125
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.875,
+      "firmware_us": 2000,
+      "difference_us": 599.125
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.8,
+      "firmware_us": 2000,
+      "difference_us": 599.2
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.45,
+      "firmware_us": 1000,
+      "difference_us": -398.45000000000005
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1400.625,
+      "firmware_us": 2000,
+      "difference_us": 599.375
+    },
+    {
+      "gpio_us": 1398.475,
+      "firmware_us": 2000,
+      "difference_us": 601.5250000000001
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1400.45,
+      "firmware_us": 2000,
+      "difference_us": 599.55
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.4,
+      "firmware_us": 1000,
+      "difference_us": -398.4000000000001
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1400.75,
+      "firmware_us": 2000,
+      "difference_us": 599.25
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1454.225,
+      "firmware_us": 1000,
+      "difference_us": -454.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1400.8,
+      "firmware_us": 2000,
+      "difference_us": 599.2
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.525,
+      "firmware_us": 2000,
+      "difference_us": 599.4749999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1398.35,
+      "firmware_us": 1000,
+      "difference_us": -398.3499999999999
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    }
+  ],
+  "firmware_stats": [
+    "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "STAT name=sample n=12118 min_us=2000 avg_us=2056 max_us=3000",
+    "STAT name=recovery n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=command n=2014 min_us=0 avg_us=11585 max_us=13000",
+    "STAT name=journal n=90 min_us=9000 avg_us=9855 max_us=11000",
+    "STAT name=output n=627 min_us=0 avg_us=3977 max_us=10000",
+    "STAT name=loop n=2121761 min_us=0 avg_us=100 max_us=25000",
+    "STAT name=command_latency n=2015 min_us=0 avg_us=468963 max_us=978000",
+    "STAT name=loop_period n=2121762 min_us=0 avg_us=114 max_us=25000",
+    "RESOURCE stack=584 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0"
+  ]
+}

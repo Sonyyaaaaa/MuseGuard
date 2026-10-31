@@ -1,0 +1,191 @@
+{
+  "base_elf_sha256": "b1d755384c47e32e24f800c49f8198b86e86a10a2bb0351238fe101361dd63fc",
+  "diagnostic": {
+    "kind": "separate diagnostic link, not S1-S3 ELF",
+    "base_source_sha256": "f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4",
+    "base_elf_sha256": "b1d755384c47e32e24f800c49f8198b86e86a10a2bb0351238fe101361dd63fc",
+    "extra_source_sha256": "a31620f3712068a94cdb90c9a189d77952490a145905d5bcfd3bbc5d6a39f60a",
+    "diagnostic_elf_sha256": "0e9691bc5eac504dd6862d41775565aca9f17ed85b6ef11ee0426daac9281171",
+    "compiler": [
+      "arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "-DSTM32C031xx",
+      "-DUSE_HAL_DRIVER",
+      "-Og",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-fstack-usage",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-ICore/Inc",
+      "-IDrivers/STM32C0xx_HAL_Driver/Inc",
+      "-IDrivers/CMSIS/Device/ST/STM32C0xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-c",
+      "/evidence/heap-reset-probe.c",
+      "-o",
+      "/evidence/heap-reset-probe.o"
+    ],
+    "linker": [
+      "arm-none-eabi-gcc",
+      "-mcpu=cortex-m0plus",
+      "-mthumb",
+      "build/platform.o",
+      "build/runner.o",
+      "build/lab3_io.o",
+      "build/exhibit.o",
+      "build/cadence.o",
+      "build/event_store.o",
+      "build/mpu6050.o",
+      "build/simple_sensors.o",
+      "build/museguard.o",
+      "build/main.o",
+      "build/stm32c0xx_it.o",
+      "build/stm32c0xx_hal_msp.o",
+      "build/syscalls.o",
+      "build/sysmem.o",
+      "build/stm32c0xx_hal_adc.o",
+      "build/stm32c0xx_hal_adc_ex.o",
+      "build/stm32c0xx_hal.o",
+      "build/stm32c0xx_hal_cortex.o",
+      "build/stm32c0xx_hal_rcc.o",
+      "build/stm32c0xx_hal_rcc_ex.o",
+      "build/stm32c0xx_hal_flash.o",
+      "build/stm32c0xx_hal_flash_ex.o",
+      "build/stm32c0xx_hal_gpio.o",
+      "build/stm32c0xx_hal_dma.o",
+      "build/stm32c0xx_hal_dma_ex.o",
+      "build/stm32c0xx_hal_pwr.o",
+      "build/stm32c0xx_hal_pwr_ex.o",
+      "build/stm32c0xx_hal_exti.o",
+      "build/stm32c0xx_hal_i2c.o",
+      "build/stm32c0xx_hal_i2c_ex.o",
+      "build/stm32c0xx_hal_uart.o",
+      "build/stm32c0xx_hal_uart_ex.o",
+      "build/system_stm32c0xx.o",
+      "build/startup_stm32c031xx.o",
+      "/evidence/heap-reset-probe.o",
+      "-specs=nano.specs",
+      "-TSTM32C031C6Tx_FLASH.ld",
+      "-lc",
+      "-lm",
+      "-lnosys",
+      "-Wl,--wrap=lab3_heap_peak,--wrap=lab3_rx,--wrap=runner_start,--gc-sections,--print-memory-usage,-Map=/evidence/heap-reset-probe.map",
+      "-o",
+      "/evidence/heap-reset-probe.elf"
+    ],
+    "purpose": "mallinfo allocation/free chunks and explicit NVIC_SystemReset through diagnostic r; never mix its timing/stack/memory with baseline",
+    "runtime_verified": false
+  },
+  "before_records": {
+    "1": {
+      "slot": 64,
+      "milliseconds": 37,
+      "events": 512,
+      "observation": 0,
+      "crc": "F7CB6CF3"
+    },
+    "2": {
+      "slot": 65,
+      "milliseconds": 53,
+      "events": 16,
+      "observation": 1001,
+      "crc": "47466F4D"
+    },
+    "3": {
+      "slot": 66,
+      "milliseconds": 76,
+      "events": 32,
+      "observation": 1001,
+      "crc": "3415DFC8"
+    },
+    "4": {
+      "slot": 67,
+      "milliseconds": 10905,
+      "events": 64,
+      "observation": 66537,
+      "crc": "37687DF8"
+    },
+    "5": {
+      "slot": 68,
+      "milliseconds": 10949,
+      "events": 4,
+      "observation": 197609,
+      "crc": "43D97096"
+    }
+  },
+  "after_records": {
+    "6": {
+      "slot": 0,
+      "milliseconds": 39,
+      "events": 512,
+      "observation": 0,
+      "crc": "912FEF03"
+    },
+    "7": {
+      "slot": 1,
+      "milliseconds": 56,
+      "events": 16,
+      "observation": 1001,
+      "crc": "6586FD0B"
+    },
+    "8": {
+      "slot": 2,
+      "milliseconds": 78,
+      "events": 32,
+      "observation": 1001,
+      "crc": "81C761D3"
+    },
+    "1": {
+      "slot": 64,
+      "milliseconds": 37,
+      "events": 512,
+      "observation": 0,
+      "crc": "F7CB6CF3"
+    },
+    "2": {
+      "slot": 65,
+      "milliseconds": 53,
+      "events": 16,
+      "observation": 1001,
+      "crc": "47466F4D"
+    },
+    "3": {
+      "slot": 66,
+      "milliseconds": 76,
+      "events": 32,
+      "observation": 1001,
+      "crc": "3415DFC8"
+    },
+    "4": {
+      "slot": 67,
+      "milliseconds": 10905,
+      "events": 64,
+      "observation": 66537,
+      "crc": "37687DF8"
+    },
+    "5": {
+      "slot": 68,
+      "milliseconds": 10949,
+      "events": 4,
+      "observation": 197609,
+      "crc": "43D97096"
+    }
+  },
+  "same_records_retained": true,
+  "crc_independently_recomputed_with_zlib": true,
+  "heap_snapshots": [
+    "HEAPDIAG arena=1032 allocated_chunks=1032 free_chunks=0 ordblks_raw=0 sbrk_arena=1032",
+    "HEAPDIAG arena=1032 allocated_chunks=1032 free_chunks=0 ordblks_raw=0 sbrk_arena=1032",
+    "HEAPDIAG arena=1032 allocated_chunks=1032 free_chunks=0 ordblks_raw=0 sbrk_arena=1032"
+  ],
+  "runtime_sda_low_interval_s": [
+    7.15782145,
+    20.375029825
+  ],
+  "runtime_sda_recovered_uart_s": 22.033634275,
+  "release_to_recovered_uart_ms": 1658.60445
+}

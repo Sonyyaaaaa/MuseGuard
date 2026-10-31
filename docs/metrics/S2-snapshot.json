@@ -1,0 +1,73 @@
+{
+  "source": "S2.uart.txt",
+  "sha256": "dc5e8cef684ed05a84358dd8c53e566dd5e702f0ae6a628ac2d67fa1614f52ea",
+  "stats": {
+    "sample": {
+      "n": 181776,
+      "min_us": 2000,
+      "avg_us": 2015,
+      "max_us": 3000
+    },
+    "recovery": {
+      "n": 0,
+      "min_us": 0,
+      "avg_us": 0,
+      "max_us": 0
+    },
+    "command": {
+      "n": 29,
+      "min_us": 0,
+      "avg_us": 4137,
+      "max_us": 8000
+    },
+    "journal": {
+      "n": 34,
+      "min_us": 9000,
+      "avg_us": 10000,
+      "max_us": 11000
+    },
+    "output": {
+      "n": 3681,
+      "min_us": 6000,
+      "avg_us": 6276,
+      "max_us": 26000
+    },
+    "loop": {
+      "n": 35993345,
+      "min_us": 0,
+      "avg_us": 86,
+      "max_us": 29000
+    },
+    "command_latency": {
+      "n": 30,
+      "min_us": 0,
+      "avg_us": 13133,
+      "max_us": 38000
+    },
+    "loop_period": {
+      "n": 35993346,
+      "min_us": 0,
+      "avg_us": 101,
+      "max_us": 29000
+    }
+  },
+  "resource": {
+    "stack": 584,
+    "heap_peak": 1032,
+    "rx_drop": 0,
+    "ore": 0,
+    "event_drop": 0,
+    "flash_fail": 0,
+    "clock_ambiguous": 0
+  },
+  "cadence": {
+    "n": 181776,
+    "skipped": 1,
+    "late": 1,
+    "finish_miss": 1,
+    "release_max_us": 23000,
+    "jitter_min_us": -17000,
+    "jitter_max_us": 17000,
+    "busy_permille": 107
+  }
+}

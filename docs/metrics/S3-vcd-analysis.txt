@@ -1,0 +1,568 @@
+{
+  "vcd_sha256": "ad4c04d51a8ac25f1f2067f4b986cab43a50f4810794cc31710150898a88b75f",
+  "timescale": "1ns",
+  "origin": "actual Wokwi logic analyzer, not synthesized",
+  "last_transition_s": 247.21463075,
+  "probe_serial_activity_permille": 223.8115255644108,
+  "analysis_window_s": [
+    0,
+    null
+  ],
+  "SAMPLE": {
+    "width_us": {
+      "n": 12357,
+      "min": 158.225,
+      "avg": 2347.819294731731,
+      "max": 2414.325,
+      "p99": 2353.825
+    },
+    "period_us": {
+      "n": 12356,
+      "min": 8448.425,
+      "avg": 20001.78504977339,
+      "max": 36664.6,
+      "p99": 26651.7
+    }
+  },
+  "FLASH": {
+    "width_us": {
+      "n": 93,
+      "min": 1398.15,
+      "avg": 1400.4190860215053,
+      "max": 1454.7,
+      "p99": 1454.7
+    },
+    "period_us": {
+      "n": 92,
+      "min": 11774.25,
+      "avg": 2009146.5301630434,
+      "max": 22560276.025,
+      "p99": 22560276.025
+    }
+  },
+  "COMMAND": {
+    "width_us": {
+      "n": 2017,
+      "min": 30.75,
+      "avg": 11542.308800198314,
+      "max": 12268.725,
+      "p99": 12259.375
+    },
+    "period_us": {
+      "n": 2016,
+      "min": 7269.65,
+      "avg": 120246.00420386904,
+      "max": 61772308.4,
+      "p99": 2476228.675
+    }
+  },
+  "ADC_MARK": {
+    "width_us": {
+      "n": 12357,
+      "min": 69.425,
+      "avg": 70.68656834183054,
+      "max": 81.3,
+      "p99": 70.675
+    },
+    "period_us": {
+      "n": 12356,
+      "min": 8448.425,
+      "avg": 20001.785086192944,
+      "max": 36664.6,
+      "p99": 26651.7
+    }
+  },
+  "pir_to_next_sample_end_bound_us": {
+    "n": 30,
+    "min": 2381.1,
+    "avg": 16029.9375,
+    "max": 26760.9,
+    "p99": 26760.9
+  },
+  "pir_to_uart_event_us": {
+    "n": 30,
+    "min": 15144.15,
+    "avg": 26167.051666666666,
+    "max": 40765.425,
+    "p99": 40765.425
+  },
+  "flash_comparison": [
+    {
+      "gpio_us": 1454.7,
+      "firmware_us": 1000,
+      "difference_us": -454.70000000000005
+    },
+    {
+      "gpio_us": 1401.3,
+      "firmware_us": 2000,
+      "difference_us": 598.7
+    },
+    {
+      "gpio_us": 1401.3,
+      "firmware_us": 2000,
+      "difference_us": 598.7
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1400.75,
+      "firmware_us": 2000,
+      "difference_us": 599.25
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1400.65,
+      "firmware_us": 2000,
+      "difference_us": 599.3499999999999
+    },
+    {
+      "gpio_us": 1398.45,
+      "firmware_us": 1000,
+      "difference_us": -398.45000000000005
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.65,
+      "firmware_us": 2000,
+      "difference_us": 599.3499999999999
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.35,
+      "firmware_us": 1000,
+      "difference_us": -398.3499999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.875,
+      "firmware_us": 2000,
+      "difference_us": 599.125
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1400.875,
+      "firmware_us": 2000,
+      "difference_us": 599.125
+    },
+    {
+      "gpio_us": 1398.325,
+      "firmware_us": 1000,
+      "difference_us": -398.32500000000005
+    },
+    {
+      "gpio_us": 1400.8,
+      "firmware_us": 2000,
+      "difference_us": 599.2
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.275,
+      "firmware_us": 1000,
+      "difference_us": -398.2750000000001
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1398.45,
+      "firmware_us": 1000,
+      "difference_us": -398.45000000000005
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1400.625,
+      "firmware_us": 2000,
+      "difference_us": 599.375
+    },
+    {
+      "gpio_us": 1398.475,
+      "firmware_us": 2000,
+      "difference_us": 601.5250000000001
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1400.45,
+      "firmware_us": 2000,
+      "difference_us": 599.55
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.4,
+      "firmware_us": 1000,
+      "difference_us": -398.4000000000001
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1398.175,
+      "firmware_us": 1000,
+      "difference_us": -398.17499999999995
+    },
+    {
+      "gpio_us": 1400.75,
+      "firmware_us": 2000,
+      "difference_us": 599.25
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1454.225,
+      "firmware_us": 1000,
+      "difference_us": -454.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.2,
+      "firmware_us": 1000,
+      "difference_us": -398.20000000000005
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.775,
+      "firmware_us": 2000,
+      "difference_us": 599.2249999999999
+    },
+    {
+      "gpio_us": 1400.8,
+      "firmware_us": 2000,
+      "difference_us": 599.2
+    },
+    {
+      "gpio_us": 1398.375,
+      "firmware_us": 1000,
+      "difference_us": -398.375
+    },
+    {
+      "gpio_us": 1400.525,
+      "firmware_us": 2000,
+      "difference_us": 599.4749999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1400.85,
+      "firmware_us": 2000,
+      "difference_us": 599.1500000000001
+    },
+    {
+      "gpio_us": 1400.7,
+      "firmware_us": 2000,
+      "difference_us": 599.3
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1400.725,
+      "firmware_us": 2000,
+      "difference_us": 599.2750000000001
+    },
+    {
+      "gpio_us": 1398.25,
+      "firmware_us": 1000,
+      "difference_us": -398.25
+    },
+    {
+      "gpio_us": 1398.35,
+      "firmware_us": 1000,
+      "difference_us": -398.3499999999999
+    },
+    {
+      "gpio_us": 1398.15,
+      "firmware_us": 1000,
+      "difference_us": -398.1500000000001
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.3,
+      "firmware_us": 1000,
+      "difference_us": -398.29999999999995
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    },
+    {
+      "gpio_us": 1398.225,
+      "firmware_us": 1000,
+      "difference_us": -398.2249999999999
+    }
+  ],
+  "firmware_stats": [
+    "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "STAT name=sample n=12118 min_us=2000 avg_us=2056 max_us=3000",
+    "STAT name=recovery n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=command n=2014 min_us=0 avg_us=11585 max_us=13000",
+    "STAT name=journal n=90 min_us=9000 avg_us=9855 max_us=11000",
+    "STAT name=output n=627 min_us=0 avg_us=3977 max_us=10000",
+    "STAT name=loop n=2121761 min_us=0 avg_us=100 max_us=25000",
+    "STAT name=command_latency n=2015 min_us=0 avg_us=468963 max_us=978000",
+    "STAT name=loop_period n=2121762 min_us=0 avg_us=114 max_us=25000",
+    "RESOURCE stack=584 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0"
+  ]
+}

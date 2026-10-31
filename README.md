@@ -14,7 +14,9 @@ make coverage
 
 Збірка потребує Docker, тести C compiler та Python 3. ELF/HEX/BIN зберігаються у firmware/build. `make clean` видаляє лише цю папку. На macOS для coverage використовуйте `make coverage GCOV='xcrun llvm-cov gcov'`. [Залежності](docs/dependencies.md), [тести](docs/testing.md), [справжні журнали](docs/validation/).
 
-Відкрийте цей каталог у VS Code з Wokwi extension, виконайте `Wokwi: Start Simulator`. Для запуску потрібен інтернет. Після зміни ELF закрийте старий simulator tab і запустіть знову. UART має показати BOOT, три SELFTEST, READY та DATA. Команди в terminal: `c` читає ID і 14 raw bytes, `n` створює адресний NACK, `r` скидає alarm і baseline. PIR запускається через Simulate motion, світло та IMU змінюються контролами сенсорів.
+ЛР3 продовжує ту саму прошивку в гілці feature/lab-3. [Звіт і стан вимог](docs/lab3-report.md), [задачі](docs/tasks.md), [виміри](docs/metrics/scenarios.csv), [обмеження](docs/limitations.md), [база ЛР4](docs/baseline-lab4.md). ЛР2 лишається історичною редакцією в Git.
+
+Для web Wokwi C031 вставте diagram.json, через F1 оберіть Upload Firmware and Start Simulation та firmware/build/firmware.elf. BOOT містить lab=3, source SHA-256, git revision і clock=SysTick_1ms. Команди: a відкриває ACCESS на 60 с без продовження повторною a; g повертає GUARD; k підтверджує alarm; c читає ID, n перевіряє NACK, f/v програмний fault/recovery; s видає метрики, d читає CRC-valid записи, z починає нове вікно метрик. Після символів у web terminal натисніть Enter.
 
 Після Stop аналізатор зберігає wokwi.vcd; збережіть його до наступного запуску. [Записи і декодування](docs/captures/analysis.md) містять параметри імпорту та виміри.
 

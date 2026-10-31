@@ -1,0 +1,112 @@
+BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128
+READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+EVENT t_ms=37 bits=512 observation=0 saved=1 seq=1 flash_us=1000
+HEART t_us=68000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=37 bits=16 observation=1001 saved=1 seq=2 flash_us=1000
+HEART t_us=1007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=2007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=3007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=4007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=5007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=6007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=7007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=8007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=9007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=10007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=11007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=12007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=13007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=14007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=15007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=16007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=17007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=18007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=19007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=20007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=21007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=22007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=23007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=24007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=25007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=26007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+CMD t_us=26724000 rx_us=26724000 char=s access=0 alarm=0
+STAT name=sample n=1334 min_us=0 avg_us=0 max_us=0
+STAT name=recovery n=27 min_us=22000 avg_us=22000 max_us=22000
+STAT name=command n=0 min_us=0 avg_us=0 max_us=0
+STAT name=journal n=2 min_us=9000 avg_us=9000 max_us=9000
+STAT name=output n=27 min_us=6000 avg_us=6000 max_us=6000
+STAT name=loop n=291781 min_us=0 avg_us=77 max_us=37000
+STAT name=command_latency n=1 min_us=0 avg_us=0 max_us=0
+STAT name=loop_period n=291782 min_us=0 avg_us=91 max_us=37000
+RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=1334 skipped=2 late=2 finish_miss=2 release_max_us=30000 jitter_min_us=-8000 jitter_max_us=17000 busy_permille=28
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=27029000 adc=1001 fault=1 alarm=0 access=0
+HEART t_us=28007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=29007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=30007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=31007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=32007000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8001 cr2=0x20100D0
+HEART t_us=33007000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=33029 bits=32 observation=1001 saved=1 seq=3 flash_us=1000
+HEART t_us=34007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=35007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=36007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=37007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=38007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=39007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=40007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=41009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=42007000 adc=1001 fault=0 alarm=0 access=0
+READ t_us=42076000 status=0 id=104
+CMD t_us=42080000 rx_us=42075000 char=c access=0 alarm=0
+CMD t_us=42090000 rx_us=42075000 char=s access=0 alarm=0
+STAT name=sample n=2101 min_us=0 avg_us=433 max_us=3000
+STAT name=recovery n=34 min_us=5000 avg_us=21500 max_us=22000
+STAT name=command n=3 min_us=0 avg_us=6333 max_us=12000
+STAT name=journal n=3 min_us=9000 avg_us=9333 max_us=10000
+STAT name=output n=52 min_us=6000 avg_us=6538 max_us=26000
+STAT name=loop n=449515 min_us=0 avg_us=79 max_us=37000
+STAT name=command_latency n=4 min_us=0 avg_us=6750 max_us=14000
+STAT name=loop_period n=449516 min_us=0 avg_us=93 max_us=37000
+RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=2101 skipped=4 late=4 finish_miss=4 release_max_us=30000 jitter_min_us=-8000 jitter_max_us=28000 busy_permille=48
+HEART t_us=43007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=44007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=45007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=46007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=47009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=48007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=49007000 adc=1001 fault=0 alarm=0 access=0

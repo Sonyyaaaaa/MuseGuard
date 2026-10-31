@@ -1,0 +1,12 @@
+mkdir -p build/Darwin-arm64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined test_museguard.c ../firmware/Devices/mpu6050.c ../firmware/Devices/simple_sensors.c ../firmware/App/museguard.c -o build/Darwin-arm64/test_museguard
+mkdir -p build/Darwin-arm64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O1 -g -Wall -Wextra -Werror -fsanitize=address,undefined test_lab3.c ../firmware/App/event_store.c ../firmware/App/exhibit.c ../firmware/App/cadence.c -o build/Darwin-arm64/test_lab3
+./build/Darwin-arm64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+./build/Darwin-arm64/test_lab3
+PASS store: 33 byte-boundary power-cut positions, preceding record preserved
+PASS store: 320 appends, page rotation, erase failure, bit corruption, CRC vector
+PASS exhibit: 60-second window across tick wrap, no flood renewal, shock always alarm
+PASS cadence: skip accounting and wrap; 180000 logical releases (not a one-hour MCU run)
+PASS rotation: 2049 erase-cut boundaries and 33 rollover program-cut boundaries (host model)

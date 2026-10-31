@@ -1,0 +1,133 @@
+{
+  "vcd_sha256": "e87cd4e0d69294f9ab7c337f848bee78fc7189105602ce9572b09aec25d5cfbc",
+  "timescale": "1ns",
+  "origin": "actual Wokwi logic analyzer, not synthesized",
+  "last_transition_s": 45.33338235,
+  "probe_serial_activity_permille": 93.69422387694397,
+  "analysis_window_s": [
+    0,
+    null
+  ],
+  "SAMPLE": {
+    "width_us": {
+      "n": 2264,
+      "min": 148.175,
+      "avg": 1636.4737080388693,
+      "max": 21996.05,
+      "p99": 2349.475
+    },
+    "period_us": {
+      "n": 2263,
+      "min": 6435.8,
+      "avg": 20012.77933053469,
+      "max": 48463.7,
+      "p99": 26517.075
+    }
+  },
+  "FLASH": {
+    "width_us": {
+      "n": 5,
+      "min": 1398.95,
+      "avg": 1411.045,
+      "max": 1454.7,
+      "p99": 1454.7
+    },
+    "period_us": {
+      "n": 4,
+      "min": 11774.25,
+      "avg": 5496707.79375,
+      "max": 14840099.35,
+      "p99": 14840099.35
+    }
+  },
+  "COMMAND": {
+    "width_us": {
+      "n": 7,
+      "min": 31.0,
+      "avg": 5457.375,
+      "max": 12048.825,
+      "p99": 12048.825
+    },
+    "period_us": {
+      "n": 6,
+      "min": 11939.15,
+      "avg": 2801001.0208333335,
+      "max": 8707014.225,
+      "p99": 8707014.225
+    }
+  },
+  "ADC_MARK": {
+    "width_us": {
+      "n": 2264,
+      "min": 70.675,
+      "avg": 70.67608215547703,
+      "max": 73.125,
+      "p99": 70.675
+    },
+    "period_us": {
+      "n": 2263,
+      "min": 6435.8,
+      "avg": 20012.77952938577,
+      "max": 48463.7,
+      "p99": 26517.075
+    }
+  },
+  "pir_to_next_sample_end_bound_us": {
+    "n": 0
+  },
+  "pir_to_uart_event_us": {
+    "n": 0
+  },
+  "pir_context": [],
+  "n_bursts": [],
+  "flash_comparison": [
+    {
+      "gpio_us": 1454.7,
+      "firmware_us": 1000,
+      "difference_us": -454.70000000000005
+    },
+    {
+      "gpio_us": 1401.3,
+      "firmware_us": 2000,
+      "difference_us": 598.7
+    },
+    {
+      "gpio_us": 1401.3,
+      "firmware_us": 2000,
+      "difference_us": 598.7
+    },
+    {
+      "gpio_us": 1398.975,
+      "firmware_us": 1000,
+      "difference_us": -398.9749999999999
+    },
+    {
+      "gpio_us": 1398.95,
+      "firmware_us": 1000,
+      "difference_us": -398.95000000000005
+    }
+  ],
+  "firmware_stats": [
+    "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "STAT name=sample n=614 min_us=0 avg_us=1195 max_us=22000",
+    "STAT name=recovery n=6 min_us=5000 avg_us=19166 max_us=22000",
+    "STAT name=command n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=journal n=4 min_us=9000 avg_us=9500 max_us=10000",
+    "STAT name=output n=13 min_us=6000 avg_us=6000 max_us=6000",
+    "STAT name=loop n=126621 min_us=0 avg_us=82 max_us=31000",
+    "STAT name=command_latency n=1 min_us=0 avg_us=0 max_us=0",
+    "STAT name=loop_period n=126622 min_us=0 avg_us=97 max_us=31000",
+    "RESOURCE stack=664 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "CADENCE n=614 skipped=3 late=3 finish_miss=4 release_max_us=30000 jitter_min_us=-11000 jitter_max_us=28000 busy_permille=78",
+    "STAT name=sample n=1017 min_us=0 avg_us=722 max_us=22000",
+    "STAT name=recovery n=14 min_us=5000 avg_us=20785 max_us=22000",
+    "STAT name=command n=3 min_us=0 avg_us=6333 max_us=12000",
+    "STAT name=journal n=4 min_us=9000 avg_us=9500 max_us=10000",
+    "STAT name=output n=30 min_us=5000 avg_us=6866 max_us=26000",
+    "STAT name=loop n=213840 min_us=0 avg_us=81 max_us=31000",
+    "STAT name=command_latency n=4 min_us=0 avg_us=6500 max_us=14000",
+    "STAT name=loop_period n=213841 min_us=0 avg_us=95 max_us=31000",
+    "RESOURCE stack=664 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "CADENCE n=1017 skipped=3 late=3 finish_miss=4 release_max_us=30000 jitter_min_us=-13000 jitter_max_us=28000 busy_permille=63"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "vcd_sha256": "259103795f6630548dddd50c579af64d86cddc3beefac4e3015bbed25188fc81",
+  "timescale": "1ns",
+  "origin": "actual Wokwi logic analyzer, not synthesized",
+  "last_transition_s": 49.301048675,
+  "probe_serial_activity_permille": 56.354592846802156,
+  "analysis_window_s": [
+    0,
+    null
+  ],
+  "SAMPLE": {
+    "width_us": {
+      "n": 2460,
+      "min": 148.175,
+      "avg": 875.1021341463414,
+      "max": 2380.475,
+      "p99": 2349.225
+    },
+    "period_us": {
+      "n": 2459,
+      "min": 11450.425,
+      "avg": 20028.007472549816,
+      "max": 48537.325,
+      "p99": 26506.325
+    }
+  },
+  "FLASH": {
+    "width_us": {
+      "n": 3,
+      "min": 1398.9,
+      "avg": 1417.5333333333333,
+      "max": 1454.725,
+      "p99": 1454.725
+    },
+    "period_us": {
+      "n": 2,
+      "min": 15498.275,
+      "avg": 16484883.2,
+      "max": 32954268.125,
+      "p99": 32954268.125
+    }
+  },
+  "COMMAND": {
+    "width_us": {
+      "n": 5,
+      "min": 31.25,
+      "avg": 5279.835,
+      "max": 12066.4,
+      "p99": 12066.4
+    },
+    "period_us": {
+      "n": 4,
+      "min": 13506.8,
+      "avg": 3844862.875,
+      "max": 15337374.725,
+      "p99": 15337374.725
+    }
+  },
+  "ADC_MARK": {
+    "width_us": {
+      "n": 2460,
+      "min": 70.675,
+      "avg": 70.675,
+      "max": 70.675,
+      "p99": 70.675
+    },
+    "period_us": {
+      "n": 2459,
+      "min": 11450.425,
+      "avg": 20028.00765555104,
+      "max": 48537.325,
+      "p99": 26506.325
+    }
+  },
+  "pir_to_next_sample_end_bound_us": {
+    "n": 0
+  },
+  "pir_to_uart_event_us": {
+    "n": 0
+  },
+  "pir_context": [],
+  "n_bursts": [],
+  "flash_comparison": [
+    {
+      "gpio_us": 1454.725,
+      "firmware_us": 1000,
+      "difference_us": -454.7249999999999
+    },
+    {
+      "gpio_us": 1398.9,
+      "firmware_us": 1000,
+      "difference_us": -398.9000000000001
+    },
+    {
+      "gpio_us": 1398.975,
+      "firmware_us": 1000,
+      "difference_us": -398.9749999999999
+    }
+  ],
+  "firmware_stats": [
+    "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "STAT name=sample n=1334 min_us=0 avg_us=0 max_us=0",
+    "STAT name=recovery n=27 min_us=22000 avg_us=22000 max_us=22000",
+    "STAT name=command n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=journal n=2 min_us=9000 avg_us=9000 max_us=9000",
+    "STAT name=output n=27 min_us=6000 avg_us=6000 max_us=6000",
+    "STAT name=loop n=291781 min_us=0 avg_us=77 max_us=37000",
+    "STAT name=command_latency n=1 min_us=0 avg_us=0 max_us=0",
+    "STAT name=loop_period n=291782 min_us=0 avg_us=91 max_us=37000",
+    "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "CADENCE n=1334 skipped=2 late=2 finish_miss=2 release_max_us=30000 jitter_min_us=-8000 jitter_max_us=17000 busy_permille=28",
+    "STAT name=sample n=2101 min_us=0 avg_us=433 max_us=3000",
+    "STAT name=recovery n=34 min_us=5000 avg_us=21500 max_us=22000",
+    "STAT name=command n=3 min_us=0 avg_us=6333 max_us=12000",
+    "STAT name=journal n=3 min_us=9000 avg_us=9333 max_us=10000",
+    "STAT name=output n=52 min_us=6000 avg_us=6538 max_us=26000",
+    "STAT name=loop n=449515 min_us=0 avg_us=79 max_us=37000",
+    "STAT name=command_latency n=4 min_us=0 avg_us=6750 max_us=14000",
+    "STAT name=loop_period n=449516 min_us=0 avg_us=93 max_us=37000",
+    "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "CADENCE n=2101 skipped=4 late=4 finish_miss=4 release_max_us=30000 jitter_min_us=-8000 jitter_max_us=28000 busy_permille=48"
+  ]
+}

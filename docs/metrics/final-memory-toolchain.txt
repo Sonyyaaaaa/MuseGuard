@@ -1,0 +1,1004 @@
+firmware/build/firmware.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                21880   134217920
+.RamFunc                56   134239800
+.rodata               1480   134239856
+.ARM                     8   134241336
+.init_array              4   134241344
+.fini_array              4   134241348
+.data                  248   536870912
+.bss                  2156   536871160
+._user_heap_stack     2564   536873316
+.ARM.attributes         40           0
+.comment                38           0
+.debug_info         181871           0
+.debug_abbrev        32467           0
+.debug_loc           77118           0
+.debug_aranges        5232           0
+.debug_ranges         4440           0
+.debug_line          96106           0
+.debug_str           25108           0
+.debug_frame         12400           0
+.debug_loclists      13760           0
+.debug_rnglists        585           0
+.debug_line_str        163           0
+Total               477920
+
+
+   text	   data	    bss	    dec	    hex	filename
+    200	      0	      0	    200	     c8	firmware/build/cadence.o
+    608	      0	      0	    608	    260	firmware/build/event_store.o
+    108	      0	      0	    108	     6c	firmware/build/exhibit.o
+    736	      0	    658	   1394	    572	firmware/build/lab3_io.o
+    664	      0	    320	    984	    3d8	firmware/build/main.o
+    440	      0	      0	    440	    1b8	firmware/build/mpu6050.o
+    598	      0	      0	    598	    256	firmware/build/museguard.o
+    835	      0	      0	    835	    343	firmware/build/platform.o
+   3196	    144	    776	   4116	   1014	firmware/build/runner.o
+     74	      0	      0	     74	     4a	firmware/build/simple_sensors.o
+    294	      0	      0	    294	    126	firmware/build/startup_stm32c031xx.o
+    560	      8	      4	    572	    23c	firmware/build/stm32c0xx_hal.o
+   4576	      0	      0	   4576	   11e0	firmware/build/stm32c0xx_hal_adc.o
+    464	      0	      0	    464	    1d0	firmware/build/stm32c0xx_hal_adc_ex.o
+    600	      0	      0	    600	    258	firmware/build/stm32c0xx_hal_cortex.o
+   1722	      0	      0	   1722	    6ba	firmware/build/stm32c0xx_hal_dma.o
+    326	      0	      0	    326	    146	firmware/build/stm32c0xx_hal_dma_ex.o
+    818	      0	      0	    818	    332	firmware/build/stm32c0xx_hal_exti.o
+    772	      0	     24	    796	    31c	firmware/build/stm32c0xx_hal_flash.o
+   1164	      0	      0	   1164	    48c	firmware/build/stm32c0xx_hal_flash_ex.o
+    854	      0	      0	    854	    356	firmware/build/stm32c0xx_hal_gpio.o
+  13066	      0	      0	  13066	   330a	firmware/build/stm32c0xx_hal_i2c.o
+    410	      0	      0	    410	    19a	firmware/build/stm32c0xx_hal_i2c_ex.o
+    480	      0	      0	    480	    1e0	firmware/build/stm32c0xx_hal_msp.o
+    268	      0	      0	    268	    10c	firmware/build/stm32c0xx_hal_pwr.o
+    676	      0	      0	    676	    2a4	firmware/build/stm32c0xx_hal_pwr_ex.o
+   1896	      0	      0	   1896	    768	firmware/build/stm32c0xx_hal_rcc.o
+    948	      0	      0	    948	    3b4	firmware/build/stm32c0xx_hal_rcc_ex.o
+   9200	      0	      0	   9200	   23f0	firmware/build/stm32c0xx_hal_uart.o
+   1554	      0	      0	   1554	    612	firmware/build/stm32c0xx_hal_uart_ex.o
+     28	      0	      0	     28	     1c	firmware/build/stm32c0xx_it.o
+    220	      4	      4	    228	     e4	firmware/build/syscalls.o
+    100	      0	      4	    104	     68	firmware/build/sysmem.o
+    220	      4	      0	    224	     e0	firmware/build/system_stm32c0xx.o
+536872204 00000001 b adc_ready
+536871160 00000001 b completed.1
+536872161 00000001 b dumping
+536872202 00000001 b inject_fault
+536872312 00000001 b read_index
+536872162 00000001 b reporting
+536872160 00000001 b reset_metrics
+536872203 00000001 b store_ready
+536872313 00000001 b write_index
+134239772 00000002 W ADC1_IRQHandler
+134239772 00000002 W DMA1_Channel1_IRQHandler
+134239772 00000002 W DMA1_Channel2_3_IRQHandler
+134239772 00000002 W DMAMUX1_IRQHandler
+134239772 00000002 T Default_Handler
+134239772 00000002 W EXTI0_1_IRQHandler
+134239772 00000002 W EXTI2_3_IRQHandler
+134239772 00000002 W FLASH_IRQHandler
+134237848 00000002 W HAL_GPIO_EXTI_Falling_Callback
+134237846 00000002 W HAL_GPIO_EXTI_Rising_Callback
+134232026 00000002 T HardFault_Handler
+134239772 00000002 W I2C1_IRQHandler
+134232024 00000002 T NMI_Handler
+134232030 00000002 T PendSV_Handler
+134239772 00000002 W RCC_IRQHandler
+134239772 00000002 W RTC_IRQHandler
+134239772 00000002 W SPI1_IRQHandler
+134232028 00000002 T SVC_Handler
+134239772 00000002 W TIM14_IRQHandler
+134239772 00000002 W TIM16_IRQHandler
+134239772 00000002 W TIM17_IRQHandler
+134239772 00000002 W TIM1_BRK_UP_TRG_COM_IRQHandler
+134239772 00000002 W TIM1_CC_IRQHandler
+134239772 00000002 W TIM3_IRQHandler
+134239772 00000002 W USART1_IRQHandler
+134239772 00000002 W WWDG_IRQHandler
+134225160 00000002 W __aeabi_idiv0
+134225160 00000002 W __aeabi_ldiv0
+134220316 00000002 T __malloc_lock
+134220320 00000002 T __malloc_unlock
+134218856 00000002 T __sfp_lock_acquire
+134218860 00000002 T __sfp_lock_release
+536872200 00000002 b last_adc
+134231624 00000004 T Error_Handler
+536871156 00000004 D SystemCoreClock
+134218312 00000004 t __fp_lock
+134218404 00000004 t __fp_unlock
+536871508 00000004 B __malloc_free_list
+536871504 00000004 B __malloc_sbrk_start
+536873284 00000004 b __sbrk_heap_end
+134221940 00000004 T __seofread
+536871188 00000004 B __stdio_exit_handler
+536870924 00000004 D _impure_ptr
+134232492 00000004 T _isatty
+134232496 00000004 T _lseek
+536872956 00000004 b ambiguous
+536872308 00000004 b dropped_bytes
+536872184 00000004 b dump_slot
+536871512 00000004 B errno
+536872196 00000004 b events_lost
+536872192 00000004 b flash_failures
+536872176 00000004 b last_loop
+536872960 00000004 b previous_us
+536871516 00000004 b qcount
+536871524 00000004 b qhead
+536871520 00000004 b qtail
+536871720 00000004 b report_load
+536872188 00000004 b report_row
+536872304 00000004 b uart_overruns
+536873288 00000004 B uwTick
+536871148 00000004 D uwTickFreq
+536871152 00000004 D uwTickPrio
+536872180 00000004 b window_start
+134233400 00000006 T HAL_ADC_GetValue
+134232476 00000006 T _close
+134235268 00000008 T HAL_NVIC_SetPriority
+134235300 00000008 T HAL_SYSTICK_Config
+134232032 00000008 T SysTick_Handler
+134225152 00000008 T __aeabi_idivmod
+134224684 00000008 T __aeabi_uidivmod
+536872168 00000008 b busy_us
+536872268 00000008 b exhibit
+134226536 00000008 T platform_now
+134232482 00000010 T _fstat
+134241204 00000010 r settings.0
+134232040 00000012 T EXTI4_15_IRQHandler
+134237834 00000012 T HAL_GPIO_WritePin
+134235104 00000012 W HAL_GetTick
+134236540 00000012 T HAL_RCC_GetHCLKFreq
+134219504 00000012 T __errno
+134222056 00000012 T __sclose
+536870912 00000012 D __sglue
+536872240 00000012 b bus
+134229108 00000012 T lab3_clock_ambiguous
+134230774 00000012 T museguard_reset
+134225812 00000012 t status
+134237820 00000014 T HAL_GPIO_ReadPin
+134229480 00000014 T exhibit_apply
+134230760 00000014 t square
+134239676 00000016 T SystemInit
+536872252 00000016 b imu
+134226376 00000016 T platform_i2c
+134226520 00000016 T platform_led
+134228664 00000016 t stack_floor
+134224396 00000018 T _malloc_usable_size_r
+134229630 00000018 T cadence_complete
+134237200 00000020 t FLASH_MassErase
+134229364 00000020 T lab3_storage
+134226392 00000020 T platform_start
+134218292 00000020 T puts
+134235080 00000024 W HAL_IncTick
+134235056 00000024 T HAL_Init
+134235276 00000024 T HAL_NVIC_EnableIRQ
+134241216 00000024 R UARTPrescTable
+134218864 00000024 T __fp_lock_all
+134218888 00000024 T __fp_unlock_all
+134221840 00000024 T __swbuf
+134229694 00000024 t blank
+134229340 00000024 T lab3_probe
+134229316 00000024 T lab3_rx_stats
+536871164 00000024 b object.0
+536873292 00000024 B pFlash
+134226496 00000024 T platform_pir
+134221660 00000024 T vfiprintf
+134221660 00000024 T vfprintf
+134220808 00000026 T _iprintf_r
+134220808 00000026 T _printf_r
+134230734 00000026 T pir_rising
+134237220 00000028 T FLASH_PageErase
+134236900 00000028 t FLASH_Program_DoubleWord
+134232420 00000028 W _read
+134232448 00000028 W _write
+536872276 00000028 b detector
+134232572 00000028 T lab3_heap_peak
+134228896 00000028 T lab3_paint_stack
+134218316 00000028 t stdio_exit_handler
+134241240 00000032 R APBPrescTable
+134236976 00000032 T HAL_FLASH_Lock
+134220992 00000032 T __sprint_r
+134229836 00000032 T mg_store_read
+134230304 00000032 t signed_word
+536872208 00000032 b store
+134241172 00000032 r task_names
+134218820 00000036 T __sinit
+134222852 00000036 T _close_r
+134220872 00000036 T _isatty_r
+134221864 00000036 T _sbrk_r
+134229444 00000036 T exhibit_tick
+134220836 00000036 T iprintf
+134220836 00000036 T printf
+134236552 00000040 T HAL_RCC_GetPCLK1Freq
+134220908 00000040 t __sfputc_r
+134221900 00000040 T __sread
+134224160 00000040 T _fstat_r
+134224200 00000040 T _lseek_r
+134223064 00000040 T _read_r
+134224356 00000040 T _write_r
+134228924 00000040 T lab3_stack_used
+134231984 00000040 T main
+134220948 00000042 T __sfputs_r
+134231580 00000044 T __io_putchar
+134229648 00000046 T duration_add
+134236928 00000048 T HAL_FLASH_Unlock
+134237852 00000048 T HAL_GPIO_EXTI_IRQHandler
+134232140 00000048 T HAL_MspInit
+134222008 00000048 T __sseek
+536871004 00000048 d heartbeat_clock
+536871052 00000048 d recovery_clock
+536871724 00000048 b report_clock
+536871100 00000048 d sample_clock
+134228764 00000048 t storage_read
+134219368 00000050 T _fflush_r
+134225884 00000050 t finish_i2c
+134239800 00000056 t FLASH_Program_Fast
+134239692 00000056 W Reset_Handler
+134235212 00000056 t SysTick_Config
+134226676 00000056 t account
+134229780 00000056 T mg_record_valid
+134229384 00000058 T exhibit_command
+134231840 00000060 t MX_USART2_UART_Init
+134225752 00000060 T __clzsi2
+134218344 00000060 t cleanup_stdio
+134229048 00000060 T lab3_us
+134229720 00000060 T mg_crc
+134225824 00000060 t settle_byte
+134225164 00000062 T __aeabi_uldivmod
+134241272 00000064 R AHBPrescTable
+134221944 00000064 T __swrite
+134225936 00000064 t wait_i2c
+134230668 00000066 T mpu6050_read
+134234580 00000068 T HAL_ADC_Stop
+134220044 00000068 T _fwalk_sglue
+134220736 00000070 T memcmp
+134218072 00000072 T __libc_init_array
+134232500 00000072 T _sbrk
+134219516 00000072 t sbrk_aligned
+134220520 00000076 T __swhatbuf_r
+536870928 00000076 D _impure_data
+536873208 00000076 B hi2c1
+134229240 00000076 T lab3_rx
+134238192 00000084 T HAL_I2CEx_ConfigDigitalFilter
+134231900 00000084 T SystemClock_Config
+134219420 00000084 T fflush
+134228964 00000084 T lab3_io_init
+134226412 00000084 T platform_adc
+134228680 00000084 t storage_erase
+134228812 00000084 t storage_program
+134234048 00000088 T ADC_ConversionStop
+134232052 00000088 T HAL_ADC_MspInit
+134238104 00000088 T HAL_I2CEx_ConfigAnalogFilter
+134234968 00000088 W HAL_InitTick
+134231752 00000088 t MX_I2C1_Init
+134225228 00000090 T __aeabi_lmul
+134225228 00000090 T __muldi3
+134237008 00000092 T FLASH_WaitForLastOperation
+134236048 00000092 T HAL_RCC_GetSysClockFreq
+134232324 00000096 T HAL_UART_MspInit
+134235116 00000096 t __NVIC_SetPriority
+134237100 00000100 T HAL_FLASH_Program
+536873108 00000100 B hadc1
+134234336 00000104 T HAL_ADC_Start
+134239564 00000112 T HAL_UART_Init
+134239448 00000116 T UART_CheckIdleState
+134224240 00000116 T memchr
+134223104 00000118 T _realloc_r
+134229120 00000120 T USART2_IRQHandler
+134231628 00000124 t MX_ADC1_Init
+134237248 00000128 T HAL_FLASHEx_Erase
+536872316 00000128 b received_byte
+134226544 00000132 t remember
+134232188 00000136 T HAL_I2C_MspInit
+134229494 00000136 T cadence_release
+134234440 00000140 T ADC_Disable
+134220596 00000140 T memcpy
+536872964 00000144 B huart2
+134218144 00000148 T _puts_r
+134230516 00000152 T mpu6050_init
+134221684 00000156 T __swbuf_r
+134218660 00000160 T __sfp
+134218912 00000166 T memset
+134226000 00000168 t write_register
+134222888 00000174 T memmove
+134227312 00000176 t journal_task
+134226732 00000176 t sample_task
+134230336 00000180 T mpu6050_decode
+134233216 00000184 T HAL_ADC_PollForConversion
+134219860 00000184 T _free_r
+536871528 00000192 b queue
+536871776 00000192 b report_timing
+536871968 00000192 b timing
+134220324 00000196 T __smakebuf_r
+134234136 00000200 T ADC_Enable
+134230104 00000200 T mg_store_append
+134227860 00000200 T runner_start
+134237900 00000204 T HAL_I2C_Init
+134220112 00000204 T __swsetup_r
+134226168 00000208 t read_register
+134231360 00000220 t MX_GPIO_Init
+134238728 00000224 T UART_AdvFeatureConfig
+134238952 00000228 T UART_WaitOnFlagUntilTimeout
+134229868 00000236 T mg_store_open
+134218408 00000252 t global_stdio_init.part.0
+134224416 00000266 T __udivsi3
+134239180 00000268 T HAL_UART_Transmit
+134219588 00000272 T _malloc_r
+134219080 00000288 T __sflush_r
+134236592 00000308 T HAL_RCCEx_PeriphCLKConfig
+536871192 00000312 B __sf
+134234648 00000320 T HAL_ADCEx_Calibration_Start
+134223224 00000328 T _printf_common
+134227488 00000372 t output_task
+134236140 00000400 T HAL_RCC_ClockConfig
+134226908 00000404 t command_task
+134225320 00000408 T __udivmoddi4
+134237376 00000444 T HAL_GPIO_Init
+134238276 00000452 T UART_SetConfig
+134224692 00000460 T __divsi3
+536872444 00000512 b received_at
+134230788 00000572 T museguard_update
+134228060 00000604 T runner_poll
+134223552 00000608 T _printf_i
+134232600 00000616 T HAL_ADC_Init
+134221024 00000636 T _vfiprintf_r
+134221024 00000636 T _vfprintf_r
+134233408 00000640 T HAL_ADC_ConfigChannel
+134235308 00000740 T HAL_RCC_OscConfig
+134222068 00000784 T __sfvwrite_r
+App/cadence.c:2:6:cadence_release	32	static
+App/cadence.c:19:6:cadence_complete	0	static
+App/cadence.c:23:6:duration_add	12	static
+App/event_store.c:19:13:blank	0	static
+App/event_store.c:6:10:mg_crc	12	static
+App/event_store.c:15:6:mg_record_valid	8	static
+App/event_store.c:25:6:mg_store_read	8	static
+App/event_store.c:30:6:mg_store_open	56	static
+App/event_store.c:55:6:mg_store_append	88	static
+App/exhibit.c:2:10:exhibit_command	8	static
+App/exhibit.c:11:10:exhibit_tick	0	static
+App/exhibit.c:18:6:exhibit_apply	0	static
+Platform/lab3_io.c:11:18:stack_floor	0	static
+Platform/lab3_io.c:73:13:storage_erase	24	static
+Platform/lab3_io.c:60:13:storage_read	8	static
+Platform/lab3_io.c:65:13:storage_program	16	static
+Platform/lab3_io.c:12:6:lab3_paint_stack	8	static
+Platform/lab3_io.c:17:10:lab3_stack_used	8	static
+Platform/lab3_io.c:22:6:lab3_io_init	32	static
+Platform/lab3_io.c:31:10:lab3_us	8	static
+Platform/lab3_io.c:41:10:lab3_clock_ambiguous	0	static
+Platform/lab3_io.c:42:6:USART2_IRQHandler	16	static
+Platform/lab3_io.c:52:6:lab3_rx	8	static
+Platform/lab3_io.c:58:6:lab3_rx_stats	0	static
+Platform/lab3_io.c:59:6:lab3_probe	0	static
+Platform/lab3_io.c:82:14:lab3_storage	12	static
+Core/Src/main.c:285:13:MX_GPIO_Init	64	static
+Core/Src/main.c:70:5:__io_putchar	16	static
+Core/Src/main.c:340:6:Error_Handler	0	static
+Core/Src/main.c:221:13:MX_ADC1_Init	24	static
+Core/Src/main.c:173:13:MX_I2C1_Init	8	static
+Core/Src/main.c:249:13:MX_USART2_UART_Init	8	static
+Core/Src/main.c:136:6:SystemClock_Config	56	static
+Core/Src/main.c:86:5:main	8	static
+Devices/mpu6050.c:3:16:signed_word	0	static
+Devices/mpu6050.c:10:13:mpu6050_decode	32	static
+Devices/mpu6050.c:26:13:mpu6050_init	56	static
+Devices/mpu6050.c:47:13:mpu6050_read	40	static
+App/museguard.c:3:16:square	8	static
+App/museguard.c:5:6:museguard_reset	8	static
+App/museguard.c:7:10:museguard_update	48	static
+Platform/platform.c:8:20:status	0	static
+Platform/platform.c:31:13:settle_byte	16	static
+Platform/platform.c:45:13:finish_i2c	16	static
+Platform/platform.c:16:20:wait_i2c	16	static
+Platform/platform.c:93:20:write_register	32	static
+Platform/platform.c:57:20:read_register	32	static
+Platform/platform.c:118:10:platform_i2c	12	static
+Platform/platform.c:124:13:platform_start	8	static
+Platform/platform.c:130:13:platform_adc	16	static
+Platform/platform.c:142:6:platform_pir	8	static
+Platform/platform.c:147:6:platform_led	8	static
+Platform/platform.c:152:10:platform_now	8	static
+Platform/platform.c:154:6:platform_command	16	static
+Platform/runner.c:30:13:remember	24	static
+Platform/runner.c:38:13:account	16	static
+Platform/runner.c:53:13:sample_task	88	static
+Platform/runner.c:64:13:command_task	40	static
+Platform/runner.c:86:13:journal_task	56	static
+Platform/runner.c:95:13:output_task	96	static
+Platform/runner.c:42:6:runner_start	56	static
+Platform/runner.c:113:6:runner_poll	40	static
+Devices/simple_sensors.c:2:6:pir_rising	0	static
+Devices/simple_sensors.c:9:13:light_millivolts	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:202:13:HAL_MspInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:213:13:HAL_MspDeInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:176:19:HAL_DeInit	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:236:26:HAL_InitTick	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:139:19:HAL_Init	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:303:13:HAL_IncTick	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:314:17:HAL_GetTick	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:323:10:HAL_GetTickPrio	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:332:19:HAL_SetTickFreq	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:356:10:HAL_GetTickFreq	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:372:13:HAL_Delay	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:398:13:HAL_SuspendTick	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:414:13:HAL_ResumeTick	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:424:10:HAL_GetHalVersion	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:433:10:HAL_GetREVID	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:442:10:HAL_GetDEVID	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:451:10:HAL_GetUIDw0	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:460:10:HAL_GetUIDw1	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:469:10:HAL_GetUIDw2	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:497:6:HAL_DBGMCU_EnableDBGStopMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:506:6:HAL_DBGMCU_DisableDBGStopMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:515:6:HAL_DBGMCU_EnableDBGStandbyMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:524:6:HAL_DBGMCU_DisableDBGStandbyMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:552:6:HAL_SYSCFG_EnableIOAnalogSwitchBooster	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:561:6:HAL_SYSCFG_DisableIOAnalogSwitchBooster	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:574:6:HAL_SYSCFG_EnableRemap	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:589:6:HAL_SYSCFG_DisableRemap	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:602:6:HAL_SYSCFG_SetPinBinding	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c:613:10:HAL_SYSCFG_GetPinBinding	0	static
+Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_adc.h:3670:22:LL_ADC_SetAnalogWDMonitChannels	8	static
+Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_adc.h:3894:22:LL_ADC_ConfigAnalogWDThresholds	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:888:13:HAL_ADC_MspInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:387:19:HAL_ADC_Init	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:905:13:HAL_ADC_MspDeInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1296:19:HAL_ADC_PollForConversion	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1423:19:HAL_ADC_PollForEvent	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1876:10:HAL_ADC_GetValue	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2102:13:HAL_ADC_ConvCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2117:13:HAL_ADC_ConvHalfCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2956:13:ADC_DMAHalfConvCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2132:13:HAL_ADC_LevelOutOfWindowCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2154:13:HAL_ADC_ErrorCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2974:13:ADC_DMAError	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2878:13:ADC_DMAConvCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1893:6:HAL_ADC_IRQHandler	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2200:19:HAL_ADC_ConfigChannel	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2642:10:HAL_ADC_GetState	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2656:10:HAL_ADC_GetError	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2683:19:ADC_ConversionStop	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2733:19:ADC_Enable	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1172:19:HAL_ADC_Start	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1550:19:HAL_ADC_Start_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1694:19:HAL_ADC_Start_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2820:19:ADC_Disable	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:759:19:HAL_ADC_DeInit	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1242:19:HAL_ADC_Stop	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1644:19:HAL_ADC_Stop_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:1792:19:HAL_ADC_Stop_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c:2400:19:HAL_ADC_AnalogWDGConfig	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:105:19:HAL_ADCEx_Calibration_Start	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:225:10:HAL_ADCEx_Calibration_GetValue	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:241:19:HAL_ADCEx_Calibration_SetValue	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:287:13:HAL_ADCEx_LevelOutOfWindow2Callback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:302:13:HAL_ADCEx_LevelOutOfWindow3Callback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:318:13:HAL_ADCEx_EndOfSamplingCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:333:13:HAL_ADCEx_ChannelConfigReadyCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c:356:19:HAL_ADCEx_DisableVoltageRegulator	0	static
+Drivers/CMSIS/Include/core_cm0plus.h:850:22:__NVIC_SetPriority	16	static
+Drivers/CMSIS/Include/core_cm0plus.h:874:26:__NVIC_GetPriority	0	static
+Drivers/CMSIS/Include/core_cm0plus.h:985:34:__NVIC_SystemReset	0	static
+Drivers/CMSIS/Include/core_cm0plus.h:1056:26:SysTick_Config	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:132:6:HAL_NVIC_SetPriority	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:149:6:HAL_NVIC_EnableIRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:166:6:HAL_NVIC_DisableIRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:179:6:HAL_NVIC_SystemReset	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:192:10:HAL_SYSTICK_Config	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:224:10:HAL_NVIC_GetPriority	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:238:6:HAL_NVIC_SetPendingIRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:257:10:HAL_NVIC_GetPendingIRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:274:6:HAL_NVIC_ClearPendingIRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:291:6:HAL_SYSTICK_CLKSourceConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:318:13:HAL_SYSTICK_Callback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:309:6:HAL_SYSTICK_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:337:6:HAL_MPU_Enable	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:352:6:HAL_MPU_Disable	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c:368:6:HAL_MPU_ConfigRegion	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:987:13:DMA_SetConfig	20	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:1030:13:DMA_CalcDMAMUXChannelBaseAndMask	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:1050:13:DMA_CalcDMAMUXRequestGenBaseAndMask	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:151:19:HAL_DMA_Init	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:242:19:HAL_DMA_DeInit	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:346:19:HAL_DMA_Start	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:393:19:HAL_DMA_Start_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:467:19:HAL_DMA_Abort	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:528:19:HAL_DMA_Abort_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:593:19:HAL_DMA_PollForTransfer	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:725:6:HAL_DMA_IRQHandler	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:819:19:HAL_DMA_RegisterCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:871:19:HAL_DMA_UnRegisterCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:949:22:HAL_DMA_GetState	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c:961:10:HAL_DMA_GetError	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c:94:19:HAL_DMAEx_ConfigMuxSync	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c:144:19:HAL_DMAEx_ConfigMuxRequestGenerator	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c:183:19:HAL_DMAEx_EnableMuxRequestGenerator	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c:211:19:HAL_DMAEx_DisableMuxRequestGenerator	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c:239:6:HAL_DMAEx_MUX_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:136:19:HAL_EXTI_SetConfigLine	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:258:19:HAL_EXTI_GetConfigLine	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:352:19:HAL_EXTI_ClearConfigLine	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:418:19:HAL_EXTI_RegisterCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:454:19:HAL_EXTI_GetHandle	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:495:6:HAL_EXTI_IRQHandler	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:549:10:HAL_EXTI_GetPending	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:593:6:HAL_EXTI_ClearPending	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:629:6:HAL_EXTI_GenerateSWI	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:631:13:FLASH_Program_DoubleWord	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:653:24:FLASH_Program_Fast	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:374:13:HAL_FLASH_EndOfOperationCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:392:13:HAL_FLASH_OperationErrorCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:279:6:HAL_FLASH_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:425:19:HAL_FLASH_Unlock	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:449:19:HAL_FLASH_Lock	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:469:19:HAL_FLASH_OB_Unlock	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:493:19:HAL_FLASH_OB_Lock	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:513:19:HAL_FLASH_OB_Launch	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:556:10:HAL_FLASH_GetError	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:580:19:FLASH_WaitForLastOperation	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:161:19:HAL_FLASH_Program	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c:222:19:HAL_FLASH_Program_IT	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:479:13:FLASH_MassErase	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:543:13:FLASH_OB_WRPConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:589:13:FLASH_OB_OptrConfig	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:619:13:FLASH_OB_PCROP1AConfig	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:671:13:FLASH_OB_PCROP1BConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:700:13:FLASH_OB_SecMemConfig	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:725:13:FLASH_OB_GetWRP	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:751:17:FLASH_OB_GetRDP	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:782:17:FLASH_OB_GetUser	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:797:13:FLASH_OB_GetPCROP1A	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:822:13:FLASH_OB_GetPCROP1B	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:842:13:FLASH_OB_GetSecMem	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:270:19:HAL_FLASHEx_OBProgram	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:373:6:HAL_FLASHEx_OBGetConfig	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:401:6:HAL_FLASHEx_EnableDebugger	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:412:6:HAL_FLASHEx_DisableDebugger	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:423:10:HAL_FLASHEx_FlashEmptyCheck	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:437:6:HAL_FLASHEx_ForceFlashEmpty	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:456:6:HAL_FLASHEx_EnableSecMemProtection	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:491:6:FLASH_PageErase	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:139:19:HAL_FLASHEx_Erase	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:206:19:HAL_FLASHEx_Erase_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c:509:6:FLASH_FlushCaches	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:170:6:HAL_GPIO_Init	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:298:6:HAL_GPIO_DeInit	28	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:378:15:HAL_GPIO_ReadPin	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:412:6:HAL_GPIO_WritePin	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:434:6:HAL_GPIO_TogglePin	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:459:19:HAL_GPIO_LockPin	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:512:13:HAL_GPIO_EXTI_Rising_Callback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:527:13:HAL_GPIO_EXTI_Falling_Callback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c:491:6:HAL_GPIO_EXTI_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6144:13:I2C_Flush_TXDR	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6689:13:I2C_TransferConfig	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6716:13:I2C_Enable_IRQ	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6787:13:I2C_Disable_IRQ	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6850:13:I2C_ConvertOtherXferOptions	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6545:26:I2C_IsErrorOccurred	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6399:26:I2C_WaitOnTXISFlagUntilTimeout	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6368:26:I2C_WaitOnFlagUntilTimeout	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5315:26:I2C_RequestMemoryWrite	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5370:26:I2C_RequestMemoryRead	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6437:26:I2C_WaitOnSTOPFlagUntilTimeout	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6472:26:I2C_WaitOnRXNEFlagUntilTimeout	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:680:13:HAL_I2C_MspInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:524:19:HAL_I2C_Init	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:696:13:HAL_I2C_MspDeInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:634:19:HAL_I2C_DeInit	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1117:19:HAL_I2C_Master_Transmit	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1236:19:HAL_I2C_Master_Receive	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1354:19:HAL_I2C_Slave_Transmit	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1497:19:HAL_I2C_Slave_Receive	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1627:19:HAL_I2C_Master_Transmit_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1698:19:HAL_I2C_Master_Receive_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1767:19:HAL_I2C_Slave_Transmit_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1817:19:HAL_I2C_Slave_Receive_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:1869:19:HAL_I2C_Master_Transmit_DMA	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2016:19:HAL_I2C_Master_Receive_DMA	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2161:19:HAL_I2C_Slave_Transmit_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2265:19:HAL_I2C_Slave_Receive_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2373:19:HAL_I2C_Mem_Write	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2510:19:HAL_I2C_Mem_Read	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2647:19:HAL_I2C_Mem_Write_IT	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2741:19:HAL_I2C_Mem_Read_IT	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2833:19:HAL_I2C_Mem_Write_DMA	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:2980:19:HAL_I2C_Mem_Read_DMA	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3123:19:HAL_I2C_IsDeviceReady	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3265:19:HAL_I2C_Master_Seq_Transmit_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3352:19:HAL_I2C_Master_Seq_Transmit_DMA	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3520:19:HAL_I2C_Master_Seq_Receive_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3607:19:HAL_I2C_Master_Seq_Receive_DMA	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3773:19:HAL_I2C_Slave_Seq_Transmit_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:3869:19:HAL_I2C_Slave_Seq_Transmit_DMA	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4050:19:HAL_I2C_Slave_Seq_Receive_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4146:19:HAL_I2C_Slave_Seq_Receive_DMA	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4323:19:HAL_I2C_EnableListen_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4347:19:HAL_I2C_DisableListen_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4380:19:HAL_I2C_Master_Abort_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4442:6:HAL_I2C_EV_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4513:13:HAL_I2C_MasterTxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4529:13:HAL_I2C_MasterRxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5514:13:I2C_ITMasterSeqCplt	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4544:13:HAL_I2C_SlaveTxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4560:13:HAL_I2C_SlaveRxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5567:13:I2C_ITSlaveSeqCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6215:13:I2C_DMASlaveTransmitCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6293:13:I2C_DMASlaveReceiveCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4578:13:HAL_I2C_AddrCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5419:13:I2C_ITAddrCplt	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4596:13:HAL_I2C_ListenCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5943:13:I2C_ITListenCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4612:13:HAL_I2C_MemTxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4628:13:HAL_I2C_MemRxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4644:13:HAL_I2C_ErrorCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4660:13:HAL_I2C_AbortCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6106:13:I2C_TreatErrorCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5994:13:I2C_ITError	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5784:13:I2C_ITSlaveCplt	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4889:26:I2C_Slave_ISR_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5641:13:I2C_ITMasterCplt	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4743:26:I2C_Master_ISR_IT	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5170:26:I2C_Slave_ISR_DMA	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:5030:26:I2C_Master_ISR_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6321:13:I2C_DMAError	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6165:13:I2C_DMAMasterTransmitCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6243:13:I2C_DMAMasterReceiveCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4461:6:HAL_I2C_ER_IRQHandler	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:6339:13:I2C_DMAAbort	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4695:22:HAL_I2C_GetState	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4707:21:HAL_I2C_GetMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c:4718:10:HAL_I2C_GetError	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:96:19:HAL_I2CEx_ConfigAnalogFilter	20	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:140:19:HAL_I2CEx_ConfigDigitalFilter	20	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:208:19:HAL_I2CEx_EnableWakeUp	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:247:19:HAL_I2CEx_DisableWakeUp	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:308:6:HAL_I2CEx_EnableFastModePlus	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c:331:6:HAL_I2CEx_DisableFastModePlus	8	static
+Core/Src/stm32c0xx_hal_msp.c:59:6:HAL_ADC_MspInit	40	static
+Core/Src/stm32c0xx_hal_msp.c:77:6:HAL_MspInit	8	static
+Core/Src/stm32c0xx_hal_msp.c:99:6:HAL_I2C_MspInit	64	static
+Core/Src/stm32c0xx_hal_msp.c:145:6:HAL_I2C_MspDeInit	8	static
+Core/Src/stm32c0xx_hal_msp.c:176:6:HAL_UART_MspInit	40	static
+Core/Src/stm32c0xx_hal_msp.c:212:6:HAL_UART_MspDeInit	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:73:6:HAL_PWR_DeInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:205:6:HAL_PWR_EnableWakeUpPin	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:226:6:HAL_PWR_DisableWakeUpPin	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:251:6:HAL_PWR_EnterSLEEPMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:300:6:HAL_PWR_EnterSTOPMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:344:6:HAL_PWR_EnterSTANDBYMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:371:6:HAL_PWR_EnableSleepOnExit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:385:6:HAL_PWR_DisableSleepOnExit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:399:6:HAL_PWR_EnableSEVOnPend	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c:412:6:HAL_PWR_DisableSEVOnPend	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:80:6:HAL_PWREx_EnableInternalWakeUpLine	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:90:6:HAL_PWREx_DisableInternalWakeUpLine	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:115:19:HAL_PWREx_EnableGPIOPullUp	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:171:19:HAL_PWREx_DisableGPIOPullUp	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:228:19:HAL_PWREx_EnableGPIOPullDown	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:284:19:HAL_PWREx_DisableGPIOPullDown	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:332:6:HAL_PWREx_EnablePullUpPullDownConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:343:6:HAL_PWREx_DisablePullUpPullDownConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:357:6:HAL_PWREx_EnableFlashPowerDown	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:373:6:HAL_PWREx_DisableFlashPowerDown	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:398:6:HAL_PWREx_EnterSHUTDOWNMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:442:6:HAL_PWREx_BKUPWrite	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c:463:10:HAL_PWREx_BKUPRead	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:196:19:HAL_RCC_DeInit	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:284:19:HAL_RCC_OscConfig	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:785:6:HAL_RCC_MCOConfig	48	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:867:10:HAL_RCC_GetSysClockFreq	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:589:19:HAL_RCC_ClockConfig	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:911:10:HAL_RCC_GetHCLKFreq	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:922:10:HAL_RCC_GetPCLK1Freq	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:935:6:HAL_RCC_GetOscConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1005:6:HAL_RCC_GetClockConfig	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1038:6:HAL_RCC_EnableCSS	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1054:6:HAL_RCC_EnableLSECSS	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1065:6:HAL_RCC_DisableLSECSS	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1101:13:HAL_RCC_CSSCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1112:13:HAL_RCC_LSECSSCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c:1075:6:HAL_RCC_NMI_IRQHandler	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:92:19:HAL_RCCEx_PeriphCLKConfig	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:227:6:HAL_RCCEx_GetPeriphCLKConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:265:10:HAL_RCCEx_GetPeriphCLKFreq	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:434:6:HAL_RCCEx_EnableLSCO	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c:459:6:HAL_RCCEx_DisableLSCO	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3566:13:UART_EndTxTransfer	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3582:13:UART_EndRxTransfer	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3987:13:UART_TxISR_8BIT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4016:13:UART_TxISR_16BIT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4048:13:UART_TxISR_8BIT_FIFOEN	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4088:13:UART_TxISR_16BIT_FIFOEN	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:668:13:HAL_UART_MspInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:683:13:HAL_UART_MspDeInit	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:622:19:HAL_UART_DeInit	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1331:19:HAL_UART_Transmit_IT	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1477:19:HAL_UART_Transmit_DMA	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1615:19:HAL_UART_DMAPause	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1649:19:HAL_UART_DMAResume	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1684:19:HAL_UART_DMAStop	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1759:19:HAL_UART_Abort	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1862:19:HAL_UART_AbortTransmit	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1921:19:HAL_UART_AbortReceive	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2646:13:HAL_UART_TxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3608:13:UART_DMATransmitCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4129:13:UART_EndTransmit_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2661:13:HAL_UART_TxHalfCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3642:13:UART_DMATxHalfCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2676:13:HAL_UART_RxCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2691:13:HAL_UART_RxHalfCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2706:13:HAL_UART_ErrorCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3751:13:UART_DMAError	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3791:13:UART_DMAAbortOnError	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2721:13:HAL_UART_AbortCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1989:19:HAL_UART_Abort_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3869:13:UART_DMARxAbortCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3814:13:UART_DMATxAbortCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2736:13:HAL_UART_AbortTransmitCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2142:19:HAL_UART_AbortTransmit_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3921:13:UART_DMATxOnlyAbortCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2751:13:HAL_UART_AbortReceiveCpltCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2233:19:HAL_UART_AbortReceive_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3954:13:UART_DMARxOnlyAbortCallback	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2768:13:HAL_UARTEx_RxEventCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2326:6:HAL_UART_IRQHandler	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4154:13:UART_RxISR_8BIT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4231:13:UART_RxISR_16BIT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4310:13:UART_RxISR_8BIT_FIFOEN	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:4458:13:UART_RxISR_16BIT_FIFOEN	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3717:13:UART_DMARxHalfCplt	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3660:13:UART_DMAReceiveCplt	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2816:6:HAL_UART_ReceiverTimeout_Config	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2828:19:HAL_UART_EnableReceiverTimeout	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2859:19:HAL_UART_DisableReceiverTimeout	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2930:6:HAL_MultiProcessor_EnterMuteMode	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2940:19:HAL_HalfDuplex_EnableTransmitter	20	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2963:19:HAL_HalfDuplex_EnableReceiver	20	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2987:19:HAL_LIN_SendBreak	12	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3032:23:HAL_UART_GetState	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3048:10:HAL_UART_GetError	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3094:19:UART_SetConfig	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3240:6:UART_AdvFeatureConfig	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3366:19:UART_WaitOnFlagUntilTimeout	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1124:19:HAL_UART_Transmit	32	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1229:19:HAL_UART_Receive	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3314:19:UART_CheckIdleState	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:305:19:HAL_UART_Init	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:378:19:HAL_HalfDuplex_Init	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:451:19:HAL_LIN_Init	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:548:19:HAL_MultiProcessor_Init	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2890:19:HAL_MultiProcessor_EnableMuteMode	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:2910:19:HAL_MultiProcessor_DisableMuteMode	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3430:19:UART_Start_Receive_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1421:19:HAL_UART_Receive_IT	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:3506:19:UART_Start_Receive_DMA	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c:1569:19:HAL_UART_Receive_DMA	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:1009:13:UARTEx_Wakeup_AddressConfig	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:1027:13:UARTEx_SetNbDataToProcess	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:166:19:HAL_RS485Ex_Init	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:272:13:HAL_UARTEx_WakeupCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:287:13:HAL_UARTEx_RxFifoFullCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:302:13:HAL_UARTEx_TxFifoEmptyCallback	0	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:387:19:HAL_MultiProcessorEx_AddressLength_Set	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:425:19:HAL_UARTEx_StopModeWakeUpSourceConfig	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:480:19:HAL_UARTEx_EnableStopMode	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:499:19:HAL_UARTEx_DisableStopMode	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:518:19:HAL_UARTEx_EnableFifoMode	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:559:19:HAL_UARTEx_DisableFifoMode	16	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:605:19:HAL_UARTEx_SetTxFifoThreshold	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:654:19:HAL_UARTEx_SetRxFifoThreshold	24	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:716:19:HAL_UARTEx_ReceiveToIdle	40	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:857:19:HAL_UARTEx_ReceiveToIdle_IT	8	static
+Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c:935:19:HAL_UARTEx_ReceiveToIdle_DMA	8	static
+Core/Src/stm32c0xx_it.c:69:6:NMI_Handler	0	static
+Core/Src/stm32c0xx_it.c:84:6:HardFault_Handler	0	static
+Core/Src/stm32c0xx_it.c:99:6:SVC_Handler	0	static
+Core/Src/stm32c0xx_it.c:112:6:PendSV_Handler	0	static
+Core/Src/stm32c0xx_it.c:125:6:SysTick_Handler	8	static
+Core/Src/stm32c0xx_it.c:146:6:EXTI4_15_IRQHandler	8	static
+Core/Src/syscalls.c:44:6:initialise_monitor_handles	0	static
+Core/Src/syscalls.c:48:5:_getpid	0	static
+Core/Src/syscalls.c:53:5:_kill	8	static
+Core/Src/syscalls.c:61:6:_exit	8	static
+Core/Src/syscalls.c:67:27:_read	16	static
+Core/Src/syscalls.c:80:27:_write	16	static
+Core/Src/syscalls.c:92:5:_close	0	static
+Core/Src/syscalls.c:99:5:_fstat	0	static
+Core/Src/syscalls.c:106:5:_isatty	0	static
+Core/Src/syscalls.c:112:5:_lseek	0	static
+Core/Src/syscalls.c:120:5:_open	0	static
+Core/Src/syscalls.c:128:5:_wait	8	static
+Core/Src/syscalls.c:135:5:_unlink	8	static
+Core/Src/syscalls.c:142:5:_times	0	static
+Core/Src/syscalls.c:148:5:_stat	0	static
+Core/Src/syscalls.c:155:5:_link	8	static
+Core/Src/syscalls.c:163:5:_fork	8	static
+Core/Src/syscalls.c:169:5:_execve	8	static
+Core/Src/sysmem.c:53:7:_sbrk	8	static
+Core/Src/sysmem.c:81:10:lab3_heap_peak	0	static
+Core/Src/system_stm32c0xx.c:136:6:SystemInit	0	static
+Core/Src/system_stm32c0xx.c:184:6:SystemCoreClockUpdate	0	static
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+apt	2.8.3
+base-files	13ubuntu10.5
+base-passwd	3.6.3build1
+bash	5.2.21-2ubuntu4
+binutils	2.42-4ubuntu2.10
+binutils-aarch64-linux-gnu	2.42-4ubuntu2.10
+binutils-arm-none-eabi	2.42-1ubuntu1+23
+binutils-common:arm64	2.42-4ubuntu2.10
+bsdutils	1:2.39.3-9ubuntu6.6
+ca-certificates	20260816ubuntu0.24.04.1
+coreutils	9.4-3ubuntu6.3
+cpp	4:13.2.0-7ubuntu1
+cpp-13	13.3.0-6ubuntu2~24.04.1
+cpp-13-aarch64-linux-gnu	13.3.0-6ubuntu2~24.04.1
+cpp-aarch64-linux-gnu	4:13.2.0-7ubuntu1
+dash	0.5.12-6ubuntu5
+debconf	1.5.86ubuntu1
+debianutils	5.17build1
+diffutils	1:3.10-1ubuntu0.1
+dpkg	1.22.6ubuntu6.6
+e2fsprogs	1.47.0-2.4~exp1ubuntu4.1
+findutils	4.9.0-5build1
+gcc	4:13.2.0-7ubuntu1
+gcc-13	13.3.0-6ubuntu2~24.04.1
+gcc-13-aarch64-linux-gnu	13.3.0-6ubuntu2~24.04.1
+gcc-13-base:arm64	13.3.0-6ubuntu2~24.04.1
+gcc-14-base:arm64	14.2.0-4ubuntu2~24.04.1
+gcc-aarch64-linux-gnu	4:13.2.0-7ubuntu1
+gcc-arm-none-eabi	15:13.2.rel1-2
+git	1:2.43.0-1ubuntu7.4
+git-man	1:2.43.0-1ubuntu7.4
+gpgv	2.4.4-2ubuntu17.6
+grep	3.11-4build1
+gzip	1.12-1ubuntu3.2
+hostname	3.23+nmu2ubuntu2
+init-system-helpers	1.66ubuntu1
+libacl1:arm64	2.3.2-1build1.1
+libapt-pkg6.0t64:arm64	2.8.3
+libasan8:arm64	14.2.0-4ubuntu2~24.04.1
+libassuan0:arm64	2.5.6-1build1
+libatomic1:arm64	14.2.0-4ubuntu2~24.04.1
+libattr1:arm64	1:2.5.2-1ubuntu0.1
+libaudit-common	1:3.1.2-2.1build1.1
+libaudit1:arm64	1:3.1.2-2.1build1.1
+libbinutils:arm64	2.42-4ubuntu2.10
+libblkid1:arm64	2.39.3-9ubuntu6.6
+libbrotli1:arm64	1.1.0-2ubuntu0.1
+libbz2-1.0:arm64	1.0.8-5.1ubuntu0.1
+libc-bin	2.39-0ubuntu8.9
+libc-dev-bin	2.39-0ubuntu8.9
+libc6:arm64	2.39-0ubuntu8.9
+libc6-dev:arm64	2.39-0ubuntu8.9
+libcap-ng0:arm64	0.8.4-2build2
+libcap2:arm64	1:2.66-5ubuntu2.4
+libcc1-0:arm64	14.2.0-4ubuntu2~24.04.1
+libcom-err2:arm64	1.47.0-2.4~exp1ubuntu4.1
+libcrypt-dev:arm64	1:4.4.36-4build1
+libcrypt1:arm64	1:4.4.36-4build1
+libctf-nobfd0:arm64	2.42-4ubuntu2.10
+libctf0:arm64	2.42-4ubuntu2.10
+libcurl3t64-gnutls:arm64	8.5.0-2ubuntu10.16
+libdb5.3t64:arm64	5.3.28+dfsg2-7
+libdebconfclient0:arm64	0.271ubuntu3
+liberror-perl	0.17029-2
+libexpat1:arm64	2.6.1-2ubuntu0.6
+libext2fs2t64:arm64	1.47.0-2.4~exp1ubuntu4.1
+libffi8:arm64	3.4.6-1build1
+libgcc-13-dev:arm64	13.3.0-6ubuntu2~24.04.1
+libgcc-s1:arm64	14.2.0-4ubuntu2~24.04.1
+libgcrypt20:arm64	1.10.3-2ubuntu0.2
+libgdbm-compat4t64:arm64	1.23-5.1build1
+libgdbm6t64:arm64	1.23-5.1build1
+libgmp10:arm64	2:6.3.0+dfsg-2ubuntu6.1
+libgnutls30t64:arm64	3.8.3-1.1ubuntu3.6
+libgomp1:arm64	14.2.0-4ubuntu2~24.04.1
+libgpg-error0:arm64	1.47-3build2.1
+libgprofng0:arm64	2.42-4ubuntu2.10
+libgssapi-krb5-2:arm64	1.20.1-6ubuntu2.10
+libhogweed6t64:arm64	3.9.1-2.2build1.1
+libhwasan0:arm64	14.2.0-4ubuntu2~24.04.1
+libidn2-0:arm64	2.3.7-2build1.1
+libisl23:arm64	0.26-3build1.1
+libitm1:arm64	14.2.0-4ubuntu2~24.04.1
+libjansson4:arm64	2.14-2build2
+libk5crypto3:arm64	1.20.1-6ubuntu2.10
+libkeyutils1:arm64	1.6.3-3build1
+libkrb5-3:arm64	1.20.1-6ubuntu2.10
+libkrb5support0:arm64	1.20.1-6ubuntu2.10
+libldap2:arm64	2.6.10+dfsg-0ubuntu0.24.04.1
+liblsan0:arm64	14.2.0-4ubuntu2~24.04.1
+liblz4-1:arm64	1.9.4-1build1.1
+liblzma5:arm64	5.6.1+really5.4.5-1ubuntu0.3
+libmd0:arm64	1.1.0-2build1.1
+libmount1:arm64	2.39.3-9ubuntu6.6
+libmpc3:arm64	1.3.1-1build1.1
+libmpfr6:arm64	4.2.1-1build1.1
+libncursesw6:arm64	6.4+20240113-1ubuntu2.2
+libnettle8t64:arm64	3.9.1-2.2build1.1
+libnewlib-arm-none-eabi	4.4.0.20231231-2
+libnewlib-dev	4.4.0.20231231-2
+libnghttp2-14:arm64	1.59.0-1ubuntu0.4
+libnpth0t64:arm64	1.6-3.1build1
+libp11-kit0:arm64	0.25.3-4ubuntu2.2
+libpam-modules:arm64	1.5.3-5ubuntu5.7
+libpam-modules-bin	1.5.3-5ubuntu5.7
+libpam-runtime	1.5.3-5ubuntu5.7
+libpam0g:arm64	1.5.3-5ubuntu5.7
+libpcre2-8-0:arm64	10.42-4ubuntu2.1
+libperl5.38t64:arm64	5.38.2-3.2ubuntu0.6
+libproc2-0:arm64	2:4.0.4-4ubuntu3.3
+libpsl5t64:arm64	0.21.2-1.1build1
+libpython3-stdlib:arm64	3.12.3-0ubuntu2.1
+libpython3.12-minimal:arm64	3.12.3-1ubuntu0.17
+libpython3.12-stdlib:arm64	3.12.3-1ubuntu0.17
+libreadline8t64:arm64	8.2-4build1
+librtmp1:arm64	2.4+20151223.gitfa8646d.1-2build7
+libsasl2-2:arm64	2.1.28+dfsg1-5ubuntu3.1
+libsasl2-modules-db:arm64	2.1.28+dfsg1-5ubuntu3.1
+libseccomp2:arm64	2.5.5-1ubuntu3.1
+libselinux1:arm64	3.5-2ubuntu2.1
+libsemanage-common	3.5-1build5
+libsemanage2:arm64	3.5-1build5
+libsepol2:arm64	3.5-2build1
+libsframe1:arm64	2.42-4ubuntu2.10
+libsmartcols1:arm64	2.39.3-9ubuntu6.6
+libsqlite3-0:arm64	3.45.1-1ubuntu2.8
+libss2:arm64	1.47.0-2.4~exp1ubuntu4.1
+libssh-4:arm64	0.10.6-2ubuntu0.5
+libssl3t64:arm64	3.0.13-0ubuntu3.16
+libstdc++6:arm64	14.2.0-4ubuntu2~24.04.1
+libsystemd0:arm64	255.4-1ubuntu8.17
+libtasn1-6:arm64	4.19.0-3ubuntu0.24.04.2
+libtinfo6:arm64	6.4+20240113-1ubuntu2.2
+libtsan2:arm64	14.2.0-4ubuntu2~24.04.1
+libubsan1:arm64	14.2.0-4ubuntu2~24.04.1
+libudev1:arm64	255.4-1ubuntu8.17
+libunistring5:arm64	1.1-2build1.1
+libuuid1:arm64	2.39.3-9ubuntu6.6
+libxxhash0:arm64	0.8.2-2build1
+libzstd1:arm64	1.5.5+dfsg2-2build1.1
+linux-libc-dev:arm64	6.8.0-147.147
+login	1:4.13+dfsg1-4ubuntu3.2
+logsave	1.47.0-2.4~exp1ubuntu4.1
+make	4.3-4.1build2
+mawk	1.3.4.20240123-1build1
+media-types	10.1.0
+mount	2.39.3-9ubuntu6.6
+ncurses-base	6.4+20240113-1ubuntu2.2
+ncurses-bin	6.4+20240113-1ubuntu2.2
+netbase	6.4
+openssl	3.0.13-0ubuntu3.16
+passwd	1:4.13+dfsg1-4ubuntu3.2
+perl	5.38.2-3.2ubuntu0.6
+perl-base	5.38.2-3.2ubuntu0.6
+perl-modules-5.38	5.38.2-3.2ubuntu0.6
+procps	2:4.0.4-4ubuntu3.3
+python3	3.12.3-0ubuntu2.1
+python3-minimal	3.12.3-0ubuntu2.1
+python3.12	3.12.3-1ubuntu0.17
+python3.12-minimal	3.12.3-1ubuntu0.17
+readline-common	8.2-4build1
+rpcsvc-proto	1.4.2-0ubuntu7
+sed	4.9-2ubuntu0.24.04.1
+sensible-utils	0.0.22
+sysvinit-utils	3.08-6ubuntu3
+tar	1.35+dfsg-3ubuntu0.4
+tzdata	2026e-0ubuntu0.24.04.1
+ubuntu-keyring	2023.11.28.1
+unminimize	0.2.1
+util-linux	2.39.3-9ubuntu6.6
+zlib1g:arm64	1:1.3.dfsg-3.1ubuntu2.2

@@ -1,0 +1,50 @@
+firmware/build/firmware.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                21912   134217920
+.RamFunc                56   134239832
+.rodata               1476   134239888
+.ARM                     8   134241364
+.init_array              4   134241372
+.fini_array              4   134241376
+.data                  248   536870912
+.bss                  1916   536871160
+._user_heap_stack     2564   536873076
+.ARM.attributes         40           0
+.comment                38           0
+.debug_info         182728           0
+.debug_abbrev        32467           0
+.debug_loc           77189           0
+.debug_aranges        5232           0
+.debug_ranges         4440           0
+.debug_line          96170           0
+.debug_str           25173           0
+.debug_frame         12412           0
+.debug_loclists      13760           0
+.debug_rnglists        585           0
+.debug_line_str        163           0
+Total               478777
+
+
+Platform/runner.c:27:13:remember	24	static
+Platform/runner.c:35:13:account	16	static
+Platform/runner.c:50:13:sample_task	88	static
+Platform/runner.c:61:13:command_task	48	static
+Platform/runner.c:85:13:journal_task	56	static
+Platform/runner.c:94:13:output_task	104	static
+Platform/runner.c:39:6:runner_start	56	static
+Platform/runner.c:112:6:runner_poll	32	static
+Platform/lab3_io.c:12:18:stack_floor	0	static
+Platform/lab3_io.c:79:13:storage_erase	24	static
+Platform/lab3_io.c:66:13:storage_read	8	static
+Platform/lab3_io.c:71:13:storage_program	16	static
+Platform/lab3_io.c:13:6:lab3_paint_stack	8	static
+Platform/lab3_io.c:18:10:lab3_stack_used	8	static
+Platform/lab3_io.c:23:6:lab3_io_init	40	static
+Platform/lab3_io.c:36:10:lab3_us	16	static
+Platform/lab3_io.c:47:10:lab3_clock_ambiguous	0	static
+Platform/lab3_io.c:48:6:USART2_IRQHandler	16	static
+Platform/lab3_io.c:58:6:lab3_rx	8	static
+Platform/lab3_io.c:64:6:lab3_rx_stats	0	static
+Platform/lab3_io.c:65:6:lab3_probe	0	static
+Platform/lab3_io.c:88:14:lab3_storage	12	static

@@ -1,0 +1,76 @@
+{
+  "vcd_sha256": "7e8251e2779bce8563af5f17ee04e79a22a3cfdaf600a340a611192bbea426e6",
+  "timescale": "1ns",
+  "origin": "actual Wokwi logic analyzer, not synthesized",
+  "last_transition_s": 109.588968875,
+  "probe_serial_activity_permille": 122.67839110529758,
+  "analysis_window_s": [
+    12.05,
+    88.5
+  ],
+  "SAMPLE": {
+    "width_us": {
+      "n": 3823,
+      "min": 2345.75,
+      "avg": 2347.635325660476,
+      "max": 2352.85,
+      "p99": 2349.475
+    },
+    "period_us": {
+      "n": 3822,
+      "min": 13386.15,
+      "avg": 19999.57561486133,
+      "max": 26639.0,
+      "p99": 26515.3
+    }
+  },
+  "FLASH": {
+    "width_us": {
+      "n": 0
+    },
+    "period_us": {
+      "n": 0
+    }
+  },
+  "COMMAND": {
+    "width_us": {
+      "n": 0
+    },
+    "period_us": {
+      "n": 0
+    }
+  },
+  "ADC_MARK": {
+    "width_us": {
+      "n": 3823,
+      "min": 70.675,
+      "avg": 70.675,
+      "max": 70.675,
+      "p99": 70.675
+    },
+    "period_us": {
+      "n": 3822,
+      "min": 13386.15,
+      "avg": 19999.57561486133,
+      "max": 26639.0,
+      "p99": 26515.3
+    }
+  },
+  "pir_to_sample_end_us": {
+    "n": 0
+  },
+  "flash_comparison": [],
+  "firmware_stats": [
+    "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "STAT name=sample n=3829 min_us=2000 avg_us=2006 max_us=3000",
+    "STAT name=recovery n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=command n=1 min_us=0 avg_us=0 max_us=0",
+    "STAT name=journal n=0 min_us=0 avg_us=0 max_us=0",
+    "STAT name=output n=77 min_us=6000 avg_us=6220 max_us=7000",
+    "STAT name=loop n=760706 min_us=0 avg_us=86 max_us=9000",
+    "STAT name=command_latency n=2 min_us=0 avg_us=5000 max_us=10000",
+    "STAT name=loop_period n=760707 min_us=0 avg_us=100 max_us=9000",
+    "RESOURCE stack=584 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "CADENCE n=3829 skipped=0 late=0 finish_miss=0 release_max_us=6000 jitter_min_us=-6000 jitter_max_us=6000 busy_permille=106"
+  ]
+}

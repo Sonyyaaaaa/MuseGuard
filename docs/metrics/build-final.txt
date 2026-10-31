@@ -1,0 +1,300 @@
+8b7c7ff6a0ceea5b0e672de431c5c8b6197df540365952650bafcd79512be3bd
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_museguard.c ../firmware/Devices/mpu6050.c ../firmware/Devices/simple_sensors.c ../firmware/App/museguard.c -o build/Linux-aarch64/test_museguard
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_lab3.c ../firmware/App/event_store.c ../firmware/App/exhibit.c ../firmware/App/cadence.c -o build/Linux-aarch64/test_lab3
+./build/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+./build/Linux-aarch64/test_lab3
+PASS store: 33 byte-boundary power-cut positions, preceding record preserved
+PASS store: 320 appends, page rotation, erase failure, bit corruption, CRC vector
+PASS exhibit: 60-second window across tick wrap, no flood renewal, shock always alarm
+PASS cadence: skip accounting and wrap; 180000 logical releases (not a one-hour MCU run)
+make[1]: Leaving directory '/workspace/tests'
+make: Entering directory '/workspace/firmware'
+rm -fR build
+mkdir -p build		
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/platform.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/platform.lst Platform/platform.c -o build/platform.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/runner.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/runner.lst Platform/runner.c -o build/runner.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/lab3_io.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/lab3_io.lst Platform/lab3_io.c -o build/lab3_io.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/exhibit.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/exhibit.lst App/exhibit.c -o build/exhibit.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/cadence.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/cadence.lst App/cadence.c -o build/cadence.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/event_store.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/event_store.lst App/event_store.c -o build/event_store.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/mpu6050.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/mpu6050.lst Devices/mpu6050.c -o build/mpu6050.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/simple_sensors.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/simple_sensors.lst Devices/simple_sensors.c -o build/simple_sensors.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/museguard.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/museguard.lst App/museguard.c -o build/museguard.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/main.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/main.lst Core/Src/main.c -o build/main.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_it.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/stm32c0xx_it.lst Core/Src/stm32c0xx_it.c -o build/stm32c0xx_it.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_msp.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_msp.lst Core/Src/stm32c0xx_hal_msp.c -o build/stm32c0xx_hal_msp.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/syscalls.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/syscalls.lst Core/Src/syscalls.c -o build/syscalls.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/sysmem.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/sysmem.lst Core/Src/sysmem.c -o build/sysmem.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_adc.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_adc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc.c -o build/stm32c0xx_hal_adc.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_adc_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_adc_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_adc_ex.c -o build/stm32c0xx_hal_adc_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c -o build/stm32c0xx_hal.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_cortex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_cortex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c -o build/stm32c0xx_hal_cortex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c -o build/stm32c0xx_hal_rcc.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_rcc_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_rcc_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c -o build/stm32c0xx_hal_rcc_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c -o build/stm32c0xx_hal_flash.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_flash_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_flash_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c -o build/stm32c0xx_hal_flash_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_gpio.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_gpio.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c -o build/stm32c0xx_hal_gpio.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma.c -o build/stm32c0xx_hal_dma.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_dma_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_dma_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_dma_ex.c -o build/stm32c0xx_hal_dma_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c -o build/stm32c0xx_hal_pwr.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_pwr_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_pwr_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c -o build/stm32c0xx_hal_pwr_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_exti.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_exti.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c -o build/stm32c0xx_hal_exti.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c.c -o build/stm32c0xx_hal_i2c.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_i2c_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_i2c_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_i2c_ex.c -o build/stm32c0xx_hal_i2c_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart.c -o build/stm32c0xx_hal_uart.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/stm32c0xx_hal_uart_ex.d" -Wa,-a,-ad,-alms=build/stm32c0xx_hal_uart_ex.lst Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_uart_ex.c -o build/stm32c0xx_hal_uart_ex.o
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/system_stm32c0xx.d" -Wa,-a,-ad,-alms=build/system_stm32c0xx.lst Core/Src/system_stm32c0xx.c -o build/system_stm32c0xx.o
+arm-none-eabi-gcc -x assembler-with-cpp -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/startup_stm32c031xx.d" startup_stm32c031xx.s -o build/startup_stm32c031xx.o
+arm-none-eabi-gcc build/platform.o build/runner.o build/lab3_io.o build/exhibit.o build/cadence.o build/event_store.o build/mpu6050.o build/simple_sensors.o build/museguard.o build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections,--print-memory-usage -o build/firmware.elf
+Memory region         Used Size  Region Size  %age Used
+             RAM:        4712 B        12 KB     38.35%
+           FLASH:       23672 B        28 KB     82.56%
+arm-none-eabi-size build/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  23416	    256	   4464	  28136	   6de8	build/firmware.elf
+arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+make: Leaving directory '/workspace/firmware'
+firmware/build/firmware.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                21732   134217920
+.RamFunc                56   134239652
+.rodata               1428   134239708
+.ARM                     8   134241136
+.init_array              4   134241144
+.fini_array              4   134241148
+.data                  248   536870912
+.bss                  1904   536871160
+._user_heap_stack     2560   536873064
+.ARM.attributes         40           0
+.comment                38           0
+.debug_info         182410           0
+.debug_abbrev        32495           0
+.debug_loc           77060           0
+.debug_aranges        5232           0
+.debug_ranges         4440           0
+.debug_line          96049           0
+.debug_str           25147           0
+.debug_frame         12396           0
+.debug_loclists      13760           0
+.debug_rnglists        585           0
+.debug_line_str        163           0
+Total               477951
+
+
+134224416 00000266 T __udivsi3
+134239032 00000268 T HAL_UART_Transmit
+134219588 00000272 T _malloc_r
+134219080 00000288 T __sflush_r
+134226908 00000288 t command_task
+134236444 00000308 T HAL_RCCEx_PeriphCLKConfig
+536871192 00000312 B __sf
+134234500 00000320 T HAL_ADCEx_Calibration_Start
+134223224 00000328 T _printf_common
+134235992 00000400 T HAL_RCC_ClockConfig
+134225320 00000408 T __udivmoddi4
+134227372 00000420 t output_task
+134237228 00000444 T HAL_GPIO_Init
+134227992 00000444 T runner_poll
+134238128 00000452 T UART_SetConfig
+134224692 00000460 T __divsi3
+536872196 00000512 b received_at
+134230640 00000572 T museguard_update
+134223552 00000608 T _printf_i
+134232452 00000616 T HAL_ADC_Init
+134221024 00000636 T _vfiprintf_r
+134221024 00000636 T _vfprintf_r
+134233260 00000640 T HAL_ADC_ConfigChannel
+134235160 00000740 T HAL_RCC_OscConfig
+134222068 00000784 T __sfvwrite_r
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+apt	2.8.3
+base-files	13ubuntu10.5
+base-passwd	3.6.3build1
+bash	5.2.21-2ubuntu4
+binutils	2.42-4ubuntu2.10
+binutils-aarch64-linux-gnu	2.42-4ubuntu2.10
+binutils-arm-none-eabi	2.42-1ubuntu1+23
+binutils-common:arm64	2.42-4ubuntu2.10
+bsdutils	1:2.39.3-9ubuntu6.6
+ca-certificates	20260816ubuntu0.24.04.1
+coreutils	9.4-3ubuntu6.3
+cpp	4:13.2.0-7ubuntu1
+cpp-13	13.3.0-6ubuntu2~24.04.1
+cpp-13-aarch64-linux-gnu	13.3.0-6ubuntu2~24.04.1
+cpp-aarch64-linux-gnu	4:13.2.0-7ubuntu1
+dash	0.5.12-6ubuntu5
+debconf	1.5.86ubuntu1
+debianutils	5.17build1
+diffutils	1:3.10-1ubuntu0.1
+dpkg	1.22.6ubuntu6.6
+e2fsprogs	1.47.0-2.4~exp1ubuntu4.1
+findutils	4.9.0-5build1
+gcc	4:13.2.0-7ubuntu1
+gcc-13	13.3.0-6ubuntu2~24.04.1
+gcc-13-aarch64-linux-gnu	13.3.0-6ubuntu2~24.04.1
+gcc-13-base:arm64	13.3.0-6ubuntu2~24.04.1
+gcc-14-base:arm64	14.2.0-4ubuntu2~24.04.1
+gcc-aarch64-linux-gnu	4:13.2.0-7ubuntu1
+gcc-arm-none-eabi	15:13.2.rel1-2
+git	1:2.43.0-1ubuntu7.4
+git-man	1:2.43.0-1ubuntu7.4
+gpgv	2.4.4-2ubuntu17.6
+grep	3.11-4build1
+gzip	1.12-1ubuntu3.2
+hostname	3.23+nmu2ubuntu2
+init-system-helpers	1.66ubuntu1
+libacl1:arm64	2.3.2-1build1.1
+libapt-pkg6.0t64:arm64	2.8.3
+libasan8:arm64	14.2.0-4ubuntu2~24.04.1
+libassuan0:arm64	2.5.6-1build1
+libatomic1:arm64	14.2.0-4ubuntu2~24.04.1
+libattr1:arm64	1:2.5.2-1ubuntu0.1
+libaudit-common	1:3.1.2-2.1build1.1
+libaudit1:arm64	1:3.1.2-2.1build1.1
+libbinutils:arm64	2.42-4ubuntu2.10
+libblkid1:arm64	2.39.3-9ubuntu6.6
+libbrotli1:arm64	1.1.0-2ubuntu0.1
+libbz2-1.0:arm64	1.0.8-5.1ubuntu0.1
+libc-bin	2.39-0ubuntu8.9
+libc-dev-bin	2.39-0ubuntu8.9
+libc6:arm64	2.39-0ubuntu8.9
+libc6-dev:arm64	2.39-0ubuntu8.9
+libcap-ng0:arm64	0.8.4-2build2
+libcap2:arm64	1:2.66-5ubuntu2.4
+libcc1-0:arm64	14.2.0-4ubuntu2~24.04.1
+libcom-err2:arm64	1.47.0-2.4~exp1ubuntu4.1
+libcrypt-dev:arm64	1:4.4.36-4build1
+libcrypt1:arm64	1:4.4.36-4build1
+libctf-nobfd0:arm64	2.42-4ubuntu2.10
+libctf0:arm64	2.42-4ubuntu2.10
+libcurl3t64-gnutls:arm64	8.5.0-2ubuntu10.16
+libdb5.3t64:arm64	5.3.28+dfsg2-7
+libdebconfclient0:arm64	0.271ubuntu3
+liberror-perl	0.17029-2
+libexpat1:arm64	2.6.1-2ubuntu0.6
+libext2fs2t64:arm64	1.47.0-2.4~exp1ubuntu4.1
+libffi8:arm64	3.4.6-1build1
+libgcc-13-dev:arm64	13.3.0-6ubuntu2~24.04.1
+libgcc-s1:arm64	14.2.0-4ubuntu2~24.04.1
+libgcrypt20:arm64	1.10.3-2ubuntu0.2
+libgdbm-compat4t64:arm64	1.23-5.1build1
+libgdbm6t64:arm64	1.23-5.1build1
+libgmp10:arm64	2:6.3.0+dfsg-2ubuntu6.1
+libgnutls30t64:arm64	3.8.3-1.1ubuntu3.6
+libgomp1:arm64	14.2.0-4ubuntu2~24.04.1
+libgpg-error0:arm64	1.47-3build2.1
+libgprofng0:arm64	2.42-4ubuntu2.10
+libgssapi-krb5-2:arm64	1.20.1-6ubuntu2.10
+libhogweed6t64:arm64	3.9.1-2.2build1.1
+libhwasan0:arm64	14.2.0-4ubuntu2~24.04.1
+libidn2-0:arm64	2.3.7-2build1.1
+libisl23:arm64	0.26-3build1.1
+libitm1:arm64	14.2.0-4ubuntu2~24.04.1
+libjansson4:arm64	2.14-2build2
+libk5crypto3:arm64	1.20.1-6ubuntu2.10
+libkeyutils1:arm64	1.6.3-3build1
+libkrb5-3:arm64	1.20.1-6ubuntu2.10
+libkrb5support0:arm64	1.20.1-6ubuntu2.10
+libldap2:arm64	2.6.10+dfsg-0ubuntu0.24.04.1
+liblsan0:arm64	14.2.0-4ubuntu2~24.04.1
+liblz4-1:arm64	1.9.4-1build1.1
+liblzma5:arm64	5.6.1+really5.4.5-1ubuntu0.3
+libmd0:arm64	1.1.0-2build1.1
+libmount1:arm64	2.39.3-9ubuntu6.6
+libmpc3:arm64	1.3.1-1build1.1
+libmpfr6:arm64	4.2.1-1build1.1
+libncursesw6:arm64	6.4+20240113-1ubuntu2.2
+libnettle8t64:arm64	3.9.1-2.2build1.1
+libnewlib-arm-none-eabi	4.4.0.20231231-2
+libnewlib-dev	4.4.0.20231231-2
+libnghttp2-14:arm64	1.59.0-1ubuntu0.4
+libnpth0t64:arm64	1.6-3.1build1
+libp11-kit0:arm64	0.25.3-4ubuntu2.2
+libpam-modules:arm64	1.5.3-5ubuntu5.7
+libpam-modules-bin	1.5.3-5ubuntu5.7
+libpam-runtime	1.5.3-5ubuntu5.7
+libpam0g:arm64	1.5.3-5ubuntu5.7
+libpcre2-8-0:arm64	10.42-4ubuntu2.1
+libperl5.38t64:arm64	5.38.2-3.2ubuntu0.6
+libproc2-0:arm64	2:4.0.4-4ubuntu3.3
+libpsl5t64:arm64	0.21.2-1.1build1
+libpython3-stdlib:arm64	3.12.3-0ubuntu2.1
+libpython3.12-minimal:arm64	3.12.3-1ubuntu0.17
+libpython3.12-stdlib:arm64	3.12.3-1ubuntu0.17
+libreadline8t64:arm64	8.2-4build1
+librtmp1:arm64	2.4+20151223.gitfa8646d.1-2build7
+libsasl2-2:arm64	2.1.28+dfsg1-5ubuntu3.1
+libsasl2-modules-db:arm64	2.1.28+dfsg1-5ubuntu3.1
+libseccomp2:arm64	2.5.5-1ubuntu3.1
+libselinux1:arm64	3.5-2ubuntu2.1
+libsemanage-common	3.5-1build5
+libsemanage2:arm64	3.5-1build5
+libsepol2:arm64	3.5-2build1
+libsframe1:arm64	2.42-4ubuntu2.10
+libsmartcols1:arm64	2.39.3-9ubuntu6.6
+libsqlite3-0:arm64	3.45.1-1ubuntu2.8
+libss2:arm64	1.47.0-2.4~exp1ubuntu4.1
+libssh-4:arm64	0.10.6-2ubuntu0.5
+libssl3t64:arm64	3.0.13-0ubuntu3.16
+libstdc++6:arm64	14.2.0-4ubuntu2~24.04.1
+libsystemd0:arm64	255.4-1ubuntu8.17
+libtasn1-6:arm64	4.19.0-3ubuntu0.24.04.2
+libtinfo6:arm64	6.4+20240113-1ubuntu2.2
+libtsan2:arm64	14.2.0-4ubuntu2~24.04.1
+libubsan1:arm64	14.2.0-4ubuntu2~24.04.1
+libudev1:arm64	255.4-1ubuntu8.17
+libunistring5:arm64	1.1-2build1.1
+libuuid1:arm64	2.39.3-9ubuntu6.6
+libxxhash0:arm64	0.8.2-2build1
+libzstd1:arm64	1.5.5+dfsg2-2build1.1
+linux-libc-dev:arm64	6.8.0-147.147
+login	1:4.13+dfsg1-4ubuntu3.2
+logsave	1.47.0-2.4~exp1ubuntu4.1
+make	4.3-4.1build2
+mawk	1.3.4.20240123-1build1
+media-types	10.1.0
+mount	2.39.3-9ubuntu6.6
+ncurses-base	6.4+20240113-1ubuntu2.2
+ncurses-bin	6.4+20240113-1ubuntu2.2
+netbase	6.4
+openssl	3.0.13-0ubuntu3.16
+passwd	1:4.13+dfsg1-4ubuntu3.2
+perl	5.38.2-3.2ubuntu0.6
+perl-base	5.38.2-3.2ubuntu0.6
+perl-modules-5.38	5.38.2-3.2ubuntu0.6
+procps	2:4.0.4-4ubuntu3.3
+python3	3.12.3-0ubuntu2.1
+python3-minimal	3.12.3-0ubuntu2.1
+python3.12	3.12.3-1ubuntu0.17
+python3.12-minimal	3.12.3-1ubuntu0.17
+readline-common	8.2-4build1
+rpcsvc-proto	1.4.2-0ubuntu7
+sed	4.9-2ubuntu0.24.04.1
+sensible-utils	0.0.22
+sysvinit-utils	3.08-6ubuntu3
+tar	1.35+dfsg-3ubuntu0.4
+tzdata	2026e-0ubuntu0.24.04.1
+ubuntu-keyring	2023.11.28.1
+unminimize	0.2.1
+util-linux	2.39.3-9ubuntu6.6
+zlib1g:arm64	1:1.3.dfsg-3.1ubuntu2.2

@@ -40,3 +40,11 @@ make coverage GCOV='xcrun llvm-cov gcov'
 ## Обмеження перевірки
 
 Wokwi підтвердив self-test, WHO_AM_I, burst read, NACK на відсутній адресі, PIR, світло, пороги SHOCK і окремий TILT. Короткий фізичний удар, реальне енергоспоживання, електричний шум, усі комбінації одночасних впливів та перенос на плату не перевірено. ADC_MARK показує тривалість виклику в симуляторі. PIR READABLE перевіряє доступність входу, а не справність фізичного датчика. Повні докази і часові виміри в [captures/analysis.md](captures/analysis.md).
+
+## Перевірки ЛР3 від 28.10.2026
+
+Поточні `make test` і `make coverage` зберігають тести ЛР2 та додають `test_lab3.c` для exhibit, cadence і NOR journal. [Фінальний Linux лог](metrics/host-final.txt) містить architecture/wiring checks, PASS обох executable і gcov. [ASan/UBSan](metrics/host-sanitizers.txt) виконано окремо. Старі CI-результати вище стосуються своїх комітів ЛР2; нового GitHub Actions run для локального patch ЛР3 немає.
+
+Для нових модулів line coverage 100%: cadence 22 рядки, event_store 47, exhibit 13. Частка branch directions taken відповідно 88.46%, 81.82%, 88.89%. Platform/Core/HAL не входять до host coverage. NOR model перевіряє 1→0, 33 межі перерваного program, 2049 меж erase та 33 межі rollover program; це не фізичне вимкнення живлення MCU. 180000 логічних cadence releases не підміняють годинний S2 Wokwi.
+
+Фактичні MCU результати, failures і неперевірені вимоги наведено у [звіті ЛР3](lab3-report.md) та [базовій лінії](baseline-lab4.md). В одному ELF S2 тривав понад 60 хв, S3 містить 30 PIR подій під час command backlog. Finish misses, UART boundary loss та невідповідність flash erase моделі збережені як результати, не приховані host PASS.

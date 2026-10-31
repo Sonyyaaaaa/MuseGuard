@@ -1,0 +1,15 @@
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+./build/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+./build/Linux-aarch64/test_lab3
+PASS store: 33 byte-boundary power-cut positions, preceding record preserved
+PASS store: 320 appends, page rotation, erase failure, bit corruption, CRC vector
+PASS exhibit: 60-second window across tick wrap, no flood renewal, shock always alarm
+PASS cadence: skip accounting and wrap; 180000 logical releases (not a one-hour MCU run)
+PASS rotation: 2049 erase-cut boundaries and 33 rollover program-cut boundaries (host model)
+make[1]: Leaving directory '/workspace/tests'

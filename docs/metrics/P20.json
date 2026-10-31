@@ -1,0 +1,198 @@
+{
+  "source_sha256": "69b5802a539f2409b0af36832a5e3aea724dad6fee7167d048e4f98c6d21479a",
+  "kind": "real captured input; phase bins use fixed20ms grid anchored at one actual SAMPLE rise, not an inferred physical oscillator phase",
+  "groups": [
+    {
+      "start_s": 1.0,
+      "end_s": 20.8398,
+      "pulse_n": 100,
+      "width_us": {
+        "n": 100,
+        "min": 19999.975,
+        "avg": 20000.0,
+        "max": 20000.025
+      },
+      "phase_anchor_sample_s": 0.208819475,
+      "phase_bins_1ms": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "phase_bins_covered": 20,
+      "command_high_at_rise": 0,
+      "pir_to_event_before_next_input_us": {
+        "n": 100,
+        "min": 3227.875,
+        "avg": 13364.18125,
+        "max": 22980.025
+      },
+      "without_event_before_next_input": [],
+      "events_over_100ms": [],
+      "duplicate_event_windows": []
+    },
+    {
+      "start_s": 26.0,
+      "end_s": 45.8398,
+      "pulse_n": 100,
+      "width_us": {
+        "n": 100,
+        "min": 19999.975,
+        "avg": 20000.00075,
+        "max": 20000.025
+      },
+      "phase_anchor_sample_s": 0.208819475,
+      "phase_bins_1ms": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "phase_bins_covered": 20,
+      "command_high_at_rise": 0,
+      "pir_to_event_before_next_input_us": {
+        "n": 100,
+        "min": 3168.125,
+        "avg": 13086.3265,
+        "max": 22964.8
+      },
+      "without_event_before_next_input": [],
+      "events_over_100ms": [],
+      "duplicate_event_windows": []
+    },
+    {
+      "start_s": 51.0,
+      "end_s": 70.8398,
+      "pulse_n": 100,
+      "width_us": {
+        "n": 100,
+        "min": 20000.0,
+        "avg": 20000.0035,
+        "max": 20000.025
+      },
+      "phase_anchor_sample_s": 0.208819475,
+      "phase_bins_1ms": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "phase_bins_covered": 20,
+      "command_high_at_rise": 37,
+      "pir_to_event_before_next_input_us": {
+        "n": 92,
+        "min": 3259.525,
+        "avg": 16989.726630434783,
+        "max": 32193.5
+      },
+      "without_event_before_next_input": [
+        52.001,
+        53.002,
+        55.004,
+        64.2132,
+        64.4134,
+        64.8138,
+        66.6156,
+        66.8158
+      ],
+      "events_over_100ms": [],
+      "duplicate_event_windows": []
+    },
+    {
+      "start_s": 76.0,
+      "end_s": 95.8398,
+      "pulse_n": 100,
+      "width_us": {
+        "n": 100,
+        "min": 20000.0,
+        "avg": 20000.0025,
+        "max": 20000.025
+      },
+      "phase_anchor_sample_s": 0.208819475,
+      "phase_bins_1ms": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "phase_bins_covered": 20,
+      "command_high_at_rise": 0,
+      "pir_to_event_before_next_input_us": {
+        "n": 100,
+        "min": 3521.625,
+        "avg": 13194.53875,
+        "max": 23115.375
+      },
+      "without_event_before_next_input": [],
+      "events_over_100ms": [],
+      "duplicate_event_windows": []
+    }
+  ],
+  "presence_lines_n": 392,
+  "pending_input_rise_ns": null,
+  "limits": "Each event is matched within the unique interval before the next input, capped at200ms. The fixture must have20ms pulse width and200.2ms period. Missing EVENT in that interval may be loss or excessive latency; inspect later events before naming permanent loss. Exclude incomplete final200ms windows."
+}

@@ -1,0 +1,66 @@
+BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128
+READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics
+EVENT t_ms=37 bits=512 observation=0 saved=1 seq=1 flash_us=1000
+HEART t_us=51000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=37 bits=16 observation=1001 saved=1 seq=2 flash_us=2000
+EVENT t_ms=59 bits=32 observation=1001 saved=1 seq=3 flash_us=2000
+HEART t_us=1007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=2009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=3007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=4007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=5009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=6009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=7007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=8007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=9007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=10007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=11007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=12007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=13007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=14009000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=15007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=16007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=17007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=18007000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=18066000 rx_us=18066000 char=a access=1 alarm=0
+EVENT t_ms=18066 bits=64 observation=66537 saved=1 seq=4 flash_us=1000
+HEART t_us=19009000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=20007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=21009000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=22007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=23007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=24007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=25007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=26007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=27009000 adc=1001 fault=0 alarm=0 access=1
+EVENT t_ms=27329 bits=8 observation=66537 saved=1 seq=5 flash_us=1000
+HEART t_us=28007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=29007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=30007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=31007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=32007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=33007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=34007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=35007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=36007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=37007000 adc=1001 fault=0 alarm=0 access=1
+HEART t_us=38007000 adc=1001 fault=0 alarm=0 access=1
+CMD t_us=38617000 rx_us=38617000 char=g access=0 alarm=0
+EVENT t_ms=38617 bits=128 observation=1001 saved=1 seq=6 flash_us=2000
+HEART t_us=39009000 adc=1001 fault=0 alarm=0 access=0
+EVENT t_ms=39149 bits=8 observation=132073 saved=1 seq=7 flash_us=1000
+HEART t_us=40007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=41009000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=42007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=43009000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=44007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=45007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=46009000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=47007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=48009000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=49007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=50007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=51007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=52007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=53009000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=54007000 adc=1001 fault=0 alarm=1 access=0

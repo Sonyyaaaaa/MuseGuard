@@ -1,0 +1,41 @@
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_museguard.c ../firmware/Devices/mpu6050.c ../firmware/Devices/simple_sensors.c ../firmware/App/museguard.c -o build/Linux-aarch64/test_museguard
+In file included from ../firmware/Devices/bus.h:4,
+                 from ../firmware/Devices/mpu6050.h:3,
+                 from ../firmware/App/museguard.h:3,
+                 from test_museguard.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from ../firmware/Devices/bus.h:4,
+                 from ../firmware/Devices/mpu6050.h:3,
+                 from ../firmware/Devices/mpu6050.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from ../firmware/Devices/bus.h:4,
+                 from ../firmware/Devices/simple_sensors.h:3,
+                 from ../firmware/Devices/simple_sensors.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+In file included from ../firmware/Devices/bus.h:4,
+                 from ../firmware/Devices/mpu6050.h:3,
+                 from ../firmware/App/museguard.h:3,
+                 from ../firmware/App/museguard.c:1:
+/usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+    9 | # include_next <stdint.h>
+      |                ^~~~~~~~~~
+compilation terminated.
+make[1]: Leaving directory '/workspace/tests'
+make[1]: *** [Makefile:13: build/Linux-aarch64/test_museguard] Error 1
+make: *** [Makefile:22: test] Error 2

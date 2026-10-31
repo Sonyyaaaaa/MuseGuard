@@ -1,0 +1,29 @@
+2638f73df2077a2f1cae72bb1ef6ee5e58705534ebdaaec76cb4f55ba89ec436
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_lab3.c ../firmware/App/event_store.c ../firmware/App/exhibit.c ../firmware/App/cadence.c -o build/Linux-aarch64/test_lab3
+./build/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+./build/Linux-aarch64/test_lab3
+PASS store: 33 byte-boundary power-cut positions, preceding record preserved
+PASS store: 320 appends, page rotation, erase failure, bit corruption, CRC vector
+PASS exhibit: 60-second window across tick wrap, no flood renewal, shock always alarm
+PASS cadence: skip accounting and wrap; 180000 logical releases (not a one-hour MCU run)
+make[1]: Leaving directory '/workspace/tests'
+make: Entering directory '/workspace/firmware'
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/runner.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/runner.lst Platform/runner.c -o build/runner.o
+arm-none-eabi-gcc build/platform.o build/runner.o build/lab3_io.o build/exhibit.o build/cadence.o build/event_store.o build/mpu6050.o build/simple_sensors.o build/museguard.o build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections,--print-memory-usage -o build/firmware.elf
+Memory region         Used Size  Region Size  %age Used
+             RAM:        4712 B        12 KB     38.35%
+           FLASH:       23868 B        28 KB     83.24%
+arm-none-eabi-size build/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  23612	    256	   4464	  28332	   6eac	build/firmware.elf
+arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+make: Leaving directory '/workspace/firmware'

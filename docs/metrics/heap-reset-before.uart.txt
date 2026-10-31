@@ -1,0 +1,64 @@
+BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=15280fb5e0e1-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128
+READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics
+DIAG kind=heap-reset-probe-v1 base_source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 extra=heap-reset-probe.c command_r=NVIC_SystemReset
+EVENT t_ms=37 bits=512 observation=0 saved=1 seq=1 flash_us=1000
+HEART t_us=67000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=53 bits=16 observation=1001 saved=1 seq=2 flash_us=1000
+EVENT t_ms=76 bits=32 observation=1001 saved=1 seq=3 flash_us=1000
+HEART t_us=1007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=2007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=3007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=4007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=5007000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=5421000 rx_us=5421000 char=s access=0 alarm=0
+STAT name=sample n=269 min_us=0 avg_us=2000 max_us=3000
+STAT name=recovery n=1 min_us=5000 avg_us=5000 max_us=5000
+STAT name=command n=0 min_us=0 avg_us=0 max_us=0
+STAT name=journal n=3 min_us=9000 avg_us=9000 max_us=9000
+STAT name=output n=6 min_us=6000 avg_us=6000 max_us=6000
+STAT name=loop n=51908 min_us=0 avg_us=89 max_us=20000
+STAT name=command_latency n=1 min_us=0 avg_us=0 max_us=0
+STAT name=loop_period n=51909 min_us=0 avg_us=104 max_us=46000
+HEAPDIAG arena=1032 allocated_chunks=1032 free_chunks=0 ordblks_raw=0 sbrk_arena=1032
+RESOURCE stack=584 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=269 skipped=2 late=1 finish_miss=1 release_max_us=46000 jitter_min_us=-7000 jitter_max_us=6000 busy_permille=111
+HEART t_us=6007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=7007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=8007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=9007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=10007000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=10905000 rx_us=10905000 char=a access=1 alarm=0
+EVENT t_ms=10905 bits=64 observation=66537 saved=1 seq=4 flash_us=1000
+EVENT t_ms=10949 bits=4 observation=197609 saved=1 seq=5 flash_us=1000
+HEART t_us=11007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=12007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=13007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=14007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=15007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=16007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=17009000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=18009000 adc=1001 fault=0 alarm=1 access=1
+CMD t_us=18982000 rx_us=18981000 char=d access=1 alarm=1
+CMD t_us=18991000 rx_us=18982000 char=s access=1 alarm=1
+STAT name=sample n=947 min_us=0 avg_us=2003 max_us=3000
+STAT name=recovery n=1 min_us=5000 avg_us=5000 max_us=5000
+HEART t_us=19012000 adc=1001 fault=0 alarm=1 access=1
+STAT name=command n=5 min_us=0 avg_us=4200 max_us=7000
+STAT name=journal n=5 min_us=9000 avg_us=9200 max_us=10000
+STAT name=output n=29 min_us=0 avg_us=7034 max_us=35000
+STAT name=loop n=181535 min_us=0 avg_us=90 max_us=38000
+STAT name=command_latency n=6 min_us=0 avg_us=7500 max_us=19000
+STAT name=loop_period n=181536 min_us=0 avg_us=104 max_us=46000
+HEAPDIAG arena=1032 allocated_chunks=1032 free_chunks=0 ordblks_raw=0 sbrk_arena=1032
+RESOURCE stack=648 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=947 skipped=3 late=2 finish_miss=2 release_max_us=46000 jitter_min_us=-15000 jitter_max_us=18000 busy_permille=114
+RECORD slot=64 seq=1 t_ms=37 bits=512 observation=0 crc=F7CB6CF3
+RECORD slot=65 seq=2 t_ms=53 bits=16 observation=1001 crc=47466F4D
+RECORD slot=66 seq=3 t_ms=76 bits=32 observation=1001 crc=3415DFC8
+RECORD slot=67 seq=4 t_ms=10905 bits=64 observation=66537 crc=37687DF8
+RECORD slot=68 seq=5 t_ms=10949 bits=4 observation=197609 crc=43D97096
+HEART t_us=20007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=21007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=22009000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=23007000 adc=1001 fault=0 alarm=1 access=1
+HEART t_us=24007000 adc=1001 fault=0 alarm=1 access=1

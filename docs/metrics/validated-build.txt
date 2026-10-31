@@ -1,0 +1,112 @@
+fd35d0801bf2e1aeee005fb76dc8d2e51fd23e831734462a2a50a84da8838d7d
+python3 tools/check_architecture.py
+PASS: App and Devices depend only on portable headers
+python3 tools/check_wiring.py
+PASS: diagram.json matches the GPIO/ADC/I2C/UART configuration
+make -C tests test
+make[1]: Entering directory '/workspace/tests'
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_museguard.c ../firmware/Devices/mpu6050.c ../firmware/Devices/simple_sensors.c ../firmware/App/museguard.c -o build/Linux-aarch64/test_museguard
+mkdir -p build/Linux-aarch64
+cc -I../firmware/Devices -I../firmware/App -std=c11 -O0 -g -Wall -Wextra -Werror test_lab3.c ../firmware/App/event_store.c ../firmware/App/exhibit.c ../firmware/App/cadence.c -o build/Linux-aarch64/test_lab3
+./build/Linux-aarch64/test_museguard
+PASS: 8 groups: initialization, units, errors, PIR/ADC, events, timing, faults, captured samples
+./build/Linux-aarch64/test_lab3
+PASS store: 33 byte-boundary power-cut positions, preceding record preserved
+PASS store: 320 appends, page rotation, erase failure, bit corruption, CRC vector
+PASS exhibit: 60-second window across tick wrap, no flood renewal, shock always alarm
+PASS cadence: skip accounting and wrap; 180000 logical releases (not a one-hour MCU run)
+make[1]: Leaving directory '/workspace/tests'
+make: Entering directory '/workspace/firmware'
+arm-none-eabi-gcc -c -fstack-usage -Wstack-usage=512 -mcpu=cortex-m0plus -mthumb   -DUSE_HAL_DRIVER -DSTM32C031xx -IPlatform -IDevices -IApp -ICore/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc -IDrivers/STM32C0xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32C0xx/Include -IDrivers/CMSIS/Include -Og -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"build/runner.d" -Wextra -Werror -Wa,-a,-ad,-alms=build/runner.lst Platform/runner.c -o build/runner.o
+arm-none-eabi-gcc build/platform.o build/runner.o build/lab3_io.o build/exhibit.o build/cadence.o build/event_store.o build/mpu6050.o build/simple_sensors.o build/museguard.o build/main.o build/stm32c0xx_it.o build/stm32c0xx_hal_msp.o build/syscalls.o build/sysmem.o build/stm32c0xx_hal_adc.o build/stm32c0xx_hal_adc_ex.o build/stm32c0xx_hal.o build/stm32c0xx_hal_cortex.o build/stm32c0xx_hal_rcc.o build/stm32c0xx_hal_rcc_ex.o build/stm32c0xx_hal_flash.o build/stm32c0xx_hal_flash_ex.o build/stm32c0xx_hal_gpio.o build/stm32c0xx_hal_dma.o build/stm32c0xx_hal_dma_ex.o build/stm32c0xx_hal_pwr.o build/stm32c0xx_hal_pwr_ex.o build/stm32c0xx_hal_exti.o build/stm32c0xx_hal_i2c.o build/stm32c0xx_hal_i2c_ex.o build/stm32c0xx_hal_uart.o build/stm32c0xx_hal_uart_ex.o build/system_stm32c0xx.o build/startup_stm32c031xx.o -mcpu=cortex-m0plus -mthumb   -specs=nano.specs -TSTM32C031C6Tx_FLASH.ld  -lc -lm -lnosys  -Wl,-Map=build/firmware.map,--cref -Wl,--gc-sections,--print-memory-usage -o build/firmware.elf
+Memory region         Used Size  Region Size  %age Used
+             RAM:        4712 B        12 KB     38.35%
+           FLASH:       23672 B        28 KB     82.56%
+arm-none-eabi-size build/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  23416	    256	   4464	  28136	   6de8	build/firmware.elf
+arm-none-eabi-objcopy -O ihex build/firmware.elf build/firmware.hex
+arm-none-eabi-objcopy -O binary -S build/firmware.elf build/firmware.bin	
+make: Leaving directory '/workspace/firmware'
+firmware/build/firmware.elf  :
+section               size        addr
+.isr_vector            192   134217728
+.text                21732   134217920
+.RamFunc                56   134239652
+.rodata               1428   134239708
+.ARM                     8   134241136
+.init_array              4   134241144
+.fini_array              4   134241148
+.data                  248   536870912
+.bss                  1904   536871160
+._user_heap_stack     2560   536873064
+.ARM.attributes         40           0
+.comment                38           0
+.debug_info         182410           0
+.debug_abbrev        32495           0
+.debug_loc           77060           0
+.debug_aranges        5232           0
+.debug_ranges         4440           0
+.debug_line          96049           0
+.debug_str           25147           0
+.debug_frame         12396           0
+.debug_loclists      13760           0
+.debug_rnglists        585           0
+.debug_line_str        163           0
+Total               477951
+
+
+134224416 00000266 T __udivsi3
+134239032 00000268 T HAL_UART_Transmit
+134219588 00000272 T _malloc_r
+134219080 00000288 T __sflush_r
+134226908 00000288 t command_task
+134236444 00000308 T HAL_RCCEx_PeriphCLKConfig
+536871192 00000312 B __sf
+134234500 00000320 T HAL_ADCEx_Calibration_Start
+134223224 00000328 T _printf_common
+134235992 00000400 T HAL_RCC_ClockConfig
+134225320 00000408 T __udivmoddi4
+134227372 00000420 t output_task
+134237228 00000444 T HAL_GPIO_Init
+134227992 00000444 T runner_poll
+134238128 00000452 T UART_SetConfig
+134224692 00000460 T __divsi3
+536872196 00000512 b received_at
+134230640 00000572 T museguard_update
+134223552 00000608 T _printf_i
+134232452 00000616 T HAL_ADC_Init
+134221024 00000636 T _vfiprintf_r
+134221024 00000636 T _vfprintf_r
+134233260 00000640 T HAL_ADC_ConfigChannel
+134235160 00000740 T HAL_RCC_OscConfig
+134222068 00000784 T __sfvwrite_r
+Platform/runner.c:26:13:remember	24	static
+Platform/runner.c:34:13:account	16	static
+Platform/runner.c:49:13:sample_task	88	static
+Platform/runner.c:60:13:command_task	40	static
+Platform/runner.c:76:13:journal_task	56	static
+Platform/runner.c:85:13:output_task	104	static
+Platform/runner.c:38:6:runner_start	56	static
+Platform/runner.c:103:6:runner_poll	32	static
+Platform/lab3_io.c:11:18:stack_floor	0	static
+Platform/lab3_io.c:78:13:storage_erase	24	static
+Platform/lab3_io.c:65:13:storage_read	8	static
+Platform/lab3_io.c:70:13:storage_program	16	static
+Platform/lab3_io.c:12:6:lab3_paint_stack	8	static
+Platform/lab3_io.c:17:10:lab3_stack_used	8	static
+Platform/lab3_io.c:22:6:lab3_io_init	40	static
+Platform/lab3_io.c:36:6:TIM3_IRQHandler	0	static
+Platform/lab3_io.c:40:10:lab3_us	0	static
+Platform/lab3_io.c:47:6:USART2_IRQHandler	16	static
+Platform/lab3_io.c:57:6:lab3_rx	8	static
+Platform/lab3_io.c:63:6:lab3_rx_stats	0	static
+Platform/lab3_io.c:64:6:lab3_probe	0	static
+Platform/lab3_io.c:87:14:lab3_storage	12	static
+App/event_store.c:19:13:blank	0	static
+App/event_store.c:6:10:mg_crc	12	static
+App/event_store.c:15:6:mg_record_valid	8	static
+App/event_store.c:25:6:mg_store_read	8	static
+App/event_store.c:30:6:mg_store_open	56	static
+App/event_store.c:55:6:mg_store_append	88	static

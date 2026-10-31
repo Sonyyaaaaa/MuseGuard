@@ -1,0 +1,73 @@
+{
+  "source": "S3.uart.txt",
+  "sha256": "7ecba4ba4878ac464ba83b0e66e369e6a71c45f3c340375ea0e8fbc447845ec6",
+  "stats": {
+    "sample": {
+      "n": 12118,
+      "min_us": 2000,
+      "avg_us": 2056,
+      "max_us": 3000
+    },
+    "recovery": {
+      "n": 0,
+      "min_us": 0,
+      "avg_us": 0,
+      "max_us": 0
+    },
+    "command": {
+      "n": 2014,
+      "min_us": 0,
+      "avg_us": 11585,
+      "max_us": 13000
+    },
+    "journal": {
+      "n": 90,
+      "min_us": 9000,
+      "avg_us": 9855,
+      "max_us": 11000
+    },
+    "output": {
+      "n": 627,
+      "min_us": 0,
+      "avg_us": 3977,
+      "max_us": 10000
+    },
+    "loop": {
+      "n": 2121761,
+      "min_us": 0,
+      "avg_us": 100,
+      "max_us": 25000
+    },
+    "command_latency": {
+      "n": 2015,
+      "min_us": 0,
+      "avg_us": 468963,
+      "max_us": 978000
+    },
+    "loop_period": {
+      "n": 2121762,
+      "min_us": 0,
+      "avg_us": 114,
+      "max_us": 25000
+    }
+  },
+  "resource": {
+    "stack": 584,
+    "heap_peak": 1032,
+    "rx_drop": 0,
+    "ore": 0,
+    "event_drop": 0,
+    "flash_fail": 0,
+    "clock_ambiguous": 0
+  },
+  "cadence": {
+    "n": 12118,
+    "skipped": 2,
+    "late": 1,
+    "finish_miss": 3,
+    "release_max_us": 21000,
+    "jitter_min_us": -11000,
+    "jitter_max_us": 16000,
+    "busy_permille": 212
+  }
+}

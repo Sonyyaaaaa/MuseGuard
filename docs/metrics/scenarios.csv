@@ -1,0 +1,4 @@
+scenario,state,sample_n,sample_min_us,sample_avg_us,sample_max_us,loop_max_us,jitter_min_us,jitter_max_us,skipped,finish_miss,command_latency_max_us,busy_permille,stack_bytes,heap_peak_bytes,rx_drop,ore,clock_ambiguous
+S1,completed,3829,2000,2006,3000,9000,-6000,6000,0,0,10000,106,584,1032,0,0,0
+S2,completed,181776,2000,2015,3000,29000,-17000,17000,1,1,38000,107,584,1032,0,0,0
+S3,completed,12118,2000,2056,3000,25000,-11000,16000,2,3,978000,212,584,1032,0,0,0

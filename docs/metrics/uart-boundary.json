@@ -1,0 +1,68 @@
+[
+  {
+    "sent_n": 1,
+    "extra_lf": 1,
+    "acknowledged_n": 1,
+    "software_dropped_bytes": 0,
+    "cumulative_drop": 0,
+    "latency_max_us": 14000,
+    "ore": 0,
+    "source": "UART-burst-1.uart.txt",
+    "sha256": "2f98792ad97acbb7df21a59cbeac2fc00b4d0614d3d32ee73301477582c115b0"
+  },
+  {
+    "sent_n": 8,
+    "extra_lf": 1,
+    "acknowledged_n": 8,
+    "software_dropped_bytes": 0,
+    "cumulative_drop": 0,
+    "latency_max_us": 108000,
+    "ore": 0,
+    "source": "UART-burst-8.uart.txt",
+    "sha256": "54f51ea89698faa3ce73a8bfce946c21ce9aa5757533a64a5fc95ef23e7fbfdb"
+  },
+  {
+    "sent_n": 32,
+    "extra_lf": 1,
+    "acknowledged_n": 32,
+    "software_dropped_bytes": 0,
+    "cumulative_drop": 0,
+    "latency_max_us": 427000,
+    "ore": 0,
+    "source": "UART-burst-32.uart.txt",
+    "sha256": "d99be6a79284897eeabe94db49053c100f1bda00e760c4aa3e9ec7cf54e017cd"
+  },
+  {
+    "sent_n": 128,
+    "extra_lf": 1,
+    "acknowledged_n": 128,
+    "software_dropped_bytes": 1,
+    "cumulative_drop": 1,
+    "latency_max_us": 1706000,
+    "ore": 0,
+    "source": "UART-burst-128.uart.txt",
+    "sha256": "3b2b95739cd1227f77059d31bf196a2935077ea2783db6d187057dc30cbd265e"
+  },
+  {
+    "sent_n": 512,
+    "extra_lf": 1,
+    "acknowledged_n": 131,
+    "software_dropped_bytes": 382,
+    "cumulative_drop": 383,
+    "latency_max_us": 1718000,
+    "ore": 0,
+    "source": "UART-burst-512.uart.txt",
+    "sha256": "d43354cd82e2cdff3063b1b1648dfc6c6b38d47a181d04bf30f99627006e1e70"
+  },
+  {
+    "sent_n": 129,
+    "extra_lf": 1,
+    "acknowledged_n": 128,
+    "software_dropped_bytes": 2,
+    "cumulative_drop": 385,
+    "latency_max_us": 1759000,
+    "ore": 0,
+    "source": "UART-burst-129.uart.txt",
+    "sha256": "d3968d3824dac8df1fab5d9fb69af7d214166df3bb026f9a2e119adfde466294"
+  }
+]
