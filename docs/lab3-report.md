@@ -25,7 +25,7 @@ S1/S2/S3 snapshot JSON і первинні UART містять min/avg/max ко�
 |11|Виконана у моделі|TILT у ACCESS без нового alarm, GUARD повторно виявляє; SHOCK у ACCESS alarm=1, k підтверджує.|
 |12|З обмеженням|S2 CRC readback; diagnostic warm reset зберіг seq1–5, CRC звірено незалежно. NOR erase суперечливий, фізичний power-cut не перевірено.|
 |13|Недосяжна під навантаженням|S3 finish_miss3; P20 stress пропускає 8/100 імпульсів 20 мс. Для зареєстрованих S3 max40.765 мс, P20 max32.194 мс. Межі 1–3.|
-|14|З обмеженням|Runtime SDA-GND: timeout22 мс, RECOVERED через 1.659 с від release. f/v, rx_drop/ORE перевірено. Flash failure лише host model; межі 2,4.|
+|14|З обмеженням|Runtime SDA-GND: timeout22 мс, RECOVERED через 1.659 с від release. f/v, rx_drop/ORE перевірено. Старт підключеного, але неготового I²C-пристрою з NACK до готовності окремо не перевірено. Flash failure лише host model; межі 2,4.|
 
 ## Функції та відмови
 
@@ -50,8 +50,6 @@ S2 readback37 valid records seq1–37. Після 253 записів у function
 5. Wokwi startup flash нульова/corrupt128; store scan відкидає invalid і викликає HAL erase для нової сторінки.
 6. Rollover лишив stale valid records попри HAL success; модель не підтверджує erase, виправлення симулятора відсутнє, host NOR tests та явне обмеження.
 7. S2/S3 misses і UART drops збережені як результат меж суперциклу, H1/H2 задають наступну перевірку.
-
-Зміни прошивки й інструментування зафіксовано в коміті `cc00eb259b0fa753e109e5b3a63be4af807fa170`, сценарії та аналіз — у `dd83e5444913b46fae5f68193f52081fb2bf1e38`. Виміряний ELF зберігає власний source hash, зазначений вище; коміти створено після вимірювань.
 
 Перевірену версію ідентифікують source manifest, source SHA-256 та ELF hash. Для кожної зміни вказано відповідний модуль. Компоненти ЛР 2 залишено у власному repo, ліцензії vendor збережено.
 

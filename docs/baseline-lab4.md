@@ -46,4 +46,6 @@ P20 fixture tests/fixtures/phase20: незмінний baseline ELF, C input dri
 
 Runtime SDA на baseline ELF: почати зі справної шини, замкнути switch після HEART fault0, отримати FAULT, розімкнути, чекати фактичного RECOVERED і id104. Порівняти sample timeout22ms, recovery max22ms, release-to-RECOVERED1658.604ms, stack664B. Ціль H4 стосується ADC/PIR deadline, не обіцянки миттєвої готовності IMU.
 
+Startup із підключеним, але неготовим I²C-пристроєм, який повертає NACK до готовності та ACK після неї, у збережених runs окремо не перевірено. Boot-with-SDA-low є коротким замиканням лінії в моделі і не підтверджує такого NACK/ACK сценарію.
+
 Діагностику mallinfo і NVIC reset повторювати окремим link із tools/diagnostics/heap-reset-probe.c, власним ELF hash та DIAG marker. Поточні results: allocated1032/free0B; із ACCESS/alarm1 reset повертає GUARD/alarm0, CRC-valid seq1–5 лишаються. Не підставляти її timings або stack648B у baseline. Toolbar Restart у web-проєкті запускає default sketch Hello STM32, тому повторний baseline старт робити саме Upload Firmware. Фізичні power cut, струм, wear і електричні рівні є іншою перевіркою після переходу з формиB до плати.
