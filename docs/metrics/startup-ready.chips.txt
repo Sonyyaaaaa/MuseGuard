@@ -1,0 +1,1 @@
+chip-startup-not-ready NOT_READY t_ns=39252850 addr=104 NACKchip-startup-not-ready NOT_READY t_ns=1008849324 addr=104 NACKchip-startup-not-ready NOT_READY t_ns=2009054175 addr=104 NACKchip-startup-not-ready NOT_READY t_ns=3008822675 addr=104 NACKchip-startup-not-ready NOT_READY t_ns=4015428325 addr=104 NACKchip-startup-not-ready READY t_ns=5008990925 addr=104 ACK

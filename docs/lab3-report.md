@@ -25,13 +25,15 @@ S1/S2/S3 snapshot JSON і первинні UART містять min/avg/max ко�
 |11|Виконана у моделі|TILT у ACCESS без нового alarm, GUARD повторно виявляє; SHOCK у ACCESS alarm=1, k підтверджує.|
 |12|З обмеженням|S2 CRC readback; diagnostic warm reset зберіг seq1–5, CRC звірено незалежно. NOR erase суперечливий, фізичний power-cut не перевірено.|
 |13|Недосяжна під навантаженням|S3 finish_miss3; P20 stress пропускає 8/100 імпульсів 20 мс. Для зареєстрованих S3 max40.765 мс, P20 max32.194 мс. Межі 1–3.|
-|14|З обмеженням|Runtime SDA-GND: timeout22 мс, RECOVERED через 1.659 с від release. f/v, rx_drop/ORE перевірено. Старт підключеного, але неготового I²C-пристрою з NACK до готовності окремо не перевірено. Flash failure лише host model; межі 2,4.|
+|14|З обмеженням|Тестова I²C-модель дала п'ять NACK, далі ACK і RECOVERED при 5029 мс. Runtime SDA-GND: RECOVERED через 1.659 с від release. Flash failure лише host model; фізичний датчик не перевірено.|
 
 ## Функції та відмови
 
 ACCESS TILT t27329ms без alarm; g t38617ms і повторний GUARD TILT t39149ms з alarm. k підтверджує, a відкриває; SHOCK t54669ms у ACCESS дає alarm. f/v перевірено програмно; v t90851ms, RECOVERED t91029ms. [Логи](metrics/access-tilt.uart.txt), [GUARD](metrics/guard-tilt.uart.txt), [SHOCK](metrics/access-shock.uart.txt), [software recovery](metrics/fault-recovery.uart.txt).
 
 Реальний сигнал SDA-GND усередині Wokwi утримувався від старту до 32.717592 с VCD. RECOVERED UART33.033380 с, observable315.789 мс після release, ID104. Recovery22 мс, loop max37 мс, stack592 B. [Первинний UART](metrics/SDA-fault-recovery.uart.txt), [аналіз](metrics/SDA-fault.json), [clip](captures/lab3/SDA-release.vcd). Це не фізична плата. Runtime SDA-GND перевірено окремо; фізичний power cut не виконано.
+
+Окремий startup тест використовує власну тестову I²C-модель замість MPU6050: вона повертає NACK до 5 с, потім ACK і статичний кадр +1g по Z. VCD підтверджує п'ять NACK, перший ACK при 5.008991 с і перший повний кадр 5.029333–5.030698 с; SAMPLE завершився при 5.031062 с. UART записав RECOVERED t_ms=5029 і пізніше READ status=0 id=104. [Умови і межі](../tests/fixtures/startup-not-ready/README.md), [розбір VCD](metrics/startup-ready-i2c.json), [UART](metrics/startup-ready.uart.txt). Це не фізичне затримання готовності MPU6050.
 
 Перший ADC MARK завершився 39.040ms, перший sample із valid IMU61.654ms від старту моделі S1. GPIO PIR low читається до 39.103ms, фізичну готовність PIR це не встановлює. Намальований RESET не породив BOOT, спроба не зарахована.
 

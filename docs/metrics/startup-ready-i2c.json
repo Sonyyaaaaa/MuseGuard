@@ -1,0 +1,137 @@
+{
+  "nack_address_phases": [
+    {
+      "start_ns": 39167850,
+      "bytes": [
+        {
+          "hex": "d0",
+          "ack": false
+        }
+      ],
+      "stop_ns": 39272850
+    },
+    {
+      "start_ns": 1008764325,
+      "bytes": [
+        {
+          "hex": "d0",
+          "ack": false
+        }
+      ],
+      "stop_ns": 1008869325
+    },
+    {
+      "start_ns": 2008969175,
+      "bytes": [
+        {
+          "hex": "d0",
+          "ack": false
+        }
+      ],
+      "stop_ns": 2009074175
+    },
+    {
+      "start_ns": 3008737675,
+      "bytes": [
+        {
+          "hex": "d0",
+          "ack": false
+        }
+      ],
+      "stop_ns": 3008842675
+    },
+    {
+      "start_ns": 4015343325,
+      "bytes": [
+        {
+          "hex": "d0",
+          "ack": false
+        }
+      ],
+      "stop_ns": 4015448325
+    }
+  ],
+  "first_ack_address": {
+    "start_ns": 5008905925,
+    "bytes": [
+      {
+        "hex": "d0",
+        "ack": true
+      },
+      {
+        "hex": "75",
+        "ack": true
+      }
+    ],
+    "stop_ns": 5009263425
+  },
+  "first_full_read": {
+    "start_ns": 5029333275,
+    "bytes": [
+      {
+        "hex": "d1",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "40",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": true
+      },
+      {
+        "hex": "00",
+        "ack": false
+      }
+    ],
+    "stop_ns": 5030698275
+  },
+  "sample_start_ns": 5028704300,
+  "sample_end_ns": 5031061525,
+  "limits": "I2C decoded from SCL rising edges; VCD reports wire activity, not MCU return codes; matching SAMPLE is enclosing pulse."
+}
