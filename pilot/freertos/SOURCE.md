@@ -1,0 +1,1 @@
+FreeRTOS-Kernel V10.6.2, commit 18ed8886fe3eed9dbe433a82cdc62ce5dc0315eb, https://github.com/FreeRTOS/FreeRTOS-Kernel/tree/V10.6.2 ; selected unmodified files, MIT license in LICENSE.md. GCC/ARM_CM0 targets ARMv6-M including Cortex-M0+.
