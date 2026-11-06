@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "author": "MuseGuard",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": 400,
+      "left": 30,
+      "attrs": {
+        "channelNames": "unused,unused,UART_TX,unused,ISR,EVENT,LOAD,unused",
+        "bufferSize": "100000"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "logic:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "logic:D2",
+      "nucleo:PA2",
+      "grey",
+      []
+    ],
+    [
+      "logic:D4",
+      "nucleo:PA4",
+      "purple",
+      []
+    ],
+    [
+      "logic:D5",
+      "nucleo:PA6",
+      "grey",
+      []
+    ],
+    [
+      "logic:D6",
+      "nucleo:PA7",
+      "grey",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
