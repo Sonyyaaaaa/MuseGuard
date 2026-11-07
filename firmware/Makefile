@@ -135,6 +135,14 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Include
 
 
+# The full RTOS target shares the same application, HAL and linker layout.
+ifeq ($(MG_FREERTOS),1)
+OPT = -Os
+C_SOURCES += ../lab4/rtos_app.c ../pilot/freertos/tasks.c ../pilot/freertos/list.c ../pilot/freertos/queue.c ../pilot/freertos/portable/GCC/ARM_CM0/port.c ../pilot/freertos/portable/MemMang/heap_4.c
+C_DEFS += -DMG_FREERTOS $(MG_EXTRA_DEFS)
+C_INCLUDES += -I$(BUILD_DIR) -I../lab4 -I../pilot/freertos/include -I../pilot/freertos/portable/GCC/ARM_CM0
+endif
+
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 

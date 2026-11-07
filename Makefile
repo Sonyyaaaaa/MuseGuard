@@ -1,6 +1,6 @@
 IMAGE ?= museguard-build:lab3
 
-.PHONY: image build clean test check coverage toolchain
+.PHONY: image build build-lab4 clean test check coverage toolchain
 
 image:
 	docker build -t $(IMAGE) docker
@@ -10,6 +10,12 @@ build: image
 	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
 		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
 		make -C firmware all
+
+build-lab4: image
+	python3 lab4/build_identity.py
+	docker run --rm -v "$(CURDIR):/workspace" -w /workspace \
+		--user "$(shell id -u):$(shell id -g)" $(IMAGE) \
+		make -C firmware MG_FREERTOS=1 BUILD_DIR=build/lab4 TARGET=museguard-lab4 all
 
 clean:
 	$(MAKE) -C firmware clean

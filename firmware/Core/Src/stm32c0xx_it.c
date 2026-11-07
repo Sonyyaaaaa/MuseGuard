@@ -96,6 +96,7 @@ void HardFault_Handler(void)
 /**
   * @brief This function handles System service call via SWI instruction.
   */
+#ifndef MG_FREERTOS
 void SVC_Handler(void)
 {
   /* USER CODE BEGIN SVC_IRQn 0 */
@@ -119,6 +120,8 @@ void PendSV_Handler(void)
   /* USER CODE END PendSV_IRQn 1 */
 }
 
+ #endif /* MG_FREERTOS */
+
 /**
   * @brief This function handles System tick timer.
   */
@@ -128,6 +131,11 @@ void SysTick_Handler(void)
 
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
+#ifdef MG_FREERTOS
+  extern volatile uint32_t mg_rtos_started;
+  extern void xPortSysTickHandler(void);
+  if (mg_rtos_started) xPortSysTickHandler();
+#endif
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */

@@ -1,6 +1,10 @@
 #include "platform.h"
 #include "main.h"
 #include <stdio.h>
+#ifdef MG_FREERTOS
+#include "runner.h"
+#define printf mg_rtos_printf
+#endif
 extern I2C_HandleTypeDef hi2c1;
 extern ADC_HandleTypeDef hadc1;
 extern UART_HandleTypeDef huart2;

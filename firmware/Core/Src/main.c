@@ -117,6 +117,9 @@ int main(void)
 
   /* USER CODE END 2 */
 
+#ifdef MG_FREERTOS
+  mg_rtos_start();
+#else
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -127,6 +130,7 @@ int main(void)
     runner_poll();
   }
   /* USER CODE END 3 */
+#endif
 }
 
 /**

@@ -3,9 +3,16 @@
 #include "lab3_io.h"
 #include "exhibit.h"
 #include "cadence.h"
+#ifdef MG_FREERTOS
+#include "lab4_build_id.h"
+#else
 #include "build_id.h"
+#endif
 #include <stdio.h>
 #include <string.h>
+#ifdef MG_FREERTOS
+#define printf mg_rtos_printf
+#endif
 static museguard_t detector;
 static exhibit_t exhibit;
 static mpu6050_t imu;
@@ -46,7 +53,12 @@ void runner_start(void)
   store_ready=mg_store_open(&store,lab3_storage());
   window_start=lab3_us();last_loop=window_start;
   sample_clock.due=heartbeat_clock.due=recovery_clock.due=window_start;
-  printf("BOOT MuseGuard lab=3 core=C031 source=%s git=%s clock=SysTick_1ms store=%u seq=%lu corrupt=%lu\r\n",MG_BUILD_ID,MG_GIT_ID,(unsigned)store_ready,(unsigned long)store.sequence,(unsigned long)store.corrupt);
+#ifdef MG_FREERTOS
+  printf("BOOT MuseGuard lab=4 core=C031 source=%s git=%s clock=SysTick_1ms store=%u seq=%lu corrupt=%lu\r\n",
+#else
+  printf("BOOT MuseGuard lab=3 core=C031 source=%s git=%s clock=SysTick_1ms store=%u seq=%lu corrupt=%lu\r\n",
+#endif
+MG_BUILD_ID,MG_GIT_ID,(unsigned)store_ready,(unsigned long)store.sequence,(unsigned long)store.corrupt);
   printf("READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics\r\n");
   remember(platform_now(),MG_BOOT);
 }
@@ -87,7 +99,15 @@ static void journal_task(void)
 {
   pending_t entry=queue[qtail];qtail=(qtail+1)%16;--qcount;
   uint32_t started=lab3_us();lab3_probe(7,true);
+#if defined(MG_FREERTOS) && !defined(MG_MUTEX_WIDE)
+  /* The service task is the only owner of store and flash. The event was
+     removed under state_lock; sensor may enqueue while programming runs. */
+  mg_state_unlock();
+#endif
   bool saved=store_ready&&mg_store_append(&store,entry.time,entry.events,entry.observation);
+#if defined(MG_FREERTOS) && !defined(MG_MUTEX_WIDE)
+  mg_state_lock();
+#endif
   lab3_probe(7,false);uint32_t elapsed=lab3_us()-started;
   if(!saved){++flash_failures;store_ready=false;}
   printf("EVENT t_ms=%lu bits=%lu observation=%lu saved=%u seq=%lu flash_us=%lu\r\n",(unsigned long)entry.time,(unsigned long)entry.events,(unsigned long)entry.observation,(unsigned)saved,(unsigned long)store.sequence,(unsigned long)elapsed);
@@ -102,6 +122,9 @@ static void output_task(void)
       uint32_t drop,ore;lab3_rx_stats(&drop,&ore);
       printf("RESOURCE stack=%lu heap_peak=%lu rx_drop=%lu ore=%lu event_drop=%lu flash_fail=%lu clock_ambiguous=%lu\r\n",(unsigned long)lab3_stack_used(),(unsigned long)lab3_heap_peak(),(unsigned long)drop,(unsigned long)ore,(unsigned long)events_lost,(unsigned long)flash_failures,(unsigned long)lab3_clock_ambiguous());
       printf("CADENCE n=%lu skipped=%lu late=%lu finish_miss=%lu release_max_us=%lu jitter_min_us=%ld jitter_max_us=%ld busy_permille=%lu\r\n",(unsigned long)report_clock.count,(unsigned long)report_clock.skipped,(unsigned long)report_clock.late,(unsigned long)report_clock.completion_misses,(unsigned long)report_clock.max_lateness,(long)report_clock.jitter_min,(long)report_clock.jitter_max,(unsigned long)report_load);
+#ifdef MG_FREERTOS
+      mg_rtos_report();
+#endif
       reporting=false;
     }
   }else if(dumping){
@@ -110,6 +133,7 @@ static void output_task(void)
     if(++dump_slot==MG_STORE_BYTES/MG_STORE_RECORD)dumping=false;
   }
 }
+#ifndef MG_FREERTOS
 void runner_poll(void)
 {
   if(reset_metrics) {
@@ -144,3 +168,44 @@ void runner_poll(void)
   }
   duration_add(&timing[LOOP],lab3_us()-loop_start);
 }
+
+#else
+void runner_sensor_step(void)
+{
+  uint32_t start=lab3_us();
+  if(cadence_release(&sample_clock,start)){
+    lab3_probe(6,true);sample_task();lab3_probe(6,false);account(SAMPLE,start);cadence_complete(&sample_clock,lab3_us());
+  }
+}
+void runner_service_step(void)
+{
+
+  if(reset_metrics) {
+    uint32_t now=lab3_us();
+    memset(timing,0,sizeof(timing));busy_us=0;window_start=now;last_loop=now;
+    sample_clock=(cadence_t){.period=20000,.deadline=20000,.due=now};
+    recovery_clock=(cadence_t){.period=1000000,.deadline=100000,.due=now};
+    heartbeat_clock=(cadence_t){.period=1000000,.deadline=100000,.due=now};
+    reporting=dumping=reset_metrics=false;
+  }
+  uint32_t loop_start=lab3_us(),start=loop_start;
+  duration_add(&timing[PERIOD],loop_start-last_loop);last_loop=loop_start;
+  remember(platform_now(),exhibit_tick(&exhibit,platform_now()));
+  start=lab3_us();
+  if(cadence_release(&recovery_clock,start) && (!imu.ready || !adc_ready)){
+    if(!inject_fault && !imu.ready)mpu6050_init(&imu,bus);
+    if(!adc_ready)adc_ready=platform_start()==MG_OK;
+    account(RECOVERY,start);
+  }
+  char command;uint32_t received;start=lab3_us();
+  if(lab3_rx(&command,&received)){command_task(command,received);account(COMMAND,start);}
+  start=lab3_us();if(qcount){journal_task();account(JOURNAL,start);}
+  start=lab3_us();
+  if(reporting||dumping){output_task();account(OUTPUT,start);}
+  start=lab3_us();
+  if(cadence_release(&heartbeat_clock,start)){
+    printf("HEART t_us=%lu adc=%u fault=%u alarm=%u access=%u\r\n",(unsigned long)start,(unsigned)last_adc,(unsigned)detector.fault,(unsigned)detector.alarm,(unsigned)exhibit.access);account(OUTPUT,start);
+  }
+  duration_add(&timing[LOOP],lab3_us()-loop_start);
+}
+#endif
