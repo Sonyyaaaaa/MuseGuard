@@ -24,8 +24,12 @@ static mg_status_t wait_i2c(I2C_TypeDef *i2c, uint32_t flag, uint32_t started)
       return MG_BUS_ERROR;
     }
     if ((uint32_t)(HAL_GetTick() - started) >= 15) {
+#if defined(MG_FREERTOS) && !defined(MG_I2C_SYNC_LOG)
+      mg_rtos_i2c_timeout(flag, i2c->ISR, i2c->CR2);
+#else
       printf("I2C timeout flag=0x%lX isr=0x%lX cr2=0x%lX\r\n",
              (unsigned long)flag, (unsigned long)i2c->ISR, (unsigned long)i2c->CR2);
+#endif
       return MG_TIMEOUT;
     }
   }

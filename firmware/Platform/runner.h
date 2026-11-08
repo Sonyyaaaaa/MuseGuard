@@ -10,5 +10,6 @@ void mg_rtos_report(void);
 void mg_state_unlock(void);
 void mg_state_lock(void);
 int mg_rtos_printf(const char *format, ...) __attribute__((format(printf, 1, 2)));
+void mg_rtos_i2c_timeout(unsigned long flag, unsigned long isr, unsigned long cr2);
 #endif
 #endif
