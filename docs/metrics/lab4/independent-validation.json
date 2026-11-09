@@ -1,0 +1,32 @@
+{
+  "boot_count": 1,
+  "z_time_us": 1014000,
+  "final_stats_command_us": 3601569000,
+  "mcu_interval_to_stats_us": 3600555000,
+  "mcu_interval_to_last_heart_us": 3610010000,
+  "heart_count": 3613,
+  "heart_gap_min_us": 29000,
+  "heart_gap_max_us": 1006000,
+  "pir_rises_ns": [
+    20000000000,
+    320000000000,
+    620000000000,
+    920000000000,
+    1220000000000,
+    1520000000000,
+    1820000000000,
+    2120000000000,
+    2420000000000,
+    2720000000000,
+    3020000000000,
+    3320000000000
+  ],
+  "journal_unique_crc_valid": 19,
+  "stat_rows": 16,
+  "resources": [
+    "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+    "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0"
+  ],
+  "cadence": "CADENCE n=180027 skipped=0 late=0 finish_miss=0 release_max_us=14000 jitter_min_us=0 jitter_max_us=0 busy_permille=106",
+  "rtos": "RTOS free=1080 min_free=1080 stack_sensor_words=318 stack_service_words=480 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0"
+}

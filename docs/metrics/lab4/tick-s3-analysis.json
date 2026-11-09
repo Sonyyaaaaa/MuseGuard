@@ -1,0 +1,54 @@
+{
+  "rtos": {
+    "capture_sha256": "f986c261aadb36ec6ad17c559f438be3d77ea5ff19a5992fcf0588198783408a",
+    "boot": "BOOT MuseGuard lab=4 core=C031 source=dea1be82c581879c6927ef1e8032eb903b24c4e0f1273d4c03eb9c35e5507506 git=2388716b4c6c-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "raw_has_boot": true,
+    "rx_bytes": 2015,
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "journal_crc_rows": 106,
+    "journal_crc_unique_sequences": 64,
+    "pir_to_event_ms": {
+      "min": 6.92665,
+      "mean": 19.760141666666666,
+      "max": 31.50925
+    },
+    "pir_in_command_high": 24,
+    "sample_n": 12401,
+    "sample_period_min_ms": 19.752475,
+    "sample_period_max_ms": 20.231175,
+    "cadence": "CADENCE n=12400 skipped=0 late=0 finish_miss=0 release_max_us=12000 jitter_min_us=0 jitter_max_us=0 busy_permille=219",
+    "resource_lines": [
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=320 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0"
+    ]
+  },
+  "tick100": {
+    "capture_sha256": "78e4519a362dd5d1f60637144314e848a4a00aee2483604b28e2222faee64d0e",
+    "boot": "BOOT MuseGuard lab=4 core=C031 source=50a12eed6b05ff39314450fd57f13691809f7457e3eecc27389387133bee3b40 git=tick100-diagnostic clock=SysTick_10ms store=1 seq=0 corrupt=128",
+    "raw_has_boot": true,
+    "rx_bytes": 2015,
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "journal_crc_rows": 106,
+    "journal_crc_unique_sequences": 64,
+    "pir_to_event_ms": {
+      "min": 6.7,
+      "mean": 16.682431666666666,
+      "max": 30.4915
+    },
+    "pir_in_command_high": 23,
+    "sample_n": 12400,
+    "sample_period_min_ms": 19.78895,
+    "sample_period_max_ms": 20.178625,
+    "cadence": "CADENCE n=12400 skipped=0 late=0 finish_miss=0 release_max_us=10000 jitter_min_us=0 jitter_max_us=0 busy_permille=87",
+    "resource_lines": [
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=320 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0"
+    ]
+  },
+  "input_uart_max_edge_difference_ns": 25,
+  "input_pir_max_edge_difference_ns": 25
+}

@@ -1,0 +1,165 @@
+BOOT MuseGuard lab=4 core=C031 source=dea1be82c581879c6927ef1e8032eb903b24c4e0f1273d4c03eb9c35e5507506 git=2388716b4c6c-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128
+READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics
+EVENT t_ms=37 bits=512 observation=0 saved=1 seq=1 flash_us=1000
+HEART t_us=52000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=38 bits=16 observation=1001 saved=1 seq=2 flash_us=1000
+EVENT t_ms=60 bits=32 observation=1001 saved=1 seq=3 flash_us=1000
+HEART t_us=1007000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=1996000 rx_us=1995000 char=z access=0 alarm=0
+HEART t_us=2006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=3006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=4006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=5006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=6006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=7006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=8006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=9006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=10006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=11006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=12006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=13006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=14006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=15006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=16006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=17006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=18006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=19006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=20006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=21006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=22006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=23006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=24006000 adc=1001 fault=0 alarm=0 access=0
+I2C timeout flag=0x20 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=25015 bits=16 observation=1001 saved=1 seq=4 flash_us=1000
+HEART t_us=25047000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=26000 bits=1 observation=1001 saved=1 seq=5 flash_us=1000
+HEART t_us=26009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=26400 bits=1 observation=1001 saved=1 seq=6 flash_us=1000
+EVENT t_ms=26800 bits=1 observation=1001 saved=1 seq=7 flash_us=1000
+HEART t_us=27023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=27200 bits=1 observation=1001 saved=1 seq=8 flash_us=1000
+EVENT t_ms=27600 bits=1 observation=1001 saved=1 seq=9 flash_us=1000
+EVENT t_ms=28000 bits=1 observation=1001 saved=1 seq=10 flash_us=1000
+HEART t_us=28009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=28400 bits=1 observation=1001 saved=1 seq=11 flash_us=1000
+EVENT t_ms=28800 bits=1 observation=1001 saved=1 seq=12 flash_us=1000
+HEART t_us=29023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=29200 bits=1 observation=1001 saved=1 seq=13 flash_us=1000
+EVENT t_ms=29600 bits=1 observation=1001 saved=1 seq=14 flash_us=1000
+EVENT t_ms=30000 bits=1 observation=1001 saved=1 seq=15 flash_us=1000
+HEART t_us=30009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=30400 bits=1 observation=1001 saved=1 seq=16 flash_us=1000
+EVENT t_ms=30800 bits=1 observation=1001 saved=1 seq=17 flash_us=1000
+HEART t_us=31023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=31200 bits=1 observation=1001 saved=1 seq=18 flash_us=1000
+EVENT t_ms=31600 bits=1 observation=1001 saved=1 seq=19 flash_us=1000
+EVENT t_ms=32000 bits=1 observation=1001 saved=1 seq=20 flash_us=1000
+HEART t_us=32009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=32400 bits=1 observation=1001 saved=1 seq=21 flash_us=1000
+EVENT t_ms=32800 bits=1 observation=1001 saved=1 seq=22 flash_us=1000
+HEART t_us=33023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=33200 bits=1 observation=1001 saved=1 seq=23 flash_us=1000
+EVENT t_ms=33600 bits=1 observation=1001 saved=1 seq=24 flash_us=1000
+EVENT t_ms=34000 bits=1 observation=1001 saved=1 seq=25 flash_us=1000
+HEART t_us=34009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=34400 bits=1 observation=1001 saved=1 seq=26 flash_us=1000
+EVENT t_ms=34800 bits=1 observation=1001 saved=1 seq=27 flash_us=1000
+HEART t_us=35023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=35200 bits=1 observation=1001 saved=1 seq=28 flash_us=1000
+EVENT t_ms=35600 bits=1 observation=1001 saved=1 seq=29 flash_us=1000
+EVENT t_ms=36000 bits=1 observation=1001 saved=1 seq=30 flash_us=1000
+HEART t_us=36009000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=36400 bits=1 observation=1001 saved=1 seq=31 flash_us=1000
+EVENT t_ms=36800 bits=1 observation=1001 saved=1 seq=32 flash_us=1000
+HEART t_us=37023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+EVENT t_ms=37200 bits=1 observation=1001 saved=1 seq=33 flash_us=1000
+EVENT t_ms=37600 bits=1 observation=1001 saved=1 seq=34 flash_us=1000
+HEART t_us=38023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+HEART t_us=39023000 adc=1001 fault=1 alarm=0 access=0
+I2C timeout flag=0x2 isr=0x8000 cr2=0x20100D0
+HEART t_us=40006000 adc=1001 fault=1 alarm=0 access=0
+HEART t_us=41007000 adc=1001 fault=1 alarm=0 access=0
+HEART t_us=42010000 adc=1001 fault=1 alarm=0 access=0
+EVENT t_ms=42022 bits=32 observation=1001 saved=1 seq=35 flash_us=1000
+HEART t_us=43006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=44006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=45006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=46006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=47006000 adc=1001 fault=0 alarm=0 access=0
+READ t_us=47997000 status=0 id=104
+CMD t_us=48004000 rx_us=47996000 char=c access=0 alarm=0
+HEART t_us=48011000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=49006000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=49997000 rx_us=49996000 char=d access=0 alarm=0
+HEART t_us=50006000 adc=1001 fault=0 alarm=0 access=0
+RECORD slot=64 seq=1 t_ms=37 bits=512 observation=0 crc=F7CB6CF3
+RECORD slot=65 seq=2 t_ms=38 bits=16 observation=1001 crc=88A9E521
+RECORD slot=66 seq=3 t_ms=60 bits=32 observation=1001 crc=EB736CD1
+RECORD slot=67 seq=4 t_ms=25015 bits=16 observation=1001 crc=E3FDA404
+RECORD slot=68 seq=5 t_ms=26000 bits=1 observation=1001 crc=719DD8BA
+RECORD slot=69 seq=6 t_ms=26400 bits=1 observation=1001 crc=DB578CF6
+RECORD slot=70 seq=7 t_ms=26800 bits=1 observation=1001 crc=5062A747
+RECORD slot=71 seq=8 t_ms=27200 bits=1 observation=1001 crc=07E0381A
+RECORD slot=72 seq=9 t_ms=27600 bits=1 observation=1001 crc=61A60BDE
+RECORD slot=73 seq=10 t_ms=28000 bits=1 observation=1001 crc=41103AF1
+RECORD slot=74 seq=11 t_ms=28400 bits=1 observation=1001 crc=8FD0B8A4
+RECORD slot=75 seq=12 t_ms=28800 bits=1 observation=1001 crc=18E32A14
+RECORD slot=76 seq=13 t_ms=29200 bits=1 observation=1001 crc=6FD873A9
+RECORD slot=77 seq=14 t_ms=29600 bits=1 observation=1001 crc=D46F4D9C
+RECORD slot=78 seq=15 t_ms=30000 bits=1 observation=1001 crc=29287142
+RECORD slot=79 seq=16 t_ms=30400 bits=1 observation=1001 crc=27979ED2
+RECORD slot=80 seq=17 t_ms=30800 bits=1 observation=1001 crc=15596E8B
+RECORD slot=81 seq=18 t_ms=31200 bits=1 observation=1001 crc=AEEE50BE
+RECORD slot=82 seq=19 t_ms=31600 bits=1 observation=1001 crc=D9D50903
+RECORD slot=83 seq=20 t_ms=32000 bits=1 observation=1001 crc=C50DC87B
+RECORD slot=84 seq=21 t_ms=32400 bits=1 observation=1001 crc=0BCD4A2E
+RECORD slot=85 seq=22 t_ms=32800 bits=1 observation=1001 crc=AC299D91
+RECORD slot=86 seq=23 t_ms=33200 bits=1 observation=1001 crc=CA6FAE55
+RECORD slot=87 seq=24 t_ms=33600 bits=1 observation=1001 crc=9DED3108
+RECORD slot=88 seq=25 t_ms=34000 bits=1 observation=1001 crc=D951D63E
+RECORD slot=89 seq=26 t_ms=34400 bits=1 observation=1001 crc=739B8272
+RECORD slot=90 seq=27 t_ms=34800 bits=1 observation=1001 crc=15DDB1B6
+RECORD slot=91 seq=28 t_ms=35200 bits=1 observation=1001 crc=C68CBC49
+RECORD slot=92 seq=29 t_ms=35600 bits=1 observation=1001 crc=B1B7E5F4
+RECORD slot=93 seq=30 t_ms=36000 bits=1 observation=1001 crc=28FA0F33
+RECORD slot=94 seq=31 t_ms=36400 bits=1 observation=1001 crc=5FC1568E
+RECORD slot=95 seq=32 t_ms=36800 bits=1 observation=1001 crc=E3045884
+RECORD slot=96 seq=33 t_ms=37200 bits=1 observation=1001 crc=95A83792
+RECORD slot=97 seq=34 t_ms=37600 bits=1 observation=1001 crc=8699B836
+RECORD slot=98 seq=35 t_ms=42022 bits=32 observation=1001 crc=AF25132E
+HEART t_us=51006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=52006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=53006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=54006000 adc=1001 fault=0 alarm=0 access=0
+CMD t_us=54997000 rx_us=54996000 char=s access=0 alarm=0
+STAT name=sample n=2643 min_us=0 avg_us=1367 max_us=17000
+HEART t_us=55013000 adc=1001 fault=0 alarm=0 access=0
+STAT name=recovery n=18 min_us=0 avg_us=14444 max_us=17000
+STAT name=command n=2 min_us=9000 avg_us=11500 max_us=14000
+STAT name=journal n=32 min_us=9000 avg_us=9031 max_us=10000
+STAT name=output n=181 min_us=0 avg_us=3712 max_us=11000
+STAT name=loop n=48081 min_us=0 avg_us=25 max_us=33000
+STAT name=command_latency n=3 min_us=1000 avg_us=1000 max_us=1000
+STAT name=loop_period n=48082 min_us=0 avg_us=1102 max_us=39000
+RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=2643 skipped=6 late=6 finish_miss=7 release_max_us=28000 jitter_min_us=-3000 jitter_max_us=14000 busy_permille=91
+RTOS free=1080 min_free=1080 stack_sensor_words=262 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=14 sensor_wait_max_ms=14
+HEART t_us=56006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=57006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=58006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=59006000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=60006000 adc=1001 fault=0 alarm=0 access=0

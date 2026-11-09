@@ -1,0 +1,74 @@
+{
+  "stack_allocation_words": {
+    "sensor": 384,
+    "service": 640,
+    "idle": 128
+  },
+  "runs": {
+    "s1": {
+      "source": "s1-pair-vscode/rtos/uart.raw",
+      "sha256": "189b0decf3d34a11ca1455fa61a45fbe9bbd25c99919e25f3db4133980bfe098",
+      "snapshot_count": 1,
+      "free_heap_min_bytes": 1080,
+      "min_free_stack_words": {
+        "sensor": 320,
+        "service": 482,
+        "idle": 116
+      }
+    },
+    "s3": {
+      "source": "s3-pair-vscode/rtos/uart.raw",
+      "sha256": "413430d5b8c5a65e7b8c3b47c92575396588ca1ec36ebe99458c010e96a791c1",
+      "snapshot_count": 1,
+      "free_heap_min_bytes": 1080,
+      "min_free_stack_words": {
+        "sensor": 320,
+        "service": 482,
+        "idle": 116
+      }
+    },
+    "p20": {
+      "source": "p20-pair-vscode/rtos/uart.raw",
+      "sha256": "a1402a378956965fd0babddca83c46e317b1e6e1dda1336d032854a09135ec7f",
+      "snapshot_count": 1,
+      "free_heap_min_bytes": 1080,
+      "min_free_stack_words": {
+        "sensor": 262,
+        "service": 482,
+        "idle": 116
+      }
+    },
+    "fault_pir": {
+      "source": "fault-pir-pair/rtos/uart.raw",
+      "sha256": "25ddcd814325d53f04fb9c93c9d3454d99242365006791bbdc58dcf305dd62dd",
+      "snapshot_count": 1,
+      "free_heap_min_bytes": 1080,
+      "min_free_stack_words": {
+        "sensor": 262,
+        "service": 482,
+        "idle": 116
+      }
+    },
+    "uart_boundary": {
+      "source": "uart-boundary-pair/rtos/uart.raw",
+      "sha256": "cfbfd3efb6150ca9a0ba9538b9f7b813e312c93e7e626beaea447fd462b88b75",
+      "snapshot_count": 5,
+      "free_heap_min_bytes": 1080,
+      "min_free_stack_words": {
+        "sensor": 320,
+        "service": 472,
+        "idle": 116
+      }
+    }
+  },
+  "all_runs_min_free_stack_words": {
+    "sensor": 262,
+    "service": 472,
+    "idle": 116
+  },
+  "all_runs_min_free_stack_percent": {
+    "sensor": 68.23,
+    "service": 73.75,
+    "idle": 90.62
+  }
+}

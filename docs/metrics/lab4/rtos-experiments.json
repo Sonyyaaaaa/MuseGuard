@@ -1,0 +1,327 @@
+{
+  "heap": {
+    "elf_sha256": "ba42dc4be3d2ff99da46b573df123c7f41b2e0d041264664401370a5daaafb43",
+    "vcd_sha256": "7290801aded4df17d2e73bd806a560bd42136e5730ac7500930f7d298381a9c3",
+    "uart": "DIAG malloc_failed_hook\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        1445275,
+        1
+      ],
+      [
+        14112195300,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ],
+      [
+        3786575,
+        1
+      ]
+    ],
+    "event_pulses": [],
+    "load_first": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "queue": {
+    "elf_sha256": "72739d487ac968dd321c67656dba3e3d81d35a193074e0d929c0bebd555313df",
+    "vcd_sha256": "7bf4ffea2355168aa2f5a87fb0c95a29b2f687b2e13fe85fce4d2ff46cff40b5",
+    "uart": "DIAG queue accepted=4 lost=16 consumed=4\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        3003525,
+        1
+      ],
+      [
+        3003775,
+        0
+      ],
+      [
+        3025525,
+        1
+      ],
+      [
+        3025775,
+        0
+      ],
+      [
+        3047525,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ]
+    ],
+    "event_pulses": [],
+    "load_first": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "starvation": {
+    "elf_sha256": "5fd5b10b2b75e27a2de7543b25a1ca04fce24bdc570bab443ea7a3df6faf2335",
+    "vcd_sha256": "fc3e661e195b5496cf181890cbfebafd3b4aff4a58e99c9dc599497da8fcc781",
+    "uart": "DIAG starve low_before=0 idle_before=0 low_after=100 idle_after=31719\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        9067225700,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ]
+    ],
+    "event_pulses": [
+      999988675
+    ],
+    "load_first": [
+      [
+        0,
+        0
+      ],
+      [
+        1002821200,
+        1
+      ],
+      [
+        1002821450,
+        0
+      ],
+      [
+        1003798175,
+        1
+      ],
+      [
+        1003798425,
+        0
+      ],
+      [
+        1004798150,
+        1
+      ]
+    ]
+  },
+  "stack-hook": {
+    "elf_sha256": "55d1450c6da4059f1c77eb4bc37e9f152bb15458e4c6237a764c54cac820d3b7",
+    "vcd_sha256": "23a11f973158b41059f266c85e8730193347f9d79228f791f4dc1595b20496ce",
+    "uart": "PILOT FreeRTOS V10.6.2 tick=1ms\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        6135650,
+        1
+      ],
+      [
+        10400028750,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ],
+      [
+        6137150,
+        1
+      ]
+    ],
+    "event_pulses": [],
+    "load_first": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "stack-nohook": {
+    "elf_sha256": "c9933d8b24a91647358c839098fcb0dafe15f6267cff56b2d129db6cb70ea6f9",
+    "vcd_sha256": "a1c4966913cd5fd56729307ddc8494aacd686e3c42a8cb83d4450f197c58c78f",
+    "uart": "PILOT FreeRTOS V10.6.2 tick=1ms\r\nP hal=1001 rtos=1001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=2001 rtos=2001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=3001 rtos=3001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=4001 rtos=4001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=5001 rtos=5001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=6001 rtos=6001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=7001 rtos=7001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=8001 rtos=8001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=9001 rtos=9001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=10001 rtos=10001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=11001 rtos=11001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=12001 rtos=12001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\nP hal=13001 rtos=13001 ev=2 free=1040 minfree=1040 stacks_words=0,0,118,118\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        502899375,
+        1
+      ],
+      [
+        502965125,
+        0
+      ],
+      [
+        1002909200,
+        1
+      ],
+      [
+        1002974950,
+        0
+      ],
+      [
+        1502878550,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ]
+    ],
+    "event_pulses": [
+      1500,
+      1500
+    ],
+    "load_first": [
+      [
+        0,
+        0
+      ],
+      [
+        6142675,
+        1
+      ],
+      [
+        502963125,
+        0
+      ],
+      [
+        503017375,
+        1
+      ],
+      [
+        1002972950,
+        0
+      ],
+      [
+        1011473725,
+        1
+      ]
+    ]
+  },
+  "inversion-mutex": {
+    "elf_sha256": "8b8478e19bc000bfe53bc624a6e75c20d45a22a3e6d82dfb109a5ba0a607a33b",
+    "vcd_sha256": "f415c939899bf467c914ee42b5a352d5f7498d110392b7bdc5d2cc72d0c44f49",
+    "uart": "DIAG high_wait_ticks=80\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        23510375,
+        1
+      ],
+      [
+        103561200,
+        0
+      ],
+      [
+        12091644700,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ]
+    ],
+    "event_pulses": [
+      2403650
+    ],
+    "load_first": [
+      [
+        0,
+        0
+      ],
+      [
+        3600775,
+        1
+      ],
+      [
+        103463950,
+        0
+      ]
+    ]
+  },
+  "inversion-semaphore": {
+    "elf_sha256": "8c9c5433a6752697a9ee8d0772a2e8b0fc51c081be361d6ed80cbb03b2ef9d68",
+    "vcd_sha256": "93d136b5e4183e81b3893c1c851258b873c5fcf1467a1c970a8154874faa1357",
+    "uart": "DIAG high_wait_ticks=205\r\n",
+    "hook_first": [
+      [
+        0,
+        0
+      ],
+      [
+        23505375,
+        1
+      ],
+      [
+        228596600,
+        0
+      ],
+      [
+        12154347400,
+        1
+      ]
+    ],
+    "fatal_first": [
+      [
+        0,
+        0
+      ]
+    ],
+    "event_pulses": [
+      2508575
+    ],
+    "load_first": [
+      [
+        0,
+        0
+      ],
+      [
+        3592025,
+        1
+      ],
+      [
+        228522850,
+        0
+      ]
+    ]
+  }
+}

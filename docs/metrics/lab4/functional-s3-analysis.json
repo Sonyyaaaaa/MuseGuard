@@ -1,0 +1,16 @@
+{
+  "bare": {
+    "sha256": "e05d6d4ef49cf859d0a427432678e1a79e6d04232f722c375d54eaedd8c4f686",
+    "ready_guard": true,
+    "a_access1_alarm0": 30,
+    "g_access0_alarm0": 30,
+    "other_a_g": 0
+  },
+  "rtos": {
+    "sha256": "413430d5b8c5a65e7b8c3b47c92575396588ca1ec36ebe99458c010e96a791c1",
+    "ready_guard": true,
+    "a_access1_alarm0": 30,
+    "g_access0_alarm0": 30,
+    "other_a_g": 0
+  }
+}

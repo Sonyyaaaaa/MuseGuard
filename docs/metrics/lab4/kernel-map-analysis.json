@@ -1,0 +1,48 @@
+{
+  "map_sha256": "3bf7d03b3aa39fbd7d3e2bd1162866e2c18386e336d33da1f05dc01dba6c1470",
+  "method": "nonzero input sections with allocated VMA in code Flash/RAM; RAM includes heap array; no shared libc or linker padding; initialized RAM load image is not attributed to Flash",
+  "objects": {
+    "tasks.o": {
+      "flash_bytes": 2465,
+      "ram_bytes": 196,
+      "flash_sections": 26,
+      "ram_sections": 18
+    },
+    "list.o": {
+      "flash_bytes": 106,
+      "ram_bytes": 0,
+      "flash_sections": 4,
+      "ram_sections": 0
+    },
+    "queue.o": {
+      "flash_bytes": 1114,
+      "ram_bytes": 0,
+      "flash_sections": 8,
+      "ram_sections": 0
+    },
+    "port.o": {
+      "flash_bytes": 428,
+      "ram_bytes": 4,
+      "flash_sections": 13,
+      "ram_sections": 1
+    },
+    "heap_4.o": {
+      "flash_bytes": 472,
+      "ram_bytes": 6172,
+      "flash_sections": 5,
+      "ram_sections": 7
+    },
+    "timers.o": {
+      "flash_bytes": 0,
+      "ram_bytes": 0,
+      "flash_sections": 0,
+      "ram_sections": 0
+    },
+    "rtos_app.o": {
+      "flash_bytes": 1010,
+      "ram_bytes": 84,
+      "flash_sections": 14,
+      "ram_sections": 9
+    }
+  }
+}

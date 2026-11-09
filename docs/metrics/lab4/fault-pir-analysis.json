@@ -1,0 +1,64 @@
+{
+  "bare": {
+    "vcd_sha256": "2d73298789c946033f8755b59dba01500dcd4de1dd2f0c4d03bd4495b9512869",
+    "sda_low_ns": [
+      [
+        25000000000,
+        40000000000
+      ]
+    ],
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "pir_event_max_ms": 37.483925,
+    "sample_n": 744,
+    "sample_width_max_ms": 21.4774,
+    "sample_period_max_ms": 48.5401,
+    "adc_calls": 744,
+    "adc_start_interval_max_ms": 48.5401,
+    "journal_crc_rows": 35,
+    "journal_unique_sequences": 35,
+    "fault_event_lines": [
+      "EVENT t_ms=36 bits=16 observation=1001 saved=1 seq=2 flash_us=1000",
+      "EVENT t_ms=58 bits=32 observation=1001 saved=1 seq=3 flash_us=1000",
+      "EVENT t_ms=25033 bits=16 observation=1001 saved=1 seq=4 flash_us=1000",
+      "EVENT t_ms=42018 bits=32 observation=1001 saved=1 seq=35 flash_us=1000"
+    ],
+    "read_lines": [
+      "READ t_us=48000000 status=0 id=104"
+    ],
+    "cadence": "CADENCE n=2644 skipped=6 late=6 finish_miss=7 release_max_us=28000 jitter_min_us=-17000 jitter_max_us=28000 busy_permille=92"
+  },
+  "rtos": {
+    "vcd_sha256": "de07f78e699c64bef5f63280bae6090cf166ebb2afaa8c588c6378dd763286f8",
+    "sda_low_ns": [
+      [
+        25000000000,
+        40000000000
+      ]
+    ],
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "pir_event_max_ms": 7.051,
+    "sample_n": 744,
+    "sample_width_max_ms": 16.95425,
+    "sample_period_max_ms": 34.0758,
+    "adc_calls": 744,
+    "adc_start_interval_max_ms": 34.0758,
+    "journal_crc_rows": 35,
+    "journal_unique_sequences": 35,
+    "fault_event_lines": [
+      "EVENT t_ms=38 bits=16 observation=1001 saved=1 seq=2 flash_us=1000",
+      "EVENT t_ms=60 bits=32 observation=1001 saved=1 seq=3 flash_us=1000",
+      "EVENT t_ms=25015 bits=16 observation=1001 saved=1 seq=4 flash_us=1000",
+      "EVENT t_ms=42022 bits=32 observation=1001 saved=1 seq=35 flash_us=1000"
+    ],
+    "read_lines": [
+      "READ t_us=47997000 status=0 id=104"
+    ],
+    "cadence": "CADENCE n=2643 skipped=6 late=6 finish_miss=7 release_max_us=28000 jitter_min_us=-3000 jitter_max_us=14000 busy_permille=91"
+  },
+  "pir_max_edge_difference_ns": 0,
+  "rx_max_edge_difference_ns": 0
+}

@@ -1,0 +1,12 @@
+PILOT FreeRTOS V10.6.2 tick=1ms
+P hal=1001 rtos=1001 ev=2 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=2001 rtos=2001 ev=4 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=3001 rtos=3001 ev=6 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=4001 rtos=4001 ev=8 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=5001 rtos=5001 ev=10 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=6001 rtos=6001 ev=12 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=7001 rtos=7001 ev=14 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=8001 rtos=8001 ev=16 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=9001 rtos=9001 ev=18 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=10001 rtos=10001 ev=20 free=144 minfree=144 stacks_words=216,104,118,118
+P hal=11001 rtos=11001 ev=22 free=144 minfree=144 stacks_words=216,104,118,118

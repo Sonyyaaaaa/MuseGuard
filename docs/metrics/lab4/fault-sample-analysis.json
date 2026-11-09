@@ -1,0 +1,32 @@
+{
+  "window_ns": [
+    25000000000,
+    30000000000
+  ],
+  "runs": {
+    "wide": {
+      "capture_sha256": "fa57f761bd78adfad4f5aa71f7b693b50169974d1d22ba516f03d6c130667265",
+      "complete_sample_pulses": 250,
+      "first_sample_ns": 25003140500,
+      "last_sample_ns": 29985036700,
+      "period_min_ns": 19792075,
+      "period_max_ns": 22097275,
+      "periods_over_20ms": 6,
+      "pulse_width_max_ns": 21952025,
+      "pulse_widths_over_20ms": 1,
+      "pir_rises_in_window": 0
+    },
+    "short": {
+      "capture_sha256": "07d5505676f2a7b2f56a471f9c9ba4482729b19a9c08f615c65ebaa9bd00aee3",
+      "complete_sample_pulses": 250,
+      "first_sample_ns": 25003139000,
+      "last_sample_ns": 29985035200,
+      "period_min_ns": 17917125,
+      "period_max_ns": 22641575,
+      "periods_over_20ms": 6,
+      "pulse_width_max_ns": 16950650,
+      "pulse_widths_over_20ms": 0,
+      "pir_rises_in_window": 0
+    }
+  }
+}

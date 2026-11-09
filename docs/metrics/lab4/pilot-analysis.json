@@ -1,0 +1,166 @@
+{
+  "uart_complete_lines": 12,
+  "snapshots": 11,
+  "first_snapshot": [
+    1001,
+    1001,
+    2,
+    144,
+    144,
+    216,
+    104,
+    118,
+    118
+  ],
+  "last_snapshot": [
+    11001,
+    11001,
+    22,
+    144,
+    144,
+    216,
+    104,
+    118,
+    118
+  ],
+  "isr_to_event_count": 22,
+  "isr_to_event_us_min": 68.75,
+  "isr_to_event_us_max": 68.75,
+  "isr_period_ms_min": 499.969325,
+  "isr_period_ms_max": 500.00985,
+  "pairs": [
+    {
+      "isr_ns": 502997625,
+      "load_low_ns": 503065875,
+      "event_ns": 503066375,
+      "load_resumed_ns": 503124625
+    },
+    {
+      "isr_ns": 1003007450,
+      "load_low_ns": 1003075700,
+      "event_ns": 1003076200,
+      "load_resumed_ns": 1013322400
+    },
+    {
+      "isr_ns": 1502976800,
+      "load_low_ns": 1503045050,
+      "event_ns": 1503045550,
+      "load_resumed_ns": 1503104050
+    },
+    {
+      "isr_ns": 2002986625,
+      "load_low_ns": 2003054875,
+      "event_ns": 2003055375,
+      "load_resumed_ns": 2013352450
+    },
+    {
+      "isr_ns": 2502955950,
+      "load_low_ns": 2503024200,
+      "event_ns": 2503024700,
+      "load_resumed_ns": 2503083450
+    },
+    {
+      "isr_ns": 3002965775,
+      "load_low_ns": 3003034025,
+      "event_ns": 3003034525,
+      "load_resumed_ns": 3013422625
+    },
+    {
+      "isr_ns": 3502935125,
+      "load_low_ns": 3503003375,
+      "event_ns": 3503003875,
+      "load_resumed_ns": 3503062125
+    },
+    {
+      "isr_ns": 4002944950,
+      "load_low_ns": 4003013200,
+      "event_ns": 4003013700,
+      "load_resumed_ns": 4013396050
+    },
+    {
+      "isr_ns": 4502914275,
+      "load_low_ns": 4502982525,
+      "event_ns": 4502983025,
+      "load_resumed_ns": 4503041275
+    },
+    {
+      "isr_ns": 5002924125,
+      "load_low_ns": 5002992375,
+      "event_ns": 5002992875,
+      "load_resumed_ns": 5013452700
+    },
+    {
+      "isr_ns": 5502893450,
+      "load_low_ns": 5502961700,
+      "event_ns": 5502962200,
+      "load_resumed_ns": 5503020200
+    },
+    {
+      "isr_ns": 6002903300,
+      "load_low_ns": 6002971550,
+      "event_ns": 6002972050,
+      "load_resumed_ns": 6013433875
+    },
+    {
+      "isr_ns": 6502872625,
+      "load_low_ns": 6502940875,
+      "event_ns": 6502941375,
+      "load_resumed_ns": 6502999875
+    },
+    {
+      "isr_ns": 7002882450,
+      "load_low_ns": 7002950700,
+      "event_ns": 7002951200,
+      "load_resumed_ns": 7013413300
+    },
+    {
+      "isr_ns": 7502851800,
+      "load_low_ns": 7502920050,
+      "event_ns": 7502920550,
+      "load_resumed_ns": 7502979050
+    },
+    {
+      "isr_ns": 8002861625,
+      "load_low_ns": 8002929875,
+      "event_ns": 8002930375,
+      "load_resumed_ns": 8013390475
+    },
+    {
+      "isr_ns": 8502830950,
+      "load_low_ns": 8502899200,
+      "event_ns": 8502899700,
+      "load_resumed_ns": 8502957950
+    },
+    {
+      "isr_ns": 9002840800,
+      "load_low_ns": 9002909050,
+      "event_ns": 9002909550,
+      "load_resumed_ns": 9013374875
+    },
+    {
+      "isr_ns": 9502810125,
+      "load_low_ns": 9502878375,
+      "event_ns": 9502878875,
+      "load_resumed_ns": 9502937875
+    },
+    {
+      "isr_ns": 10002819950,
+      "load_low_ns": 10002888200,
+      "event_ns": 10002888700,
+      "load_resumed_ns": 10013551300
+    },
+    {
+      "isr_ns": 10502789275,
+      "load_low_ns": 10502857525,
+      "event_ns": 10502858025,
+      "load_resumed_ns": 10502916025
+    },
+    {
+      "isr_ns": 11002799125,
+      "load_low_ns": 11002867375,
+      "event_ns": 11002867875,
+      "load_resumed_ns": 11013529450
+    }
+  ],
+  "limit": "GPIO ISR marker to event marker, includes ISR and scheduler; Wokwi model, not isolated context-switch cost. Final duplicated terminal VCD levels are excluded by pairing."
+}

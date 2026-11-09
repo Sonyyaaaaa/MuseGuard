@@ -1,0 +1,19 @@
+{
+  "phase": "COMPLETE",
+  "started_utc": "2026-11-04T11:36:10.473174+00:00",
+  "minimum_us": 3600000000,
+  "last_heart_us": 3611024000,
+  "heart_count": 3613,
+  "error": null,
+  "boot": "BOOT MuseGuard lab=4 core=C031 source=0ebda54f4e6b774c78aded96927b5ef985ba16ae8840a348c0e8101946339d92 git=ac6d766d6968-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+  "first_heart_us": 52000,
+  "elapsed_us": 3610010000,
+  "metrics_epoch_us": 1014000,
+  "last_resource": "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+  "final_request_heart_us": 3601024000,
+  "final_cadence": "CADENCE n=180027 skipped=0 late=0 finish_miss=0 release_max_us=14000 jitter_min_us=0 jitter_max_us=0 busy_permille=106",
+  "final_rtos": "RTOS free=1080 min_free=1080 stack_sensor_words=318 stack_service_words=480 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0",
+  "finished_utc": "2026-11-04T12:36:27.768457+00:00",
+  "crc_records": 19,
+  "boot_count": 1
+}

@@ -1,0 +1,53 @@
+{
+  "bare": {
+    "capture_sha256": "a203dbe35cfc505ffcdf64a0d8a2e928aace932a3f3a5ce0fa80e7f6b05d9679",
+    "boot": "BOOT MuseGuard lab=3 core=C031 source=f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4 git=9d386032f7e1 clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "raw_has_boot": true,
+    "rx_bytes": 2015,
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "journal_crc_rows": 106,
+    "journal_crc_unique_sequences": 64,
+    "pir_to_event_ms": {
+      "min": 14.708725,
+      "mean": 25.143719166666667,
+      "max": 39.548
+    },
+    "pir_in_command_high": 26,
+    "sample_n": 12386,
+    "sample_period_min_ms": 9.031075,
+    "sample_period_max_ms": 42.115,
+    "cadence": "CADENCE n=12386 skipped=14 late=9 finish_miss=22 release_max_us=22000 jitter_min_us=-10000 jitter_max_us=22000 busy_permille=208",
+    "resource_lines": [
+      "RESOURCE stack=696 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0"
+    ]
+  },
+  "rtos": {
+    "capture_sha256": "f986c261aadb36ec6ad17c559f438be3d77ea5ff19a5992fcf0588198783408a",
+    "boot": "BOOT MuseGuard lab=4 core=C031 source=dea1be82c581879c6927ef1e8032eb903b24c4e0f1273d4c03eb9c35e5507506 git=2388716b4c6c-dirty clock=SysTick_1ms store=1 seq=0 corrupt=128",
+    "raw_has_boot": true,
+    "rx_bytes": 2015,
+    "pir_count": 30,
+    "presence_received": 30,
+    "missing_pir_ns": [],
+    "journal_crc_rows": 106,
+    "journal_crc_unique_sequences": 64,
+    "pir_to_event_ms": {
+      "min": 6.92665,
+      "mean": 19.760141666666666,
+      "max": 31.50925
+    },
+    "pir_in_command_high": 24,
+    "sample_n": 12401,
+    "sample_period_min_ms": 19.752475,
+    "sample_period_max_ms": 20.231175,
+    "cadence": "CADENCE n=12400 skipped=0 late=0 finish_miss=0 release_max_us=12000 jitter_min_us=0 jitter_max_us=0 busy_permille=219",
+    "resource_lines": [
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=320 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0"
+    ]
+  },
+  "input_uart_max_edge_difference_ns": 25,
+  "input_pir_max_edge_difference_ns": 25
+}

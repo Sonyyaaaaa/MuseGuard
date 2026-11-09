@@ -1,0 +1,396 @@
+{
+  "bare": {
+    "rx_bytes": 771,
+    "pir_count": 400,
+    "min_width_ns": 19999975,
+    "max_width_ns": 20000025,
+    "groups": [
+      {
+        "start_s": 1.0,
+        "end_s": 20.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 19999.975,
+          "avg": 19999.99975,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.208766225,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 2838.2,
+          "avg": 12690.42625,
+          "max": 22638.625
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 26.0,
+        "end_s": 45.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 19999.975,
+          "avg": 20000.00075,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.208766225,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 99,
+          "min": 2988.875,
+          "avg": 12705.379040404041,
+          "max": 22566.375
+        },
+        "without_event_before_next_input": [
+          33.2072
+        ],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 51.0,
+        "end_s": 70.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 20000.0,
+          "avg": 20000.0035,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.208766225,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 51,
+        "pir_to_event_before_next_input_us": {
+          "n": 93,
+          "min": 3306.45,
+          "avg": 18891.162634408603,
+          "max": 34484.5
+        },
+        "without_event_before_next_input": [
+          61.4104,
+          62.4114,
+          62.8118,
+          63.012,
+          64.013,
+          64.2132,
+          64.6136
+        ],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 76.0,
+        "end_s": 95.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 20000.0,
+          "avg": 20000.00275,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.208766225,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 2987.525,
+          "avg": 12773.775,
+          "max": 22727.45
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      }
+    ],
+    "presence_lines_n": 392,
+    "journal_crc_rows": 128,
+    "journal_unique_sequences": 128
+  },
+  "rtos": {
+    "rx_bytes": 771,
+    "pir_count": 400,
+    "min_width_ns": 19999975,
+    "max_width_ns": 20000025,
+    "groups": [
+      {
+        "start_s": 1.0,
+        "end_s": 20.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 19999.975,
+          "avg": 20000.00025,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.202582675,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 3149.0,
+          "avg": 12941.966,
+          "max": 22944.15
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 26.0,
+        "end_s": 45.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 19999.975,
+          "avg": 20000.00075,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.202582675,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 3078.75,
+          "avg": 12859.036,
+          "max": 22875.4
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 51.0,
+        "end_s": 70.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 20000.0,
+          "avg": 20000.004,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.202582675,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 56,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 3592.25,
+          "avg": 16970.5925,
+          "max": 36006.625
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      },
+      {
+        "start_s": 76.0,
+        "end_s": 95.8398,
+        "pulse_n": 100,
+        "width_us": {
+          "n": 100,
+          "min": 20000.0,
+          "avg": 20000.003,
+          "max": 20000.025
+        },
+        "phase_anchor_sample_s": 0.202582675,
+        "phase_bins_1ms": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "phase_bins_covered": 20,
+        "command_high_at_rise": 0,
+        "pir_to_event_before_next_input_us": {
+          "n": 100,
+          "min": 3072.9,
+          "avg": 12828.99675,
+          "max": 22912.325
+        },
+        "without_event_before_next_input": [],
+        "events_over_100ms": [],
+        "duplicate_event_windows": []
+      }
+    ],
+    "presence_lines_n": 400,
+    "journal_crc_rows": 128,
+    "journal_unique_sequences": 128
+  },
+  "rx_max_edge_difference_ns": 25,
+  "pir_max_edge_difference_ns": 25
+}

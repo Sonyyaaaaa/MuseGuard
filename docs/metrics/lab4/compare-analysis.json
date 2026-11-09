@@ -1,0 +1,279 @@
+{
+  "wide": {
+    "pir_rises_ns": [
+      3000000000,
+      3400000000,
+      3800000000,
+      4200000000,
+      4600000000,
+      5000000000,
+      5400000000,
+      5800000000,
+      6200000000,
+      6600000000,
+      7000000000,
+      7400000000,
+      7800000000,
+      8200000000,
+      8600000000,
+      9000000000,
+      9400000000,
+      9800000000,
+      10200000000,
+      10600000000,
+      11000000000,
+      11400000000,
+      11800000000,
+      12200000000,
+      12600000000,
+      13000000000,
+      13400000000,
+      13800000000,
+      14200000000,
+      14600000000,
+      15000000000,
+      15400000000,
+      15800000000,
+      16200000000,
+      16600000000,
+      17000000000,
+      17400000000,
+      17800000000,
+      18200000000,
+      18600000000,
+      19000000000,
+      19400000000,
+      19800000000,
+      20200000000,
+      20600000000,
+      21000000000,
+      21400000000,
+      21800000000,
+      22200000000,
+      22600000000
+    ],
+    "uart_input_bytes": 550,
+    "uart_n": 544,
+    "lock_traffic": {
+      "n": 13745,
+      "mean_ms": 0.266557226264096,
+      "median_ms": 0.07375,
+      "p95_ms": 2.295575,
+      "p99_ms": 2.298225,
+      "max_ms": 19.9983,
+      "over_20ms": 0
+    },
+    "lock_without_sample_traffic": {
+      "n": 12695,
+      "mean_ms": 0.10284164828672705,
+      "median_ms": 0.07375,
+      "p95_ms": 0.11825,
+      "p99_ms": 0.9193,
+      "max_ms": 5.983125,
+      "over_20ms": 0
+    },
+    "lock_fault": {
+      "n": 5087,
+      "mean_ms": 0.10035438863770395,
+      "median_ms": 0.07375,
+      "p95_ms": 0.194175,
+      "p99_ms": 0.194175,
+      "max_ms": 22.004275,
+      "over_20ms": 1
+    },
+    "lock_recovery": {
+      "n": 12007,
+      "mean_ms": 0.1792838281835596,
+      "median_ms": 0.07375,
+      "p95_ms": 0.5195,
+      "p99_ms": 2.297725,
+      "max_ms": 5.144125,
+      "over_20ms": 0
+    },
+    "sample_periods_traffic": {
+      "n": 1050,
+      "min_ms": 19.510475,
+      "max_ms": 21.26135
+    },
+    "pir_uart_latency_ms": {
+      "n": 50,
+      "min": 6.458925,
+      "mean": 11.2004945,
+      "max": 17.736275
+    },
+    "journal_crc_rows": 109,
+    "journal_crc_unique_sequences": 57,
+    "snapshots": [
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "CADENCE n=1049 skipped=0 late=0 finish_miss=1 release_max_us=13000 jitter_min_us=0 jitter_max_us=1000 busy_permille=489",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=210 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0",
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "CADENCE n=2049 skipped=0 late=0 finish_miss=2 release_max_us=15000 jitter_min_us=0 jitter_max_us=2000 busy_permille=306",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=210 stack_service_words=454 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0"
+    ],
+    "fault_event_lines": [
+      {
+        "start_ns": 25049771525,
+        "end_ns": 25056579000,
+        "text": "EVENT t_ms=25021 bits=16 observation=1001 saved=1 seq=56 flash_us=1000"
+      },
+      {
+        "start_ns": 32030145850,
+        "end_ns": 32036953325,
+        "text": "EVENT t_ms=32023 bits=32 observation=1001 saved=1 seq=57 flash_us=1000"
+      }
+    ],
+    "read_id_lines": [
+      {
+        "start_ns": 33002764350,
+        "end_ns": 33008565425,
+        "text": "READ t_us=32997000 status=0 id=104"
+      }
+    ],
+    "sda_low_intervals_ns": [
+      [
+        25000000000,
+        30000000000
+      ]
+    ]
+  },
+  "short": {
+    "pir_rises_ns": [
+      3000000000,
+      3400000000,
+      3800000000,
+      4200000000,
+      4600000000,
+      5000000000,
+      5400000000,
+      5800000000,
+      6200000000,
+      6600000000,
+      7000000000,
+      7400000000,
+      7800000000,
+      8200000000,
+      8600000000,
+      9000000000,
+      9400000000,
+      9800000000,
+      10200000000,
+      10600000000,
+      11000000000,
+      11400000000,
+      11800000000,
+      12200000000,
+      12600000000,
+      13000000000,
+      13400000000,
+      13800000000,
+      14200000000,
+      14600000000,
+      15000000000,
+      15400000000,
+      15800000000,
+      16200000000,
+      16600000000,
+      17000000000,
+      17400000000,
+      17800000000,
+      18200000000,
+      18600000000,
+      19000000000,
+      19400000000,
+      19800000000,
+      20200000000,
+      20600000000,
+      21000000000,
+      21400000000,
+      21800000000,
+      22200000000,
+      22600000000
+    ],
+    "uart_input_bytes": 550,
+    "uart_n": 544,
+    "lock_traffic": {
+      "n": 13745,
+      "mean_ms": 0.26616706620589303,
+      "median_ms": 0.07375,
+      "p95_ms": 2.295575,
+      "p99_ms": 2.298225,
+      "max_ms": 14.80995,
+      "over_20ms": 0
+    },
+    "lock_without_sample_traffic": {
+      "n": 12695,
+      "mean_ms": 0.10282813312327688,
+      "median_ms": 0.07375,
+      "p95_ms": 0.11825,
+      "p99_ms": 0.9193,
+      "max_ms": 5.983125,
+      "over_20ms": 0
+    },
+    "lock_fault": {
+      "n": 5080,
+      "mean_ms": 0.09960329724409449,
+      "median_ms": 0.07375,
+      "p95_ms": 0.194175,
+      "p99_ms": 0.194175,
+      "max_ms": 17.014625,
+      "over_20ms": 0
+    },
+    "lock_recovery": {
+      "n": 12007,
+      "mean_ms": 0.17928333888565004,
+      "median_ms": 0.07375,
+      "p95_ms": 0.5195,
+      "p99_ms": 2.297725,
+      "max_ms": 5.142125,
+      "over_20ms": 0
+    },
+    "sample_periods_traffic": {
+      "n": 1050,
+      "min_ms": 19.632475,
+      "max_ms": 21.1404
+    },
+    "pir_uart_latency_ms": {
+      "n": 50,
+      "min": 6.457425,
+      "mean": 11.1994295,
+      "max": 17.733525
+    },
+    "journal_crc_rows": 109,
+    "journal_crc_unique_sequences": 57,
+    "snapshots": [
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "CADENCE n=1049 skipped=0 late=0 finish_miss=1 release_max_us=13000 jitter_min_us=0 jitter_max_us=1000 busy_permille=489",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=262 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0",
+      "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0",
+      "CADENCE n=2049 skipped=0 late=0 finish_miss=2 release_max_us=17000 jitter_min_us=-2000 jitter_max_us=2000 busy_permille=305",
+      "RTOS free=1080 min_free=1080 stack_sensor_words=262 stack_service_words=480 stack_idle_words=116 sensor_lock_waits=4 sensor_wait_max_ms=2"
+    ],
+    "fault_event_lines": [
+      {
+        "start_ns": 25046126600,
+        "end_ns": 25052919250,
+        "text": "EVENT t_ms=25016 bits=16 observation=1001 saved=1 seq=56 flash_us=1000"
+      },
+      {
+        "start_ns": 32030142600,
+        "end_ns": 32036949875,
+        "text": "EVENT t_ms=32023 bits=32 observation=1001 saved=1 seq=57 flash_us=1000"
+      }
+    ],
+    "read_id_lines": [
+      {
+        "start_ns": 33002762850,
+        "end_ns": 33008562150,
+        "text": "READ t_us=32997000 status=0 id=104"
+      }
+    ],
+    "sda_low_intervals_ns": [
+      [
+        25000000000,
+        30000000000
+      ]
+    ]
+  },
+  "input_uart_max_edge_difference_ns": 25
+}

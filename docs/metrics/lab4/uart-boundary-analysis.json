@@ -1,0 +1,153 @@
+{
+  "bare": {
+    "bytes": 687,
+    "snapshots": [
+      {
+        "packet_bytes": 1,
+        "command_n": 2,
+        "max_latency_us": 0,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          300,
+          0,
+          0,
+          0,
+          11000
+        ]
+      },
+      {
+        "packet_bytes": 8,
+        "command_n": 11,
+        "max_latency_us": 99000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          650,
+          0,
+          0,
+          0,
+          15000
+        ]
+      },
+      {
+        "packet_bytes": 32,
+        "command_n": 44,
+        "max_latency_us": 412000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          1100,
+          0,
+          0,
+          0,
+          17000
+        ]
+      },
+      {
+        "packet_bytes": 128,
+        "command_n": 173,
+        "max_latency_us": 1674000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          1800,
+          0,
+          0,
+          0,
+          17000
+        ]
+      },
+      {
+        "packet_bytes": 512,
+        "command_n": 304,
+        "max_latency_us": 1680000,
+        "rx_drop": 382,
+        "ore": 0,
+        "cadence": [
+          3000,
+          0,
+          0,
+          0,
+          18000
+        ]
+      }
+    ]
+  },
+  "rtos": {
+    "bytes": 687,
+    "snapshots": [
+      {
+        "packet_bytes": 1,
+        "command_n": 2,
+        "max_latency_us": 1000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          299,
+          0,
+          0,
+          0,
+          12000
+        ]
+      },
+      {
+        "packet_bytes": 8,
+        "command_n": 11,
+        "max_latency_us": 109000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          649,
+          0,
+          0,
+          0,
+          12000
+        ]
+      },
+      {
+        "packet_bytes": 32,
+        "command_n": 44,
+        "max_latency_us": 450000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          1099,
+          0,
+          0,
+          0,
+          12000
+        ]
+      },
+      {
+        "packet_bytes": 128,
+        "command_n": 173,
+        "max_latency_us": 1833000,
+        "rx_drop": 0,
+        "ore": 0,
+        "cadence": [
+          1799,
+          0,
+          0,
+          0,
+          12000
+        ]
+      },
+      {
+        "packet_bytes": 512,
+        "command_n": 304,
+        "max_latency_us": 1841000,
+        "rx_drop": 382,
+        "ore": 0,
+        "cadence": [
+          2999,
+          0,
+          0,
+          0,
+          13000
+        ]
+      }
+    ]
+  },
+  "rx_max_edge_difference_ns": 25
+}
