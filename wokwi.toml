@@ -1,5 +1,5 @@
 [wokwi]
 version = 1
-firmware = 'firmware/build/firmware.hex'
-elf = 'firmware/build/firmware.elf'
-vcdFile = 'wokwi.vcd'
+firmware = "docs/firmware/lab4/firmware.hex"
+elf = "docs/firmware/lab4/firmware.elf"
+vcdFile = 'local/demo/recording.vcd'
