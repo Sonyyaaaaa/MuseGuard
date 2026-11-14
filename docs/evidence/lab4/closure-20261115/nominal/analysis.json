@@ -1,0 +1,20 @@
+{
+  "end_ns": 90908439000,
+  "boots": 1,
+  "crc_records": 93,
+  "crc_valid": 93,
+  "unique_sequences": 93,
+  "raw_events": 93,
+  "vcd_decoded_events": 93,
+  "rfc_lines_present_in_vcd": true,
+  "hashes": {
+    "uart.raw": "2d650611a195987d57b8dbcf9523e37ef32ec86dc20eaa55065ea92175df5b25",
+    "capture.vcd": "443f4da5b1b301579dd9d5ba567ab8b331e15284df0cec0b154d3c53b8f72893",
+    "firmware.elf": "ea0b2d79cbef504014e5bba4b70fdfa6b6061507f528a24c0a8b060cc6b33044",
+    "firmware.hex": "77722c766bdbe99c0aceacb7ad100647086dd40f38a0579e510b824a3d3dcc59",
+    "mgload.chip.c": "9290da761e3f9016768d1a0c34dbbae439182e42076e29da6a4083f3dd7eab9f",
+    "mgload.chip.wasm": "ba31f8111668c5c6b34f7cc5c50a883885b9451cc27cfbaf5cc21d98cb1e3768",
+    "startup-not-ready.chip.c": "ac8e728ee5427f43736bd0f5ab2ab13294a3171cca9f0fb66d25d356db2c436b",
+    "startup-not-ready.chip.wasm": "6e1f5691d77d46be8cb7bf4679cad0642fd72c58c7efc4b33400e8a914fccecf"
+  }
+}

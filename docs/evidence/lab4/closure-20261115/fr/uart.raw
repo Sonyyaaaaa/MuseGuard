@@ -1,0 +1,1770 @@
+BOOT MuseGuard lab=4 core=C031 source=dea1be82c581879c6927ef1e8032eb903b24c4e0f1273d4c03eb9c35e5507506 git=2388716b4c6c-dirty clock=SysTick_1ms store=1 seq=0 corrupt=0
+READY mode=GUARD commands=a:access60s,g:guard,k:ack,c:read,n:nack,f:fault,v:recover,s:stats,d:dump,z:metrics
+EVENT t_ms=42 bits=512 observation=0 saved=1 seq=1 flash_us=1000
+HEART t_us=57000 adc=819 fault=1 alarm=0 access=0
+EVENT t_ms=43 bits=16 observation=819 saved=1 seq=2 flash_us=1000
+EVENT t_ms=65 bits=32 observation=819 saved=1 seq=3 flash_us=1000
+HEART t_us=1012000 adc=819 fault=0 alarm=0 access=0
+HEART t_us=2012000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=2996000 rx_us=2995000 char=z access=0 alarm=0
+HEART t_us=3005000 adc=819 fault=0 alarm=0 access=0
+HEART t_us=4005000 adc=819 fault=0 alarm=0 access=0
+READ t_us=4996000 status=2 id=0
+CMD t_us=5000000 rx_us=4995000 char=n access=0 alarm=0
+EVENT t_ms=5005 bits=4 observation=131891 saved=1 seq=4 flash_us=1000
+HEART t_us=5019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=5029000 status=2 id=0
+CMD t_us=5033000 rx_us=4995000 char=n access=0 alarm=1
+READ t_us=5041000 status=2 id=0
+CMD t_us=5047000 rx_us=4995000 char=n access=0 alarm=1
+READ t_us=5055000 status=2 id=0
+CMD t_us=5059000 rx_us=4995000 char=n access=0 alarm=1
+READ t_us=5070000 status=2 id=0
+CMD t_us=5074000 rx_us=4995000 char=n access=0 alarm=1
+READ t_us=5082000 status=2 id=0
+CMD t_us=5088000 rx_us=4995000 char=n access=0 alarm=1
+READ t_us=5096000 status=2 id=0
+CMD t_us=5100000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5111000 status=2 id=0
+CMD t_us=5115000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5126000 status=2 id=0
+CMD t_us=5130000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5138000 status=2 id=0
+CMD t_us=5142000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5152000 status=2 id=0
+CMD t_us=5156000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5167000 status=2 id=0
+CMD t_us=5171000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5179000 status=2 id=0
+CMD t_us=5185000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5193000 status=2 id=0
+CMD t_us=5197000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5208000 status=2 id=0
+CMD t_us=5212000 rx_us=4996000 char=n access=0 alarm=1
+READ t_us=5220000 status=2 id=0
+CMD t_us=5226000 rx_us=4996000 char=n access=0 alarm=1
+CMD t_us=5496000 rx_us=5495000 char=k access=0 alarm=0
+EVENT t_ms=5496 bits=256 observation=819 saved=1 seq=5 flash_us=4000
+READ t_us=5996000 status=2 id=0
+CMD t_us=6000000 rx_us=5995000 char=n access=0 alarm=0
+EVENT t_ms=6005 bits=4 observation=131891 saved=1 seq=6 flash_us=1000
+HEART t_us=6019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=6029000 status=2 id=0
+CMD t_us=6033000 rx_us=5995000 char=n access=0 alarm=1
+READ t_us=6041000 status=2 id=0
+CMD t_us=6047000 rx_us=5995000 char=n access=0 alarm=1
+READ t_us=6055000 status=2 id=0
+CMD t_us=6059000 rx_us=5995000 char=n access=0 alarm=1
+READ t_us=6070000 status=2 id=0
+CMD t_us=6074000 rx_us=5995000 char=n access=0 alarm=1
+READ t_us=6082000 status=2 id=0
+CMD t_us=6088000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6096000 status=2 id=0
+CMD t_us=6100000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6111000 status=2 id=0
+CMD t_us=6115000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6126000 status=2 id=0
+CMD t_us=6130000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6138000 status=2 id=0
+CMD t_us=6142000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6152000 status=2 id=0
+CMD t_us=6156000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6167000 status=2 id=0
+CMD t_us=6171000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6179000 status=2 id=0
+CMD t_us=6185000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6193000 status=2 id=0
+CMD t_us=6197000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6208000 status=2 id=0
+CMD t_us=6212000 rx_us=5996000 char=n access=0 alarm=1
+READ t_us=6220000 status=2 id=0
+CMD t_us=6226000 rx_us=5996000 char=n access=0 alarm=1
+CMD t_us=6496000 rx_us=6495000 char=k access=0 alarm=0
+EVENT t_ms=6496 bits=256 observation=819 saved=1 seq=7 flash_us=4000
+READ t_us=6996000 status=2 id=0
+CMD t_us=7000000 rx_us=6995000 char=n access=0 alarm=0
+EVENT t_ms=7005 bits=4 observation=131891 saved=1 seq=8 flash_us=1000
+HEART t_us=7019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=7029000 status=2 id=0
+CMD t_us=7033000 rx_us=6995000 char=n access=0 alarm=1
+READ t_us=7041000 status=2 id=0
+CMD t_us=7047000 rx_us=6995000 char=n access=0 alarm=1
+READ t_us=7055000 status=2 id=0
+CMD t_us=7059000 rx_us=6995000 char=n access=0 alarm=1
+READ t_us=7070000 status=2 id=0
+CMD t_us=7074000 rx_us=6995000 char=n access=0 alarm=1
+READ t_us=7082000 status=2 id=0
+CMD t_us=7088000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7096000 status=2 id=0
+CMD t_us=7100000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7111000 status=2 id=0
+CMD t_us=7115000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7126000 status=2 id=0
+CMD t_us=7130000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7138000 status=2 id=0
+CMD t_us=7142000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7152000 status=2 id=0
+CMD t_us=7156000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7167000 status=2 id=0
+CMD t_us=7171000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7179000 status=2 id=0
+CMD t_us=7185000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7193000 status=2 id=0
+CMD t_us=7197000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7208000 status=2 id=0
+CMD t_us=7212000 rx_us=6996000 char=n access=0 alarm=1
+READ t_us=7220000 status=2 id=0
+CMD t_us=7226000 rx_us=6996000 char=n access=0 alarm=1
+CMD t_us=7496000 rx_us=7495000 char=k access=0 alarm=0
+EVENT t_ms=7496 bits=256 observation=819 saved=1 seq=9 flash_us=4000
+READ t_us=7996000 status=2 id=0
+CMD t_us=8000000 rx_us=7995000 char=n access=0 alarm=0
+EVENT t_ms=8005 bits=4 observation=131891 saved=1 seq=10 flash_us=1000
+HEART t_us=8019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=8029000 status=2 id=0
+CMD t_us=8033000 rx_us=7995000 char=n access=0 alarm=1
+READ t_us=8041000 status=2 id=0
+CMD t_us=8047000 rx_us=7995000 char=n access=0 alarm=1
+READ t_us=8055000 status=2 id=0
+CMD t_us=8059000 rx_us=7995000 char=n access=0 alarm=1
+READ t_us=8070000 status=2 id=0
+CMD t_us=8074000 rx_us=7995000 char=n access=0 alarm=1
+READ t_us=8082000 status=2 id=0
+CMD t_us=8088000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8096000 status=2 id=0
+CMD t_us=8100000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8111000 status=2 id=0
+CMD t_us=8115000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8126000 status=2 id=0
+CMD t_us=8130000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8138000 status=2 id=0
+CMD t_us=8142000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8152000 status=2 id=0
+CMD t_us=8156000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8167000 status=2 id=0
+CMD t_us=8171000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8179000 status=2 id=0
+CMD t_us=8185000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8193000 status=2 id=0
+CMD t_us=8197000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8208000 status=2 id=0
+CMD t_us=8212000 rx_us=7996000 char=n access=0 alarm=1
+READ t_us=8220000 status=2 id=0
+CMD t_us=8226000 rx_us=7996000 char=n access=0 alarm=1
+CMD t_us=8496000 rx_us=8495000 char=k access=0 alarm=0
+EVENT t_ms=8496 bits=256 observation=819 saved=1 seq=11 flash_us=4000
+READ t_us=8996000 status=2 id=0
+CMD t_us=9000000 rx_us=8995000 char=n access=0 alarm=0
+EVENT t_ms=9005 bits=4 observation=131891 saved=1 seq=12 flash_us=1000
+HEART t_us=9019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=9029000 status=2 id=0
+CMD t_us=9033000 rx_us=8995000 char=n access=0 alarm=1
+READ t_us=9041000 status=2 id=0
+CMD t_us=9047000 rx_us=8995000 char=n access=0 alarm=1
+READ t_us=9055000 status=2 id=0
+CMD t_us=9059000 rx_us=8995000 char=n access=0 alarm=1
+READ t_us=9070000 status=2 id=0
+CMD t_us=9074000 rx_us=8995000 char=n access=0 alarm=1
+READ t_us=9082000 status=2 id=0
+CMD t_us=9088000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9096000 status=2 id=0
+CMD t_us=9100000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9111000 status=2 id=0
+CMD t_us=9115000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9126000 status=2 id=0
+CMD t_us=9130000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9138000 status=2 id=0
+CMD t_us=9142000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9152000 status=2 id=0
+CMD t_us=9156000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9167000 status=2 id=0
+CMD t_us=9171000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9179000 status=2 id=0
+CMD t_us=9185000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9193000 status=2 id=0
+CMD t_us=9197000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9208000 status=2 id=0
+CMD t_us=9212000 rx_us=8996000 char=n access=0 alarm=1
+READ t_us=9220000 status=2 id=0
+CMD t_us=9226000 rx_us=8996000 char=n access=0 alarm=1
+CMD t_us=9496000 rx_us=9495000 char=k access=0 alarm=0
+EVENT t_ms=9496 bits=256 observation=819 saved=1 seq=13 flash_us=4000
+READ t_us=9996000 status=2 id=0
+CMD t_us=10000000 rx_us=9995000 char=n access=0 alarm=0
+EVENT t_ms=10005 bits=4 observation=131891 saved=1 seq=14 flash_us=1000
+HEART t_us=10019000 adc=819 fault=0 alarm=1 access=0
+READ t_us=10029000 status=2 id=0
+CMD t_us=10034000 rx_us=9995000 char=n access=0 alarm=1
+READ t_us=10041000 status=2 id=0
+CMD t_us=10047000 rx_us=9995000 char=n access=0 alarm=1
+READ t_us=10055000 status=2 id=0
+CMD t_us=10060000 rx_us=9995000 char=n access=0 alarm=1
+READ t_us=10070000 status=2 id=0
+CMD t_us=10075000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10086000 status=2 id=0
+CMD t_us=10090000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10098000 status=2 id=0
+CMD t_us=10102000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10112000 status=2 id=0
+CMD t_us=10117000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10127000 status=2 id=0
+CMD t_us=10132000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10140000 status=2 id=0
+CMD t_us=10146000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10154000 status=2 id=0
+CMD t_us=10159000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10169000 status=2 id=0
+CMD t_us=10174000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10181000 status=2 id=0
+CMD t_us=10187000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10195000 status=2 id=0
+CMD t_us=10200000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10210000 status=2 id=0
+CMD t_us=10215000 rx_us=9996000 char=n access=0 alarm=1
+READ t_us=10226000 status=2 id=0
+CMD t_us=10230000 rx_us=9996000 char=n access=0 alarm=1
+CMD t_us=10496000 rx_us=10495000 char=k access=0 alarm=0
+EVENT t_ms=10496 bits=256 observation=819 saved=1 seq=15 flash_us=1000
+READ t_us=10996000 status=2 id=0
+CMD t_us=11001000 rx_us=10995000 char=n access=0 alarm=0
+EVENT t_ms=11005 bits=4 observation=131891 saved=1 seq=16 flash_us=1000
+HEART t_us=11020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=11030000 status=2 id=0
+CMD t_us=11035000 rx_us=10995000 char=n access=0 alarm=1
+READ t_us=11046000 status=2 id=0
+CMD t_us=11050000 rx_us=10995000 char=n access=0 alarm=1
+READ t_us=11058000 status=2 id=0
+CMD t_us=11062000 rx_us=10995000 char=n access=0 alarm=1
+READ t_us=11072000 status=2 id=0
+CMD t_us=11077000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11087000 status=2 id=0
+CMD t_us=11092000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11100000 status=2 id=0
+CMD t_us=11106000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11114000 status=2 id=0
+CMD t_us=11119000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11129000 status=2 id=0
+CMD t_us=11134000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11142000 status=2 id=0
+CMD t_us=11148000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11156000 status=2 id=0
+CMD t_us=11161000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11171000 status=2 id=0
+CMD t_us=11176000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11186000 status=2 id=0
+CMD t_us=11191000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11199000 status=2 id=0
+CMD t_us=11205000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11213000 status=2 id=0
+CMD t_us=11218000 rx_us=10996000 char=n access=0 alarm=1
+READ t_us=11228000 status=2 id=0
+CMD t_us=11233000 rx_us=10996000 char=n access=0 alarm=1
+CMD t_us=11496000 rx_us=11495000 char=k access=0 alarm=0
+EVENT t_ms=11496 bits=256 observation=819 saved=1 seq=17 flash_us=1000
+READ t_us=11996000 status=2 id=0
+CMD t_us=12001000 rx_us=11995000 char=n access=0 alarm=0
+EVENT t_ms=12005 bits=4 observation=131891 saved=1 seq=18 flash_us=1000
+HEART t_us=12020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=12030000 status=2 id=0
+CMD t_us=12035000 rx_us=11995000 char=n access=0 alarm=1
+READ t_us=12046000 status=2 id=0
+CMD t_us=12050000 rx_us=11995000 char=n access=0 alarm=1
+READ t_us=12058000 status=2 id=0
+CMD t_us=12062000 rx_us=11995000 char=n access=0 alarm=1
+READ t_us=12072000 status=2 id=0
+CMD t_us=12077000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12087000 status=2 id=0
+CMD t_us=12092000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12100000 status=2 id=0
+CMD t_us=12106000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12114000 status=2 id=0
+CMD t_us=12119000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12129000 status=2 id=0
+CMD t_us=12134000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12142000 status=2 id=0
+CMD t_us=12148000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12156000 status=2 id=0
+CMD t_us=12161000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12171000 status=2 id=0
+CMD t_us=12176000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12186000 status=2 id=0
+CMD t_us=12191000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12199000 status=2 id=0
+CMD t_us=12205000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12213000 status=2 id=0
+CMD t_us=12218000 rx_us=11996000 char=n access=0 alarm=1
+READ t_us=12228000 status=2 id=0
+CMD t_us=12233000 rx_us=11997000 char=n access=0 alarm=1
+CMD t_us=12496000 rx_us=12495000 char=k access=0 alarm=0
+EVENT t_ms=12496 bits=256 observation=819 saved=1 seq=19 flash_us=1000
+READ t_us=12996000 status=2 id=0
+CMD t_us=13001000 rx_us=12995000 char=n access=0 alarm=0
+EVENT t_ms=13005 bits=4 observation=131891 saved=1 seq=20 flash_us=1000
+HEART t_us=13020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=13030000 status=2 id=0
+CMD t_us=13035000 rx_us=12995000 char=n access=0 alarm=1
+READ t_us=13046000 status=2 id=0
+CMD t_us=13050000 rx_us=12995000 char=n access=0 alarm=1
+READ t_us=13058000 status=2 id=0
+CMD t_us=13062000 rx_us=12995000 char=n access=0 alarm=1
+READ t_us=13072000 status=2 id=0
+CMD t_us=13077000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13087000 status=2 id=0
+CMD t_us=13092000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13100000 status=2 id=0
+CMD t_us=13106000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13114000 status=2 id=0
+CMD t_us=13119000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13129000 status=2 id=0
+CMD t_us=13134000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13142000 status=2 id=0
+CMD t_us=13148000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13156000 status=2 id=0
+CMD t_us=13161000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13171000 status=2 id=0
+CMD t_us=13176000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13186000 status=2 id=0
+CMD t_us=13191000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13199000 status=2 id=0
+CMD t_us=13205000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13213000 status=2 id=0
+CMD t_us=13218000 rx_us=12996000 char=n access=0 alarm=1
+READ t_us=13228000 status=2 id=0
+CMD t_us=13233000 rx_us=12997000 char=n access=0 alarm=1
+CMD t_us=13496000 rx_us=13495000 char=k access=0 alarm=0
+EVENT t_ms=13496 bits=256 observation=819 saved=1 seq=21 flash_us=1000
+READ t_us=13996000 status=2 id=0
+CMD t_us=14001000 rx_us=13995000 char=n access=0 alarm=0
+HEART t_us=14010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=14018000 status=2 id=0
+CMD t_us=14025000 rx_us=13995000 char=n access=0 alarm=1
+EVENT t_ms=14025 bits=4 observation=131891 saved=1 seq=22 flash_us=1000
+READ t_us=14046000 status=2 id=0
+CMD t_us=14050000 rx_us=13995000 char=n access=0 alarm=1
+READ t_us=14058000 status=2 id=0
+CMD t_us=14062000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14072000 status=2 id=0
+CMD t_us=14077000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14087000 status=2 id=0
+CMD t_us=14092000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14100000 status=2 id=0
+CMD t_us=14106000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14114000 status=2 id=0
+CMD t_us=14119000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14129000 status=2 id=0
+CMD t_us=14134000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14142000 status=2 id=0
+CMD t_us=14148000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14156000 status=2 id=0
+CMD t_us=14161000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14171000 status=2 id=0
+CMD t_us=14176000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14186000 status=2 id=0
+CMD t_us=14191000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14199000 status=2 id=0
+CMD t_us=14205000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14213000 status=2 id=0
+CMD t_us=14218000 rx_us=13996000 char=n access=0 alarm=1
+READ t_us=14228000 status=2 id=0
+CMD t_us=14233000 rx_us=13997000 char=n access=0 alarm=1
+CMD t_us=14496000 rx_us=14495000 char=k access=0 alarm=0
+EVENT t_ms=14496 bits=256 observation=819 saved=1 seq=23 flash_us=1000
+READ t_us=14996000 status=2 id=0
+CMD t_us=15001000 rx_us=14995000 char=n access=0 alarm=0
+HEART t_us=15010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=15018000 status=2 id=0
+CMD t_us=15025000 rx_us=14995000 char=n access=0 alarm=1
+EVENT t_ms=15025 bits=4 observation=131891 saved=1 seq=24 flash_us=1000
+READ t_us=15046000 status=2 id=0
+CMD t_us=15050000 rx_us=14995000 char=n access=0 alarm=1
+READ t_us=15058000 status=2 id=0
+CMD t_us=15062000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15072000 status=2 id=0
+CMD t_us=15077000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15087000 status=2 id=0
+CMD t_us=15092000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15100000 status=2 id=0
+CMD t_us=15106000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15114000 status=2 id=0
+CMD t_us=15119000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15129000 status=2 id=0
+CMD t_us=15134000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15142000 status=2 id=0
+CMD t_us=15148000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15156000 status=2 id=0
+CMD t_us=15161000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15171000 status=2 id=0
+CMD t_us=15176000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15186000 status=2 id=0
+CMD t_us=15191000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15199000 status=2 id=0
+CMD t_us=15205000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15213000 status=2 id=0
+CMD t_us=15218000 rx_us=14996000 char=n access=0 alarm=1
+READ t_us=15228000 status=2 id=0
+CMD t_us=15233000 rx_us=14997000 char=n access=0 alarm=1
+CMD t_us=15496000 rx_us=15495000 char=k access=0 alarm=0
+EVENT t_ms=15496 bits=256 observation=819 saved=1 seq=25 flash_us=1000
+READ t_us=15996000 status=2 id=0
+CMD t_us=16001000 rx_us=15995000 char=n access=0 alarm=0
+HEART t_us=16010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=16018000 status=2 id=0
+CMD t_us=16025000 rx_us=15995000 char=n access=0 alarm=1
+EVENT t_ms=16025 bits=4 observation=131891 saved=1 seq=26 flash_us=1000
+READ t_us=16046000 status=2 id=0
+CMD t_us=16050000 rx_us=15995000 char=n access=0 alarm=1
+READ t_us=16058000 status=2 id=0
+CMD t_us=16062000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16072000 status=2 id=0
+CMD t_us=16077000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16087000 status=2 id=0
+CMD t_us=16092000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16100000 status=2 id=0
+CMD t_us=16106000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16114000 status=2 id=0
+CMD t_us=16119000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16129000 status=2 id=0
+CMD t_us=16134000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16142000 status=2 id=0
+CMD t_us=16148000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16156000 status=2 id=0
+CMD t_us=16161000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16171000 status=2 id=0
+CMD t_us=16176000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16186000 status=2 id=0
+CMD t_us=16191000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16199000 status=2 id=0
+CMD t_us=16205000 rx_us=15996000 char=n access=0 alarm=1
+READ t_us=16213000 status=2 id=0
+CMD t_us=16218000 rx_us=15997000 char=n access=0 alarm=1
+READ t_us=16228000 status=2 id=0
+CMD t_us=16233000 rx_us=15997000 char=n access=0 alarm=1
+CMD t_us=16496000 rx_us=16495000 char=k access=0 alarm=0
+EVENT t_ms=16496 bits=256 observation=819 saved=1 seq=27 flash_us=1000
+READ t_us=16996000 status=2 id=0
+CMD t_us=17001000 rx_us=16995000 char=n access=0 alarm=0
+HEART t_us=17010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=17018000 status=2 id=0
+CMD t_us=17025000 rx_us=16995000 char=n access=0 alarm=1
+EVENT t_ms=17025 bits=4 observation=131891 saved=1 seq=28 flash_us=1000
+READ t_us=17046000 status=2 id=0
+CMD t_us=17050000 rx_us=16995000 char=n access=0 alarm=1
+READ t_us=17058000 status=2 id=0
+CMD t_us=17062000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17072000 status=2 id=0
+CMD t_us=17077000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17087000 status=2 id=0
+CMD t_us=17092000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17100000 status=2 id=0
+CMD t_us=17106000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17114000 status=2 id=0
+CMD t_us=17119000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17129000 status=2 id=0
+CMD t_us=17134000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17142000 status=2 id=0
+CMD t_us=17148000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17156000 status=2 id=0
+CMD t_us=17161000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17171000 status=2 id=0
+CMD t_us=17176000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17186000 status=2 id=0
+CMD t_us=17191000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17199000 status=2 id=0
+CMD t_us=17205000 rx_us=16996000 char=n access=0 alarm=1
+READ t_us=17213000 status=2 id=0
+CMD t_us=17218000 rx_us=16997000 char=n access=0 alarm=1
+READ t_us=17228000 status=2 id=0
+CMD t_us=17233000 rx_us=16997000 char=n access=0 alarm=1
+CMD t_us=17496000 rx_us=17495000 char=k access=0 alarm=0
+EVENT t_ms=17496 bits=256 observation=819 saved=1 seq=29 flash_us=1000
+READ t_us=17996000 status=2 id=0
+CMD t_us=18001000 rx_us=17995000 char=n access=0 alarm=0
+HEART t_us=18010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=18018000 status=2 id=0
+CMD t_us=18025000 rx_us=17995000 char=n access=0 alarm=1
+EVENT t_ms=18025 bits=4 observation=131891 saved=1 seq=30 flash_us=1000
+READ t_us=18046000 status=2 id=0
+CMD t_us=18050000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18058000 status=2 id=0
+CMD t_us=18062000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18072000 status=2 id=0
+CMD t_us=18077000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18087000 status=2 id=0
+CMD t_us=18092000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18100000 status=2 id=0
+CMD t_us=18106000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18114000 status=2 id=0
+CMD t_us=18119000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18129000 status=2 id=0
+CMD t_us=18134000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18142000 status=2 id=0
+CMD t_us=18148000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18156000 status=2 id=0
+CMD t_us=18161000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18171000 status=2 id=0
+CMD t_us=18176000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18186000 status=2 id=0
+CMD t_us=18191000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18199000 status=2 id=0
+CMD t_us=18205000 rx_us=17996000 char=n access=0 alarm=1
+READ t_us=18213000 status=2 id=0
+CMD t_us=18218000 rx_us=17997000 char=n access=0 alarm=1
+READ t_us=18228000 status=2 id=0
+CMD t_us=18233000 rx_us=17997000 char=n access=0 alarm=1
+CMD t_us=18496000 rx_us=18495000 char=k access=0 alarm=0
+EVENT t_ms=18496 bits=256 observation=819 saved=1 seq=31 flash_us=1000
+READ t_us=18996000 status=2 id=0
+CMD t_us=19001000 rx_us=18995000 char=n access=0 alarm=0
+HEART t_us=19010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=19018000 status=2 id=0
+CMD t_us=19025000 rx_us=18995000 char=n access=0 alarm=1
+EVENT t_ms=19025 bits=4 observation=131891 saved=1 seq=32 flash_us=1000
+READ t_us=19046000 status=2 id=0
+CMD t_us=19050000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19058000 status=2 id=0
+CMD t_us=19062000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19072000 status=2 id=0
+CMD t_us=19077000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19087000 status=2 id=0
+CMD t_us=19092000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19100000 status=2 id=0
+CMD t_us=19106000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19114000 status=2 id=0
+CMD t_us=19119000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19129000 status=2 id=0
+CMD t_us=19134000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19142000 status=2 id=0
+CMD t_us=19148000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19157000 status=2 id=0
+CMD t_us=19162000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19172000 status=2 id=0
+CMD t_us=19177000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19187000 status=2 id=0
+CMD t_us=19192000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19200000 status=2 id=0
+CMD t_us=19206000 rx_us=18996000 char=n access=0 alarm=1
+READ t_us=19214000 status=2 id=0
+CMD t_us=19219000 rx_us=18997000 char=n access=0 alarm=1
+READ t_us=19229000 status=2 id=0
+CMD t_us=19234000 rx_us=18997000 char=n access=0 alarm=1
+CMD t_us=19496000 rx_us=19495000 char=k access=0 alarm=0
+EVENT t_ms=19496 bits=256 observation=819 saved=1 seq=33 flash_us=1000
+READ t_us=19996000 status=2 id=0
+CMD t_us=20001000 rx_us=19995000 char=n access=0 alarm=0
+HEART t_us=20010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=20018000 status=2 id=0
+CMD t_us=20025000 rx_us=19995000 char=n access=0 alarm=1
+EVENT t_ms=20025 bits=4 observation=131891 saved=1 seq=34 flash_us=1000
+READ t_us=20046000 status=2 id=0
+CMD t_us=20050000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20058000 status=2 id=0
+CMD t_us=20062000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20072000 status=2 id=0
+CMD t_us=20077000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20087000 status=2 id=0
+CMD t_us=20092000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20100000 status=2 id=0
+CMD t_us=20106000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20114000 status=2 id=0
+CMD t_us=20119000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20129000 status=2 id=0
+CMD t_us=20134000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20142000 status=2 id=0
+CMD t_us=20148000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20157000 status=2 id=0
+CMD t_us=20162000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20172000 status=2 id=0
+CMD t_us=20177000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20187000 status=2 id=0
+CMD t_us=20192000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20200000 status=2 id=0
+CMD t_us=20206000 rx_us=19996000 char=n access=0 alarm=1
+READ t_us=20214000 status=2 id=0
+CMD t_us=20219000 rx_us=19997000 char=n access=0 alarm=1
+READ t_us=20229000 status=2 id=0
+CMD t_us=20234000 rx_us=19997000 char=n access=0 alarm=1
+CMD t_us=20496000 rx_us=20495000 char=k access=0 alarm=0
+EVENT t_ms=20496 bits=256 observation=819 saved=1 seq=35 flash_us=1000
+READ t_us=20996000 status=2 id=0
+CMD t_us=21001000 rx_us=20995000 char=n access=0 alarm=0
+HEART t_us=21010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=21018000 status=2 id=0
+CMD t_us=21025000 rx_us=20995000 char=n access=0 alarm=1
+EVENT t_ms=21025 bits=4 observation=131891 saved=1 seq=36 flash_us=1000
+READ t_us=21046000 status=2 id=0
+CMD t_us=21050000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21058000 status=2 id=0
+CMD t_us=21062000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21072000 status=2 id=0
+CMD t_us=21077000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21087000 status=2 id=0
+CMD t_us=21092000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21100000 status=2 id=0
+CMD t_us=21106000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21114000 status=2 id=0
+CMD t_us=21119000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21129000 status=2 id=0
+CMD t_us=21134000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21142000 status=2 id=0
+CMD t_us=21148000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21156000 status=2 id=0
+CMD t_us=21161000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21171000 status=2 id=0
+CMD t_us=21176000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21186000 status=2 id=0
+CMD t_us=21191000 rx_us=20996000 char=n access=0 alarm=1
+READ t_us=21199000 status=2 id=0
+CMD t_us=21205000 rx_us=20997000 char=n access=0 alarm=1
+READ t_us=21213000 status=2 id=0
+CMD t_us=21218000 rx_us=20997000 char=n access=0 alarm=1
+READ t_us=21228000 status=2 id=0
+CMD t_us=21233000 rx_us=20997000 char=n access=0 alarm=1
+CMD t_us=21496000 rx_us=21495000 char=k access=0 alarm=0
+EVENT t_ms=21496 bits=256 observation=819 saved=1 seq=37 flash_us=1000
+READ t_us=21996000 status=2 id=0
+CMD t_us=22001000 rx_us=21995000 char=n access=0 alarm=0
+HEART t_us=22010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=22018000 status=2 id=0
+CMD t_us=22025000 rx_us=21995000 char=n access=0 alarm=1
+EVENT t_ms=22025 bits=4 observation=131891 saved=1 seq=38 flash_us=1000
+READ t_us=22046000 status=2 id=0
+CMD t_us=22050000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22058000 status=2 id=0
+CMD t_us=22062000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22073000 status=2 id=0
+CMD t_us=22078000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22088000 status=2 id=0
+CMD t_us=22093000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22101000 status=2 id=0
+CMD t_us=22107000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22115000 status=2 id=0
+CMD t_us=22120000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22130000 status=2 id=0
+CMD t_us=22135000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22146000 status=2 id=0
+CMD t_us=22150000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22158000 status=2 id=0
+CMD t_us=22162000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22172000 status=2 id=0
+CMD t_us=22177000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22187000 status=2 id=0
+CMD t_us=22192000 rx_us=21996000 char=n access=0 alarm=1
+READ t_us=22200000 status=2 id=0
+CMD t_us=22206000 rx_us=21997000 char=n access=0 alarm=1
+READ t_us=22214000 status=2 id=0
+CMD t_us=22219000 rx_us=21997000 char=n access=0 alarm=1
+READ t_us=22229000 status=2 id=0
+CMD t_us=22234000 rx_us=21997000 char=n access=0 alarm=1
+CMD t_us=22496000 rx_us=22495000 char=k access=0 alarm=0
+EVENT t_ms=22496 bits=256 observation=819 saved=1 seq=39 flash_us=1000
+READ t_us=22996000 status=2 id=0
+CMD t_us=23001000 rx_us=22995000 char=n access=0 alarm=0
+HEART t_us=23010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=23018000 status=2 id=0
+CMD t_us=23025000 rx_us=22996000 char=n access=0 alarm=1
+EVENT t_ms=23025 bits=4 observation=131891 saved=1 seq=40 flash_us=1000
+READ t_us=23046000 status=2 id=0
+CMD t_us=23050000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23058000 status=2 id=0
+CMD t_us=23062000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23073000 status=2 id=0
+CMD t_us=23078000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23088000 status=2 id=0
+CMD t_us=23093000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23101000 status=2 id=0
+CMD t_us=23107000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23115000 status=2 id=0
+CMD t_us=23120000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23130000 status=2 id=0
+CMD t_us=23135000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23146000 status=2 id=0
+CMD t_us=23150000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23158000 status=2 id=0
+CMD t_us=23162000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23173000 status=2 id=0
+CMD t_us=23178000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23188000 status=2 id=0
+CMD t_us=23193000 rx_us=22996000 char=n access=0 alarm=1
+READ t_us=23201000 status=2 id=0
+CMD t_us=23207000 rx_us=22997000 char=n access=0 alarm=1
+READ t_us=23215000 status=2 id=0
+CMD t_us=23220000 rx_us=22997000 char=n access=0 alarm=1
+READ t_us=23230000 status=2 id=0
+CMD t_us=23235000 rx_us=22997000 char=n access=0 alarm=1
+CMD t_us=23496000 rx_us=23495000 char=k access=0 alarm=0
+EVENT t_ms=23496 bits=256 observation=819 saved=1 seq=41 flash_us=1000
+READ t_us=23996000 status=2 id=0
+CMD t_us=24001000 rx_us=23995000 char=n access=0 alarm=0
+HEART t_us=24010000 adc=819 fault=0 alarm=0 access=0
+READ t_us=24018000 status=2 id=0
+CMD t_us=24025000 rx_us=23996000 char=n access=0 alarm=1
+EVENT t_ms=24025 bits=4 observation=131891 saved=1 seq=42 flash_us=1000
+READ t_us=24046000 status=2 id=0
+CMD t_us=24050000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24058000 status=2 id=0
+CMD t_us=24062000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24073000 status=2 id=0
+CMD t_us=24078000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24088000 status=2 id=0
+CMD t_us=24093000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24101000 status=2 id=0
+CMD t_us=24107000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24115000 status=2 id=0
+CMD t_us=24120000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24130000 status=2 id=0
+CMD t_us=24135000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24146000 status=2 id=0
+CMD t_us=24150000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24158000 status=2 id=0
+CMD t_us=24162000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24173000 status=2 id=0
+CMD t_us=24178000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24188000 status=2 id=0
+CMD t_us=24193000 rx_us=23996000 char=n access=0 alarm=1
+READ t_us=24201000 status=2 id=0
+CMD t_us=24207000 rx_us=23997000 char=n access=0 alarm=1
+READ t_us=24215000 status=2 id=0
+CMD t_us=24220000 rx_us=23997000 char=n access=0 alarm=1
+READ t_us=24230000 status=2 id=0
+CMD t_us=24235000 rx_us=23997000 char=n access=0 alarm=1
+CMD t_us=24496000 rx_us=24495000 char=k access=0 alarm=0
+EVENT t_ms=24496 bits=256 observation=819 saved=1 seq=43 flash_us=1000
+READ t_us=24996000 status=2 id=0
+CMD t_us=25001000 rx_us=24995000 char=n access=0 alarm=0
+EVENT t_ms=25005 bits=4 observation=131891 saved=1 seq=44 flash_us=1000
+HEART t_us=25020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=25030000 status=2 id=0
+CMD t_us=25035000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25046000 status=2 id=0
+CMD t_us=25050000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25058000 status=2 id=0
+CMD t_us=25062000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25073000 status=2 id=0
+CMD t_us=25078000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25088000 status=2 id=0
+CMD t_us=25093000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25101000 status=2 id=0
+CMD t_us=25107000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25115000 status=2 id=0
+CMD t_us=25120000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25130000 status=2 id=0
+CMD t_us=25135000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25146000 status=2 id=0
+CMD t_us=25150000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25158000 status=2 id=0
+CMD t_us=25162000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25173000 status=2 id=0
+CMD t_us=25178000 rx_us=24996000 char=n access=0 alarm=1
+READ t_us=25188000 status=2 id=0
+CMD t_us=25193000 rx_us=24997000 char=n access=0 alarm=1
+READ t_us=25201000 status=2 id=0
+CMD t_us=25207000 rx_us=24997000 char=n access=0 alarm=1
+READ t_us=25215000 status=2 id=0
+CMD t_us=25220000 rx_us=24997000 char=n access=0 alarm=1
+READ t_us=25230000 status=2 id=0
+CMD t_us=25235000 rx_us=24997000 char=n access=0 alarm=1
+CMD t_us=25496000 rx_us=25495000 char=k access=0 alarm=0
+EVENT t_ms=25496 bits=256 observation=819 saved=1 seq=45 flash_us=1000
+READ t_us=25996000 status=2 id=0
+CMD t_us=26001000 rx_us=25995000 char=n access=0 alarm=0
+EVENT t_ms=26005 bits=4 observation=131891 saved=1 seq=46 flash_us=1000
+HEART t_us=26020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=26030000 status=2 id=0
+CMD t_us=26035000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26046000 status=2 id=0
+CMD t_us=26050000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26058000 status=2 id=0
+CMD t_us=26062000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26073000 status=2 id=0
+CMD t_us=26078000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26088000 status=2 id=0
+CMD t_us=26093000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26101000 status=2 id=0
+CMD t_us=26107000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26116000 status=2 id=0
+CMD t_us=26121000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26131000 status=2 id=0
+CMD t_us=26136000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26146000 status=2 id=0
+CMD t_us=26151000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26159000 status=2 id=0
+CMD t_us=26165000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26173000 status=2 id=0
+CMD t_us=26178000 rx_us=25996000 char=n access=0 alarm=1
+READ t_us=26188000 status=2 id=0
+CMD t_us=26193000 rx_us=25997000 char=n access=0 alarm=1
+READ t_us=26201000 status=2 id=0
+CMD t_us=26207000 rx_us=25997000 char=n access=0 alarm=1
+READ t_us=26216000 status=2 id=0
+CMD t_us=26221000 rx_us=25997000 char=n access=0 alarm=1
+READ t_us=26231000 status=2 id=0
+CMD t_us=26236000 rx_us=25997000 char=n access=0 alarm=1
+CMD t_us=26496000 rx_us=26496000 char=k access=0 alarm=0
+EVENT t_ms=26496 bits=256 observation=819 saved=1 seq=47 flash_us=1000
+READ t_us=26996000 status=2 id=0
+CMD t_us=27001000 rx_us=26996000 char=n access=0 alarm=0
+EVENT t_ms=27005 bits=4 observation=131891 saved=1 seq=48 flash_us=1000
+HEART t_us=27020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=27030000 status=2 id=0
+CMD t_us=27035000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27046000 status=2 id=0
+CMD t_us=27050000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27058000 status=2 id=0
+CMD t_us=27062000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27073000 status=2 id=0
+CMD t_us=27078000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27088000 status=2 id=0
+CMD t_us=27093000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27101000 status=2 id=0
+CMD t_us=27107000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27115000 status=2 id=0
+CMD t_us=27120000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27130000 status=2 id=0
+CMD t_us=27135000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27146000 status=2 id=0
+CMD t_us=27150000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27158000 status=2 id=0
+CMD t_us=27162000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27173000 status=2 id=0
+CMD t_us=27178000 rx_us=26996000 char=n access=0 alarm=1
+READ t_us=27188000 status=2 id=0
+CMD t_us=27193000 rx_us=26997000 char=n access=0 alarm=1
+READ t_us=27201000 status=2 id=0
+CMD t_us=27207000 rx_us=26997000 char=n access=0 alarm=1
+READ t_us=27215000 status=2 id=0
+CMD t_us=27220000 rx_us=26997000 char=n access=0 alarm=1
+READ t_us=27230000 status=2 id=0
+CMD t_us=27235000 rx_us=26997000 char=n access=0 alarm=1
+CMD t_us=27496000 rx_us=27496000 char=k access=0 alarm=0
+EVENT t_ms=27496 bits=256 observation=819 saved=1 seq=49 flash_us=1000
+READ t_us=27996000 status=2 id=0
+CMD t_us=28001000 rx_us=27996000 char=n access=0 alarm=0
+EVENT t_ms=28005 bits=4 observation=131891 saved=1 seq=50 flash_us=1000
+HEART t_us=28020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=28030000 status=2 id=0
+CMD t_us=28035000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28046000 status=2 id=0
+CMD t_us=28050000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28058000 status=2 id=0
+CMD t_us=28062000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28073000 status=2 id=0
+CMD t_us=28078000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28088000 status=2 id=0
+CMD t_us=28093000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28101000 status=2 id=0
+CMD t_us=28107000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28116000 status=2 id=0
+CMD t_us=28121000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28131000 status=2 id=0
+CMD t_us=28136000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28146000 status=2 id=0
+CMD t_us=28151000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28159000 status=2 id=0
+CMD t_us=28165000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28174000 status=2 id=0
+CMD t_us=28179000 rx_us=27996000 char=n access=0 alarm=1
+READ t_us=28189000 status=2 id=0
+CMD t_us=28194000 rx_us=27997000 char=n access=0 alarm=1
+READ t_us=28202000 status=2 id=0
+CMD t_us=28208000 rx_us=27997000 char=n access=0 alarm=1
+READ t_us=28217000 status=2 id=0
+CMD t_us=28222000 rx_us=27997000 char=n access=0 alarm=1
+READ t_us=28232000 status=2 id=0
+CMD t_us=28237000 rx_us=27997000 char=n access=0 alarm=1
+CMD t_us=28496000 rx_us=28496000 char=k access=0 alarm=0
+EVENT t_ms=28496 bits=256 observation=819 saved=1 seq=51 flash_us=1000
+READ t_us=28996000 status=2 id=0
+CMD t_us=29001000 rx_us=28996000 char=n access=0 alarm=0
+EVENT t_ms=29005 bits=4 observation=131891 saved=1 seq=52 flash_us=1000
+HEART t_us=29020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=29030000 status=2 id=0
+CMD t_us=29035000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29046000 status=2 id=0
+CMD t_us=29050000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29058000 status=2 id=0
+CMD t_us=29062000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29073000 status=2 id=0
+CMD t_us=29078000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29088000 status=2 id=0
+CMD t_us=29093000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29101000 status=2 id=0
+CMD t_us=29107000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29115000 status=2 id=0
+CMD t_us=29120000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29130000 status=2 id=0
+CMD t_us=29135000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29146000 status=2 id=0
+CMD t_us=29150000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29158000 status=2 id=0
+CMD t_us=29162000 rx_us=28996000 char=n access=0 alarm=1
+READ t_us=29173000 status=2 id=0
+CMD t_us=29178000 rx_us=28997000 char=n access=0 alarm=1
+READ t_us=29188000 status=2 id=0
+CMD t_us=29193000 rx_us=28997000 char=n access=0 alarm=1
+READ t_us=29201000 status=2 id=0
+CMD t_us=29207000 rx_us=28997000 char=n access=0 alarm=1
+READ t_us=29215000 status=2 id=0
+CMD t_us=29220000 rx_us=28997000 char=n access=0 alarm=1
+READ t_us=29230000 status=2 id=0
+CMD t_us=29235000 rx_us=28997000 char=n access=0 alarm=1
+CMD t_us=29496000 rx_us=29496000 char=k access=0 alarm=0
+EVENT t_ms=29496 bits=256 observation=819 saved=1 seq=53 flash_us=1000
+READ t_us=29996000 status=2 id=0
+CMD t_us=30001000 rx_us=29996000 char=n access=0 alarm=0
+EVENT t_ms=30005 bits=4 observation=131891 saved=1 seq=54 flash_us=1000
+HEART t_us=30020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=30030000 status=2 id=0
+CMD t_us=30035000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30046000 status=2 id=0
+CMD t_us=30050000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30058000 status=2 id=0
+CMD t_us=30062000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30073000 status=2 id=0
+CMD t_us=30078000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30088000 status=2 id=0
+CMD t_us=30093000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30101000 status=2 id=0
+CMD t_us=30107000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30115000 status=2 id=0
+CMD t_us=30120000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30130000 status=2 id=0
+CMD t_us=30135000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30146000 status=2 id=0
+CMD t_us=30150000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30158000 status=2 id=0
+CMD t_us=30162000 rx_us=29996000 char=n access=0 alarm=1
+READ t_us=30173000 status=2 id=0
+CMD t_us=30178000 rx_us=29997000 char=n access=0 alarm=1
+READ t_us=30188000 status=2 id=0
+CMD t_us=30193000 rx_us=29997000 char=n access=0 alarm=1
+READ t_us=30201000 status=2 id=0
+CMD t_us=30207000 rx_us=29997000 char=n access=0 alarm=1
+READ t_us=30215000 status=2 id=0
+CMD t_us=30220000 rx_us=29997000 char=n access=0 alarm=1
+READ t_us=30230000 status=2 id=0
+CMD t_us=30235000 rx_us=29997000 char=n access=0 alarm=1
+CMD t_us=30496000 rx_us=30496000 char=k access=0 alarm=0
+EVENT t_ms=30496 bits=256 observation=819 saved=1 seq=55 flash_us=1000
+READ t_us=30996000 status=2 id=0
+CMD t_us=31001000 rx_us=30996000 char=n access=0 alarm=0
+EVENT t_ms=31005 bits=4 observation=131891 saved=1 seq=56 flash_us=1000
+HEART t_us=31020000 adc=819 fault=0 alarm=1 access=0
+READ t_us=31030000 status=2 id=0
+CMD t_us=31035000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31046000 status=2 id=0
+CMD t_us=31050000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31058000 status=2 id=0
+CMD t_us=31062000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31073000 status=2 id=0
+CMD t_us=31078000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31088000 status=2 id=0
+CMD t_us=31093000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31101000 status=2 id=0
+CMD t_us=31107000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31116000 status=2 id=0
+CMD t_us=31121000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31131000 status=2 id=0
+CMD t_us=31136000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31146000 status=2 id=0
+CMD t_us=31151000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31159000 status=2 id=0
+CMD t_us=31165000 rx_us=30996000 char=n access=0 alarm=1
+READ t_us=31173000 status=2 id=0
+CMD t_us=31178000 rx_us=30997000 char=n access=0 alarm=1
+READ t_us=31188000 status=2 id=0
+CMD t_us=31193000 rx_us=30997000 char=n access=0 alarm=1
+READ t_us=31201000 status=2 id=0
+CMD t_us=31207000 rx_us=30997000 char=n access=0 alarm=1
+READ t_us=31215000 status=2 id=0
+CMD t_us=31220000 rx_us=30997000 char=n access=0 alarm=1
+READ t_us=31230000 status=2 id=0
+CMD t_us=31235000 rx_us=30997000 char=n access=0 alarm=1
+CMD t_us=31497000 rx_us=31496000 char=k access=0 alarm=0
+EVENT t_ms=31497 bits=256 observation=819 saved=1 seq=57 flash_us=1000
+READ t_us=31997000 status=2 id=0
+CMD t_us=32002000 rx_us=31996000 char=n access=0 alarm=0
+EVENT t_ms=32005 bits=4 observation=131891 saved=1 seq=58 flash_us=1000
+HEART t_us=32021000 adc=819 fault=0 alarm=1 access=0
+READ t_us=32031000 status=2 id=0
+CMD t_us=32036000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32046000 status=2 id=0
+CMD t_us=32051000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32059000 status=2 id=0
+CMD t_us=32065000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32073000 status=2 id=0
+CMD t_us=32078000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32088000 status=2 id=0
+CMD t_us=32093000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32101000 status=2 id=0
+CMD t_us=32107000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32115000 status=2 id=0
+CMD t_us=32120000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32130000 status=2 id=0
+CMD t_us=32135000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32146000 status=2 id=0
+CMD t_us=32150000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32158000 status=2 id=0
+CMD t_us=32162000 rx_us=31996000 char=n access=0 alarm=1
+READ t_us=32173000 status=2 id=0
+CMD t_us=32178000 rx_us=31997000 char=n access=0 alarm=1
+READ t_us=32188000 status=2 id=0
+CMD t_us=32193000 rx_us=31997000 char=n access=0 alarm=1
+READ t_us=32201000 status=2 id=0
+CMD t_us=32207000 rx_us=31997000 char=n access=0 alarm=1
+READ t_us=32215000 status=2 id=0
+CMD t_us=32220000 rx_us=31997000 char=n access=0 alarm=1
+READ t_us=32230000 status=2 id=0
+CMD t_us=32235000 rx_us=31997000 char=n access=0 alarm=1
+CMD t_us=32497000 rx_us=32496000 char=k access=0 alarm=0
+EVENT t_ms=32497 bits=256 observation=819 saved=1 seq=59 flash_us=1000
+READ t_us=32997000 status=2 id=0
+CMD t_us=33002000 rx_us=32996000 char=n access=0 alarm=0
+EVENT t_ms=33005 bits=4 observation=131891 saved=1 seq=60 flash_us=1000
+HEART t_us=33021000 adc=819 fault=0 alarm=1 access=0
+READ t_us=33031000 status=2 id=0
+CMD t_us=33036000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33046000 status=2 id=0
+CMD t_us=33051000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33059000 status=2 id=0
+CMD t_us=33065000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33073000 status=2 id=0
+CMD t_us=33078000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33088000 status=2 id=0
+CMD t_us=33093000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33101000 status=2 id=0
+CMD t_us=33107000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33115000 status=2 id=0
+CMD t_us=33120000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33130000 status=2 id=0
+CMD t_us=33135000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33146000 status=2 id=0
+CMD t_us=33150000 rx_us=32996000 char=n access=0 alarm=1
+READ t_us=33158000 status=2 id=0
+CMD t_us=33162000 rx_us=32997000 char=n access=0 alarm=1
+READ t_us=33173000 status=2 id=0
+CMD t_us=33178000 rx_us=32997000 char=n access=0 alarm=1
+READ t_us=33188000 status=2 id=0
+CMD t_us=33193000 rx_us=32997000 char=n access=0 alarm=1
+READ t_us=33201000 status=2 id=0
+CMD t_us=33207000 rx_us=32997000 char=n access=0 alarm=1
+READ t_us=33215000 status=2 id=0
+CMD t_us=33220000 rx_us=32997000 char=n access=0 alarm=1
+READ t_us=33230000 status=2 id=0
+CMD t_us=33235000 rx_us=32997000 char=n access=0 alarm=1
+CMD t_us=33497000 rx_us=33496000 char=k access=0 alarm=0
+EVENT t_ms=33497 bits=256 observation=819 saved=1 seq=61 flash_us=1000
+READ t_us=33997000 status=2 id=0
+CMD t_us=34002000 rx_us=33996000 char=n access=0 alarm=0
+HEART t_us=34011000 adc=819 fault=0 alarm=0 access=0
+READ t_us=34019000 status=2 id=0
+CMD t_us=34026000 rx_us=33996000 char=n access=0 alarm=1
+EVENT t_ms=34025 bits=4 observation=131891 saved=1 seq=62 flash_us=1000
+READ t_us=34046000 status=2 id=0
+CMD t_us=34051000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34059000 status=2 id=0
+CMD t_us=34065000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34073000 status=2 id=0
+CMD t_us=34078000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34088000 status=2 id=0
+CMD t_us=34093000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34101000 status=2 id=0
+CMD t_us=34107000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34115000 status=2 id=0
+CMD t_us=34120000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34130000 status=2 id=0
+CMD t_us=34135000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34146000 status=2 id=0
+CMD t_us=34150000 rx_us=33996000 char=n access=0 alarm=1
+READ t_us=34158000 status=2 id=0
+CMD t_us=34162000 rx_us=33997000 char=n access=0 alarm=1
+READ t_us=34173000 status=2 id=0
+CMD t_us=34178000 rx_us=33997000 char=n access=0 alarm=1
+READ t_us=34188000 status=2 id=0
+CMD t_us=34193000 rx_us=33997000 char=n access=0 alarm=1
+READ t_us=34201000 status=2 id=0
+CMD t_us=34207000 rx_us=33997000 char=n access=0 alarm=1
+READ t_us=34215000 status=2 id=0
+CMD t_us=34220000 rx_us=33997000 char=n access=0 alarm=1
+READ t_us=34230000 status=2 id=0
+CMD t_us=34235000 rx_us=33997000 char=n access=0 alarm=1
+CMD t_us=34497000 rx_us=34496000 char=k access=0 alarm=0
+EVENT t_ms=34497 bits=256 observation=819 saved=1 seq=63 flash_us=1000
+EVENT t_ms=35005 bits=1 observation=819 saved=1 seq=64 flash_us=1000
+HEART t_us=35014000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=35497000 rx_us=35496000 char=k access=0 alarm=0
+EVENT t_ms=35497 bits=256 observation=819 saved=1 seq=65 flash_us=1000
+EVENT t_ms=36005 bits=2 observation=1556 saved=1 seq=66 flash_us=1000
+HEART t_us=36014000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=36497000 rx_us=36496000 char=k access=0 alarm=0
+EVENT t_ms=36497 bits=256 observation=819 saved=1 seq=67 flash_us=1000
+EVENT t_ms=37005 bits=3 observation=1556 saved=1 seq=68 flash_us=1000
+HEART t_us=37014000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=37497000 rx_us=37496000 char=k access=0 alarm=0
+EVENT t_ms=37497 bits=256 observation=819 saved=1 seq=69 flash_us=1000
+EVENT t_ms=38005 bits=4 observation=131891 saved=1 seq=70 flash_us=1000
+HEART t_us=38015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=38497000 rx_us=38496000 char=k access=0 alarm=0
+EVENT t_ms=38497 bits=256 observation=819 saved=1 seq=71 flash_us=1000
+EVENT t_ms=39005 bits=5 observation=131891 saved=1 seq=72 flash_us=1000
+HEART t_us=39015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=39497000 rx_us=39496000 char=k access=0 alarm=0
+EVENT t_ms=39497 bits=256 observation=819 saved=1 seq=73 flash_us=1000
+EVENT t_ms=40005 bits=6 observation=132628 saved=1 seq=74 flash_us=1000
+HEART t_us=40015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=40497000 rx_us=40496000 char=k access=0 alarm=0
+EVENT t_ms=40497 bits=256 observation=819 saved=1 seq=75 flash_us=1000
+EVENT t_ms=41005 bits=7 observation=132628 saved=1 seq=76 flash_us=1000
+HEART t_us=41015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=41497000 rx_us=41496000 char=k access=0 alarm=0
+EVENT t_ms=41497 bits=256 observation=819 saved=1 seq=77 flash_us=1000
+EVENT t_ms=42005 bits=1 observation=819 saved=1 seq=78 flash_us=1000
+HEART t_us=42014000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=42497000 rx_us=42496000 char=k access=0 alarm=0
+EVENT t_ms=42497 bits=256 observation=819 saved=1 seq=79 flash_us=1000
+EVENT t_ms=43005 bits=2 observation=1556 saved=1 seq=80 flash_us=1000
+HEART t_us=43015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=43497000 rx_us=43496000 char=k access=0 alarm=0
+EVENT t_ms=43497 bits=256 observation=819 saved=1 seq=81 flash_us=1000
+EVENT t_ms=44005 bits=3 observation=1556 saved=1 seq=82 flash_us=1000
+HEART t_us=44015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=44497000 rx_us=44496000 char=k access=0 alarm=0
+EVENT t_ms=44497 bits=256 observation=819 saved=1 seq=83 flash_us=1000
+EVENT t_ms=45005 bits=4 observation=131891 saved=1 seq=84 flash_us=1000
+HEART t_us=45015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=45497000 rx_us=45496000 char=k access=0 alarm=0
+EVENT t_ms=45497 bits=256 observation=819 saved=1 seq=85 flash_us=1000
+EVENT t_ms=46005 bits=5 observation=131891 saved=1 seq=86 flash_us=1000
+HEART t_us=46015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=46497000 rx_us=46496000 char=k access=0 alarm=0
+EVENT t_ms=46497 bits=256 observation=819 saved=1 seq=87 flash_us=1000
+EVENT t_ms=47005 bits=6 observation=132628 saved=1 seq=88 flash_us=1000
+HEART t_us=47015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=47497000 rx_us=47496000 char=k access=0 alarm=0
+EVENT t_ms=47497 bits=256 observation=819 saved=1 seq=89 flash_us=1000
+EVENT t_ms=48005 bits=7 observation=132628 saved=1 seq=90 flash_us=1000
+HEART t_us=48015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=48497000 rx_us=48496000 char=k access=0 alarm=0
+EVENT t_ms=48497 bits=256 observation=819 saved=1 seq=91 flash_us=1000
+EVENT t_ms=49005 bits=1 observation=819 saved=1 seq=92 flash_us=1000
+HEART t_us=49014000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=49497000 rx_us=49496000 char=k access=0 alarm=0
+EVENT t_ms=49497 bits=256 observation=819 saved=1 seq=93 flash_us=1000
+EVENT t_ms=50005 bits=2 observation=1556 saved=1 seq=94 flash_us=1000
+HEART t_us=50015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=50497000 rx_us=50496000 char=k access=0 alarm=0
+EVENT t_ms=50497 bits=256 observation=819 saved=1 seq=95 flash_us=1000
+EVENT t_ms=51005 bits=3 observation=1556 saved=1 seq=96 flash_us=1000
+HEART t_us=51015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=51497000 rx_us=51496000 char=k access=0 alarm=0
+EVENT t_ms=51497 bits=256 observation=819 saved=1 seq=97 flash_us=1000
+EVENT t_ms=52005 bits=4 observation=131891 saved=1 seq=98 flash_us=1000
+HEART t_us=52015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=52497000 rx_us=52496000 char=k access=0 alarm=0
+EVENT t_ms=52497 bits=256 observation=819 saved=1 seq=99 flash_us=1000
+EVENT t_ms=53005 bits=5 observation=131891 saved=1 seq=100 flash_us=1000
+HEART t_us=53015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=53497000 rx_us=53496000 char=k access=0 alarm=0
+EVENT t_ms=53497 bits=256 observation=819 saved=1 seq=101 flash_us=1000
+EVENT t_ms=54005 bits=6 observation=132628 saved=1 seq=102 flash_us=1000
+HEART t_us=54015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=54497000 rx_us=54496000 char=k access=0 alarm=0
+EVENT t_ms=54497 bits=256 observation=819 saved=1 seq=103 flash_us=1000
+EVENT t_ms=55005 bits=7 observation=132628 saved=1 seq=104 flash_us=1000
+HEART t_us=55015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=55497000 rx_us=55496000 char=k access=0 alarm=0
+EVENT t_ms=55497 bits=256 observation=819 saved=1 seq=105 flash_us=1000
+EVENT t_ms=56005 bits=1 observation=819 saved=1 seq=106 flash_us=1000
+HEART t_us=56015000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=56497000 rx_us=56496000 char=k access=0 alarm=0
+EVENT t_ms=56497 bits=256 observation=819 saved=1 seq=107 flash_us=1000
+EVENT t_ms=57005 bits=2 observation=1556 saved=1 seq=108 flash_us=1000
+HEART t_us=57015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=57497000 rx_us=57496000 char=k access=0 alarm=0
+EVENT t_ms=57497 bits=256 observation=819 saved=1 seq=109 flash_us=1000
+EVENT t_ms=58005 bits=3 observation=1556 saved=1 seq=110 flash_us=1000
+HEART t_us=58015000 adc=1556 fault=0 alarm=0 access=0
+CMD t_us=58497000 rx_us=58496000 char=k access=0 alarm=0
+EVENT t_ms=58497 bits=256 observation=819 saved=1 seq=111 flash_us=1000
+EVENT t_ms=59005 bits=4 observation=131891 saved=1 seq=112 flash_us=1000
+HEART t_us=59015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=59497000 rx_us=59496000 char=k access=0 alarm=0
+EVENT t_ms=59497 bits=256 observation=819 saved=1 seq=113 flash_us=1000
+EVENT t_ms=60005 bits=5 observation=131891 saved=1 seq=114 flash_us=1000
+HEART t_us=60015000 adc=819 fault=0 alarm=1 access=0
+CMD t_us=60497000 rx_us=60496000 char=k access=0 alarm=0
+EVENT t_ms=60497 bits=256 observation=819 saved=1 seq=115 flash_us=1000
+EVENT t_ms=61005 bits=6 observation=132628 saved=1 seq=116 flash_us=1000
+HEART t_us=61015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=61497000 rx_us=61496000 char=k access=0 alarm=0
+EVENT t_ms=61497 bits=256 observation=819 saved=1 seq=117 flash_us=1000
+EVENT t_ms=62005 bits=7 observation=132628 saved=1 seq=118 flash_us=1000
+HEART t_us=62015000 adc=1556 fault=0 alarm=1 access=0
+CMD t_us=62497000 rx_us=62496000 char=k access=0 alarm=0
+EVENT t_ms=62497 bits=256 observation=819 saved=1 seq=119 flash_us=1000
+EVENT t_ms=63005 bits=1 observation=819 saved=1 seq=120 flash_us=1000
+HEART t_us=63015000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=63497000 rx_us=63496000 char=k access=0 alarm=0
+EVENT t_ms=63497 bits=256 observation=819 saved=1 seq=121 flash_us=1000
+CMD t_us=63997000 rx_us=63996000 char=a access=1 alarm=0
+EVENT t_ms=63997 bits=64 observation=66355 saved=1 seq=122 flash_us=1000
+HEART t_us=64016000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=64005 bits=2 observation=67092 saved=1 seq=123 flash_us=1000
+CMD t_us=64497000 rx_us=64496000 char=k access=1 alarm=0
+EVENT t_ms=64497 bits=256 observation=66355 saved=1 seq=124 flash_us=1000
+EVENT t_ms=65005 bits=3 observation=67092 saved=1 seq=125 flash_us=1000
+HEART t_us=65015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=65497000 rx_us=65496000 char=k access=1 alarm=0
+EVENT t_ms=65497 bits=256 observation=66355 saved=1 seq=126 flash_us=1000
+EVENT t_ms=66005 bits=4 observation=197427 saved=1 seq=127 flash_us=1000
+HEART t_us=66015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=66497000 rx_us=66496000 char=k access=1 alarm=0
+EVENT t_ms=66497 bits=256 observation=66355 saved=1 seq=128 flash_us=1000
+EVENT t_ms=67005 bits=5 observation=197427 saved=1 seq=129 flash_us=1000
+HEART t_us=67015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=67497000 rx_us=67496000 char=k access=1 alarm=0
+EVENT t_ms=67497 bits=256 observation=66355 saved=1 seq=130 flash_us=1000
+EVENT t_ms=68005 bits=6 observation=198164 saved=1 seq=131 flash_us=1000
+HEART t_us=68015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=68497000 rx_us=68496000 char=k access=1 alarm=0
+EVENT t_ms=68497 bits=256 observation=66355 saved=1 seq=132 flash_us=1000
+EVENT t_ms=69005 bits=7 observation=198164 saved=1 seq=133 flash_us=1000
+HEART t_us=69015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=69497000 rx_us=69496000 char=k access=1 alarm=0
+EVENT t_ms=69497 bits=256 observation=66355 saved=1 seq=134 flash_us=1000
+EVENT t_ms=70005 bits=1 observation=66355 saved=1 seq=135 flash_us=1000
+HEART t_us=70015000 adc=819 fault=0 alarm=0 access=1
+CMD t_us=70497000 rx_us=70496000 char=k access=1 alarm=0
+EVENT t_ms=70497 bits=256 observation=66355 saved=1 seq=136 flash_us=1000
+EVENT t_ms=71005 bits=2 observation=67092 saved=1 seq=137 flash_us=1000
+HEART t_us=71015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=71497000 rx_us=71496000 char=k access=1 alarm=0
+EVENT t_ms=71497 bits=256 observation=66355 saved=1 seq=138 flash_us=1000
+EVENT t_ms=72005 bits=3 observation=67092 saved=1 seq=139 flash_us=1000
+HEART t_us=72015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=72497000 rx_us=72496000 char=k access=1 alarm=0
+EVENT t_ms=72497 bits=256 observation=66355 saved=1 seq=140 flash_us=1000
+EVENT t_ms=73005 bits=4 observation=197427 saved=1 seq=141 flash_us=1000
+HEART t_us=73015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=73497000 rx_us=73496000 char=k access=1 alarm=0
+EVENT t_ms=73497 bits=256 observation=66355 saved=1 seq=142 flash_us=1000
+EVENT t_ms=74005 bits=5 observation=197427 saved=1 seq=143 flash_us=1000
+HEART t_us=74015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=74497000 rx_us=74497000 char=k access=1 alarm=0
+EVENT t_ms=74497 bits=256 observation=66355 saved=1 seq=144 flash_us=1000
+EVENT t_ms=75005 bits=6 observation=198164 saved=1 seq=145 flash_us=1000
+HEART t_us=75015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=75497000 rx_us=75497000 char=k access=1 alarm=0
+EVENT t_ms=75497 bits=256 observation=66355 saved=1 seq=146 flash_us=1000
+EVENT t_ms=76005 bits=7 observation=198164 saved=1 seq=147 flash_us=1000
+HEART t_us=76015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=76497000 rx_us=76497000 char=k access=1 alarm=0
+EVENT t_ms=76497 bits=256 observation=66355 saved=1 seq=148 flash_us=1000
+EVENT t_ms=77005 bits=1 observation=66355 saved=1 seq=149 flash_us=1000
+HEART t_us=77015000 adc=819 fault=0 alarm=0 access=1
+CMD t_us=77497000 rx_us=77497000 char=k access=1 alarm=0
+EVENT t_ms=77497 bits=256 observation=66355 saved=1 seq=150 flash_us=1000
+EVENT t_ms=78005 bits=2 observation=67092 saved=1 seq=151 flash_us=1000
+HEART t_us=78015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=78497000 rx_us=78497000 char=k access=1 alarm=0
+EVENT t_ms=78497 bits=256 observation=66355 saved=1 seq=152 flash_us=1000
+EVENT t_ms=79005 bits=3 observation=67092 saved=1 seq=153 flash_us=1000
+HEART t_us=79015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=79498000 rx_us=79497000 char=k access=1 alarm=0
+EVENT t_ms=79498 bits=256 observation=66355 saved=1 seq=154 flash_us=1000
+EVENT t_ms=80005 bits=4 observation=197427 saved=1 seq=155 flash_us=1000
+HEART t_us=80015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=80498000 rx_us=80497000 char=k access=1 alarm=0
+EVENT t_ms=80498 bits=256 observation=66355 saved=1 seq=156 flash_us=1000
+EVENT t_ms=81005 bits=5 observation=197427 saved=1 seq=157 flash_us=1000
+HEART t_us=81015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=81498000 rx_us=81497000 char=k access=1 alarm=0
+EVENT t_ms=81498 bits=256 observation=66355 saved=1 seq=158 flash_us=1000
+EVENT t_ms=82005 bits=6 observation=198164 saved=1 seq=159 flash_us=1000
+HEART t_us=82015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=82498000 rx_us=82497000 char=k access=1 alarm=0
+EVENT t_ms=82498 bits=256 observation=66355 saved=1 seq=160 flash_us=1000
+EVENT t_ms=83005 bits=7 observation=198164 saved=1 seq=161 flash_us=1000
+HEART t_us=83015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=83498000 rx_us=83497000 char=k access=1 alarm=0
+EVENT t_ms=83498 bits=256 observation=66355 saved=1 seq=162 flash_us=1000
+EVENT t_ms=84005 bits=1 observation=66355 saved=1 seq=163 flash_us=1000
+HEART t_us=84015000 adc=819 fault=0 alarm=0 access=1
+CMD t_us=84498000 rx_us=84497000 char=k access=1 alarm=0
+EVENT t_ms=84498 bits=256 observation=66355 saved=1 seq=164 flash_us=1000
+EVENT t_ms=85005 bits=2 observation=67092 saved=1 seq=165 flash_us=1000
+HEART t_us=85015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=85498000 rx_us=85497000 char=k access=1 alarm=0
+EVENT t_ms=85498 bits=256 observation=66355 saved=1 seq=166 flash_us=1000
+EVENT t_ms=86005 bits=3 observation=67092 saved=1 seq=167 flash_us=1000
+HEART t_us=86015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=86498000 rx_us=86497000 char=k access=1 alarm=0
+EVENT t_ms=86498 bits=256 observation=66355 saved=1 seq=168 flash_us=1000
+EVENT t_ms=87005 bits=4 observation=197427 saved=1 seq=169 flash_us=1000
+HEART t_us=87015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=87498000 rx_us=87497000 char=k access=1 alarm=0
+EVENT t_ms=87498 bits=256 observation=66355 saved=1 seq=170 flash_us=1000
+EVENT t_ms=88005 bits=5 observation=197427 saved=1 seq=171 flash_us=1000
+HEART t_us=88015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=88498000 rx_us=88497000 char=k access=1 alarm=0
+EVENT t_ms=88498 bits=256 observation=66355 saved=1 seq=172 flash_us=1000
+EVENT t_ms=89005 bits=6 observation=198164 saved=1 seq=173 flash_us=1000
+HEART t_us=89015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=89498000 rx_us=89497000 char=k access=1 alarm=0
+EVENT t_ms=89498 bits=256 observation=66355 saved=1 seq=174 flash_us=1000
+EVENT t_ms=90005 bits=7 observation=198164 saved=1 seq=175 flash_us=1000
+HEART t_us=90015000 adc=1556 fault=0 alarm=1 access=1
+CMD t_us=90498000 rx_us=90497000 char=k access=1 alarm=0
+EVENT t_ms=90498 bits=256 observation=66355 saved=1 seq=176 flash_us=1000
+EVENT t_ms=91005 bits=1 observation=66355 saved=1 seq=177 flash_us=1000
+HEART t_us=91015000 adc=819 fault=0 alarm=0 access=1
+CMD t_us=91498000 rx_us=91497000 char=k access=1 alarm=0
+EVENT t_ms=91498 bits=256 observation=66355 saved=1 seq=178 flash_us=1000
+EVENT t_ms=92005 bits=2 observation=67092 saved=1 seq=179 flash_us=1000
+HEART t_us=92015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=92498000 rx_us=92497000 char=k access=1 alarm=0
+EVENT t_ms=92498 bits=256 observation=66355 saved=1 seq=180 flash_us=1000
+EVENT t_ms=93005 bits=3 observation=67092 saved=1 seq=181 flash_us=1000
+HEART t_us=93015000 adc=1556 fault=0 alarm=0 access=1
+CMD t_us=93498000 rx_us=93497000 char=k access=1 alarm=0
+EVENT t_ms=93498 bits=256 observation=66355 saved=1 seq=182 flash_us=1000
+EVENT t_ms=94005 bits=4 observation=197427 saved=1 seq=183 flash_us=1000
+HEART t_us=94015000 adc=819 fault=0 alarm=1 access=1
+CMD t_us=94498000 rx_us=94497000 char=k access=1 alarm=0
+EVENT t_ms=94498 bits=256 observation=66355 saved=1 seq=184 flash_us=1000
+EVENT t_ms=94505 bits=4 observation=197427 saved=1 seq=185 flash_us=1000
+HEART t_us=95005000 adc=819 fault=0 alarm=1 access=1
+EVENT t_ms=95505 bits=8 observation=197427 saved=1 seq=186 flash_us=1000
+CMD t_us=95798000 rx_us=95797000 char=k access=1 alarm=0
+EVENT t_ms=95798 bits=256 observation=66355 saved=1 seq=187 flash_us=1000
+EVENT t_ms=96005 bits=1 observation=66355 saved=1 seq=188 flash_us=1000
+HEART t_us=96015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=96505 bits=8 observation=66355 saved=1 seq=189 flash_us=1000
+CMD t_us=96798000 rx_us=96797000 char=k access=1 alarm=0
+EVENT t_ms=96798 bits=256 observation=66355 saved=1 seq=190 flash_us=1000
+EVENT t_ms=97005 bits=2 observation=67092 saved=1 seq=191 flash_us=1000
+HEART t_us=97015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=97505 bits=8 observation=67092 saved=1 seq=192 flash_us=1000
+CMD t_us=97798000 rx_us=97797000 char=k access=1 alarm=0
+EVENT t_ms=97798 bits=256 observation=66355 saved=1 seq=193 flash_us=1000
+EVENT t_ms=98005 bits=3 observation=67092 saved=1 seq=194 flash_us=1000
+HEART t_us=98015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=98505 bits=8 observation=67092 saved=1 seq=195 flash_us=1000
+CMD t_us=98798000 rx_us=98797000 char=k access=1 alarm=0
+EVENT t_ms=98798 bits=256 observation=66355 saved=1 seq=196 flash_us=1000
+HEART t_us=99005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=99505 bits=8 observation=66355 saved=1 seq=197 flash_us=1000
+CMD t_us=99798000 rx_us=99797000 char=k access=1 alarm=0
+EVENT t_ms=99798 bits=256 observation=66355 saved=1 seq=198 flash_us=1000
+EVENT t_ms=100005 bits=1 observation=66355 saved=1 seq=199 flash_us=1000
+HEART t_us=100015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=100505 bits=8 observation=66355 saved=1 seq=200 flash_us=1000
+CMD t_us=100798000 rx_us=100797000 char=k access=1 alarm=0
+EVENT t_ms=100798 bits=256 observation=66355 saved=1 seq=201 flash_us=2000
+EVENT t_ms=101005 bits=2 observation=67092 saved=1 seq=202 flash_us=1000
+HEART t_us=101015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=101505 bits=8 observation=67092 saved=1 seq=203 flash_us=1000
+CMD t_us=101798000 rx_us=101797000 char=k access=1 alarm=0
+EVENT t_ms=101798 bits=256 observation=66355 saved=1 seq=204 flash_us=2000
+EVENT t_ms=102005 bits=3 observation=67092 saved=1 seq=205 flash_us=1000
+HEART t_us=102015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=102505 bits=8 observation=67092 saved=1 seq=206 flash_us=1000
+CMD t_us=102798000 rx_us=102797000 char=k access=1 alarm=0
+EVENT t_ms=102798 bits=256 observation=66355 saved=1 seq=207 flash_us=2000
+HEART t_us=103005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=103505 bits=8 observation=66355 saved=1 seq=208 flash_us=1000
+CMD t_us=103798000 rx_us=103797000 char=k access=1 alarm=0
+EVENT t_ms=103798 bits=256 observation=66355 saved=1 seq=209 flash_us=2000
+EVENT t_ms=104005 bits=1 observation=66355 saved=1 seq=210 flash_us=1000
+HEART t_us=104015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=104505 bits=8 observation=66355 saved=1 seq=211 flash_us=1000
+CMD t_us=104798000 rx_us=104797000 char=k access=1 alarm=0
+EVENT t_ms=104798 bits=256 observation=66355 saved=1 seq=212 flash_us=2000
+EVENT t_ms=105005 bits=2 observation=67092 saved=1 seq=213 flash_us=1000
+HEART t_us=105015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=105505 bits=8 observation=67092 saved=1 seq=214 flash_us=1000
+CMD t_us=105798000 rx_us=105797000 char=k access=1 alarm=0
+EVENT t_ms=105798 bits=256 observation=66355 saved=1 seq=215 flash_us=2000
+EVENT t_ms=106005 bits=3 observation=67092 saved=1 seq=216 flash_us=1000
+HEART t_us=106015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=106505 bits=8 observation=67092 saved=1 seq=217 flash_us=1000
+CMD t_us=106798000 rx_us=106797000 char=k access=1 alarm=0
+EVENT t_ms=106798 bits=256 observation=66355 saved=1 seq=218 flash_us=2000
+HEART t_us=107005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=107505 bits=8 observation=66355 saved=1 seq=219 flash_us=1000
+CMD t_us=107798000 rx_us=107797000 char=k access=1 alarm=0
+EVENT t_ms=107798 bits=256 observation=66355 saved=1 seq=220 flash_us=2000
+EVENT t_ms=108005 bits=1 observation=66355 saved=1 seq=221 flash_us=1000
+HEART t_us=108015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=108505 bits=8 observation=66355 saved=1 seq=222 flash_us=1000
+CMD t_us=108798000 rx_us=108797000 char=k access=1 alarm=0
+EVENT t_ms=108798 bits=256 observation=66355 saved=1 seq=223 flash_us=2000
+EVENT t_ms=109005 bits=2 observation=67092 saved=1 seq=224 flash_us=1000
+HEART t_us=109015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=109505 bits=8 observation=67092 saved=1 seq=225 flash_us=1000
+CMD t_us=109798000 rx_us=109797000 char=k access=1 alarm=0
+EVENT t_ms=109798 bits=256 observation=66355 saved=1 seq=226 flash_us=2000
+EVENT t_ms=110005 bits=3 observation=67092 saved=1 seq=227 flash_us=1000
+HEART t_us=110015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=110505 bits=8 observation=67092 saved=1 seq=228 flash_us=1000
+CMD t_us=110798000 rx_us=110797000 char=k access=1 alarm=0
+EVENT t_ms=110798 bits=256 observation=66355 saved=1 seq=229 flash_us=2000
+HEART t_us=111005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=111505 bits=8 observation=66355 saved=1 seq=230 flash_us=1000
+CMD t_us=111798000 rx_us=111797000 char=k access=1 alarm=0
+EVENT t_ms=111798 bits=256 observation=66355 saved=1 seq=231 flash_us=2000
+EVENT t_ms=112005 bits=1 observation=66355 saved=1 seq=232 flash_us=1000
+HEART t_us=112015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=112505 bits=8 observation=66355 saved=1 seq=233 flash_us=1000
+CMD t_us=112798000 rx_us=112797000 char=k access=1 alarm=0
+EVENT t_ms=112798 bits=256 observation=66355 saved=1 seq=234 flash_us=2000
+EVENT t_ms=113005 bits=2 observation=67092 saved=1 seq=235 flash_us=1000
+HEART t_us=113015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=113505 bits=8 observation=67092 saved=1 seq=236 flash_us=1000
+CMD t_us=113798000 rx_us=113797000 char=k access=1 alarm=0
+EVENT t_ms=113798 bits=256 observation=66355 saved=1 seq=237 flash_us=2000
+EVENT t_ms=114005 bits=3 observation=67092 saved=1 seq=238 flash_us=1000
+HEART t_us=114015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=114505 bits=8 observation=67092 saved=1 seq=239 flash_us=1000
+CMD t_us=114798000 rx_us=114797000 char=k access=1 alarm=0
+EVENT t_ms=114798 bits=256 observation=66355 saved=1 seq=240 flash_us=2000
+HEART t_us=115005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=115505 bits=8 observation=66355 saved=1 seq=241 flash_us=1000
+CMD t_us=115798000 rx_us=115797000 char=k access=1 alarm=0
+EVENT t_ms=115798 bits=256 observation=66355 saved=1 seq=242 flash_us=2000
+EVENT t_ms=116005 bits=1 observation=66355 saved=1 seq=243 flash_us=1000
+HEART t_us=116015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=116505 bits=8 observation=66355 saved=1 seq=244 flash_us=1000
+CMD t_us=116798000 rx_us=116797000 char=k access=1 alarm=0
+EVENT t_ms=116798 bits=256 observation=66355 saved=1 seq=245 flash_us=2000
+EVENT t_ms=117005 bits=2 observation=67092 saved=1 seq=246 flash_us=1000
+HEART t_us=117015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=117505 bits=8 observation=67092 saved=1 seq=247 flash_us=1000
+CMD t_us=117798000 rx_us=117797000 char=k access=1 alarm=0
+EVENT t_ms=117798 bits=256 observation=66355 saved=1 seq=248 flash_us=2000
+EVENT t_ms=118005 bits=3 observation=67092 saved=1 seq=249 flash_us=1000
+HEART t_us=118015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=118505 bits=8 observation=67092 saved=1 seq=250 flash_us=1000
+CMD t_us=118798000 rx_us=118797000 char=k access=1 alarm=0
+EVENT t_ms=118798 bits=256 observation=66355 saved=1 seq=251 flash_us=2000
+HEART t_us=119005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=119505 bits=8 observation=66355 saved=1 seq=252 flash_us=1000
+CMD t_us=119798000 rx_us=119797000 char=k access=1 alarm=0
+EVENT t_ms=119798 bits=256 observation=66355 saved=1 seq=253 flash_us=2000
+EVENT t_ms=120005 bits=1 observation=66355 saved=1 seq=254 flash_us=1000
+HEART t_us=120015000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=120505 bits=8 observation=66355 saved=1 seq=255 flash_us=1000
+CMD t_us=120798000 rx_us=120797000 char=k access=1 alarm=0
+EVENT t_ms=120798 bits=256 observation=66355 saved=1 seq=256 flash_us=2000
+EVENT t_ms=121005 bits=2 observation=67092 saved=1 seq=257 flash_us=1000
+HEART t_us=121015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=121505 bits=8 observation=67092 saved=1 seq=258 flash_us=1000
+CMD t_us=121798000 rx_us=121797000 char=k access=1 alarm=0
+EVENT t_ms=121798 bits=256 observation=66355 saved=1 seq=259 flash_us=2000
+EVENT t_ms=122005 bits=3 observation=67092 saved=1 seq=260 flash_us=1000
+HEART t_us=122015000 adc=1556 fault=0 alarm=0 access=1
+EVENT t_ms=122505 bits=8 observation=67092 saved=1 seq=261 flash_us=1000
+CMD t_us=122798000 rx_us=122798000 char=k access=1 alarm=0
+EVENT t_ms=122798 bits=256 observation=66355 saved=1 seq=262 flash_us=2000
+HEART t_us=123005000 adc=819 fault=0 alarm=0 access=1
+EVENT t_ms=123505 bits=8 observation=66355 saved=1 seq=263 flash_us=1000
+CMD t_us=123798000 rx_us=123798000 char=k access=1 alarm=0
+EVENT t_ms=123798 bits=256 observation=66355 saved=1 seq=264 flash_us=2000
+EVENT t_ms=123997 bits=128 observation=819 saved=1 seq=265 flash_us=1000
+HEART t_us=124009000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=124005 bits=1 observation=819 saved=1 seq=266 flash_us=1000
+EVENT t_ms=124505 bits=8 observation=131891 saved=1 seq=267 flash_us=1000
+CMD t_us=124798000 rx_us=124798000 char=k access=0 alarm=0
+EVENT t_ms=124798 bits=256 observation=819 saved=1 seq=268 flash_us=2000
+CMD t_us=124998000 rx_us=124998000 char=g access=0 alarm=0
+EVENT t_ms=125005 bits=2 observation=1556 saved=1 seq=269 flash_us=2000
+HEART t_us=125017000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=125505 bits=8 observation=132628 saved=1 seq=270 flash_us=1000
+CMD t_us=125798000 rx_us=125798000 char=k access=0 alarm=0
+EVENT t_ms=125798 bits=256 observation=819 saved=1 seq=271 flash_us=2000
+EVENT t_ms=126005 bits=3 observation=1556 saved=1 seq=272 flash_us=1000
+HEART t_us=126015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=126505 bits=8 observation=132628 saved=1 seq=273 flash_us=1000
+CMD t_us=126798000 rx_us=126798000 char=k access=0 alarm=0
+EVENT t_ms=126798 bits=256 observation=819 saved=1 seq=274 flash_us=2000
+HEART t_us=127005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=127505 bits=8 observation=131891 saved=1 seq=275 flash_us=1000
+CMD t_us=127799000 rx_us=127798000 char=k access=0 alarm=0
+EVENT t_ms=127799 bits=256 observation=819 saved=1 seq=276 flash_us=1000
+EVENT t_ms=128005 bits=1 observation=819 saved=1 seq=277 flash_us=1000
+HEART t_us=128015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=128505 bits=8 observation=131891 saved=1 seq=278 flash_us=1000
+CMD t_us=128799000 rx_us=128798000 char=k access=0 alarm=0
+EVENT t_ms=128799 bits=256 observation=819 saved=1 seq=279 flash_us=1000
+EVENT t_ms=129005 bits=2 observation=1556 saved=1 seq=280 flash_us=1000
+HEART t_us=129015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=129505 bits=8 observation=132628 saved=1 seq=281 flash_us=1000
+CMD t_us=129799000 rx_us=129798000 char=k access=0 alarm=0
+EVENT t_ms=129799 bits=256 observation=819 saved=1 seq=282 flash_us=1000
+EVENT t_ms=130005 bits=3 observation=1556 saved=1 seq=283 flash_us=1000
+HEART t_us=130015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=130505 bits=8 observation=132628 saved=1 seq=284 flash_us=1000
+CMD t_us=130799000 rx_us=130798000 char=k access=0 alarm=0
+EVENT t_ms=130799 bits=256 observation=819 saved=1 seq=285 flash_us=1000
+HEART t_us=131005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=131505 bits=8 observation=131891 saved=1 seq=286 flash_us=1000
+CMD t_us=131799000 rx_us=131798000 char=k access=0 alarm=0
+EVENT t_ms=131799 bits=256 observation=819 saved=1 seq=287 flash_us=1000
+EVENT t_ms=132005 bits=1 observation=819 saved=1 seq=288 flash_us=1000
+HEART t_us=132015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=132505 bits=8 observation=131891 saved=1 seq=289 flash_us=1000
+CMD t_us=132799000 rx_us=132798000 char=k access=0 alarm=0
+EVENT t_ms=132799 bits=256 observation=819 saved=1 seq=290 flash_us=1000
+EVENT t_ms=133005 bits=2 observation=1556 saved=1 seq=291 flash_us=1000
+HEART t_us=133015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=133505 bits=8 observation=132628 saved=1 seq=292 flash_us=1000
+CMD t_us=133799000 rx_us=133798000 char=k access=0 alarm=0
+EVENT t_ms=133799 bits=256 observation=819 saved=1 seq=293 flash_us=1000
+EVENT t_ms=134005 bits=3 observation=1556 saved=1 seq=294 flash_us=1000
+HEART t_us=134015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=134505 bits=8 observation=132628 saved=1 seq=295 flash_us=1000
+CMD t_us=134799000 rx_us=134798000 char=k access=0 alarm=0
+EVENT t_ms=134799 bits=256 observation=819 saved=1 seq=296 flash_us=1000
+HEART t_us=135005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=135505 bits=8 observation=131891 saved=1 seq=297 flash_us=1000
+CMD t_us=135799000 rx_us=135798000 char=k access=0 alarm=0
+EVENT t_ms=135799 bits=256 observation=819 saved=1 seq=298 flash_us=1000
+EVENT t_ms=136005 bits=1 observation=819 saved=1 seq=299 flash_us=1000
+HEART t_us=136015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=136505 bits=8 observation=131891 saved=1 seq=300 flash_us=1000
+CMD t_us=136799000 rx_us=136798000 char=k access=0 alarm=0
+EVENT t_ms=136799 bits=256 observation=819 saved=1 seq=301 flash_us=1000
+EVENT t_ms=137005 bits=2 observation=1556 saved=1 seq=302 flash_us=1000
+HEART t_us=137015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=137505 bits=8 observation=132628 saved=1 seq=303 flash_us=1000
+CMD t_us=137799000 rx_us=137798000 char=k access=0 alarm=0
+EVENT t_ms=137799 bits=256 observation=819 saved=1 seq=304 flash_us=1000
+EVENT t_ms=138005 bits=3 observation=1556 saved=1 seq=305 flash_us=1000
+HEART t_us=138015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=138505 bits=8 observation=132628 saved=1 seq=306 flash_us=1000
+CMD t_us=138799000 rx_us=138798000 char=k access=0 alarm=0
+EVENT t_ms=138799 bits=256 observation=819 saved=1 seq=307 flash_us=1000
+HEART t_us=139005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=139505 bits=8 observation=131891 saved=1 seq=308 flash_us=1000
+CMD t_us=139799000 rx_us=139798000 char=k access=0 alarm=0
+EVENT t_ms=139799 bits=256 observation=819 saved=1 seq=309 flash_us=1000
+EVENT t_ms=140005 bits=1 observation=819 saved=1 seq=310 flash_us=1000
+HEART t_us=140015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=140505 bits=8 observation=131891 saved=1 seq=311 flash_us=1000
+CMD t_us=140799000 rx_us=140798000 char=k access=0 alarm=0
+EVENT t_ms=140799 bits=256 observation=819 saved=1 seq=312 flash_us=1000
+EVENT t_ms=141005 bits=2 observation=1556 saved=1 seq=313 flash_us=1000
+HEART t_us=141015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=141505 bits=8 observation=132628 saved=1 seq=314 flash_us=1000
+CMD t_us=141799000 rx_us=141798000 char=k access=0 alarm=0
+EVENT t_ms=141799 bits=256 observation=819 saved=1 seq=315 flash_us=1000
+EVENT t_ms=142005 bits=3 observation=1556 saved=1 seq=316 flash_us=1000
+HEART t_us=142015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=142505 bits=8 observation=132628 saved=1 seq=317 flash_us=1000
+CMD t_us=142799000 rx_us=142798000 char=k access=0 alarm=0
+EVENT t_ms=142799 bits=256 observation=819 saved=1 seq=318 flash_us=1000
+HEART t_us=143005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=143505 bits=8 observation=131891 saved=1 seq=319 flash_us=1000
+CMD t_us=143799000 rx_us=143798000 char=k access=0 alarm=0
+EVENT t_ms=143799 bits=256 observation=819 saved=1 seq=320 flash_us=1000
+EVENT t_ms=144005 bits=1 observation=819 saved=1 seq=321 flash_us=1000
+HEART t_us=144015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=144505 bits=8 observation=131891 saved=1 seq=322 flash_us=1000
+CMD t_us=144799000 rx_us=144798000 char=k access=0 alarm=0
+EVENT t_ms=144799 bits=256 observation=819 saved=1 seq=323 flash_us=1000
+EVENT t_ms=145005 bits=2 observation=1556 saved=1 seq=324 flash_us=1000
+HEART t_us=145015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=145505 bits=8 observation=132628 saved=1 seq=325 flash_us=1000
+CMD t_us=145799000 rx_us=145798000 char=k access=0 alarm=0
+EVENT t_ms=145799 bits=256 observation=819 saved=1 seq=326 flash_us=1000
+EVENT t_ms=146005 bits=3 observation=1556 saved=1 seq=327 flash_us=1000
+HEART t_us=146015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=146505 bits=8 observation=132628 saved=1 seq=328 flash_us=1000
+CMD t_us=146799000 rx_us=146798000 char=k access=0 alarm=0
+EVENT t_ms=146799 bits=256 observation=819 saved=1 seq=329 flash_us=1000
+HEART t_us=147005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=147505 bits=8 observation=131891 saved=1 seq=330 flash_us=1000
+CMD t_us=147799000 rx_us=147798000 char=k access=0 alarm=0
+EVENT t_ms=147799 bits=256 observation=819 saved=1 seq=331 flash_us=1000
+EVENT t_ms=148005 bits=1 observation=819 saved=1 seq=332 flash_us=1000
+HEART t_us=148015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=148505 bits=8 observation=131891 saved=1 seq=333 flash_us=1000
+CMD t_us=148799000 rx_us=148798000 char=k access=0 alarm=0
+EVENT t_ms=148799 bits=256 observation=819 saved=1 seq=334 flash_us=1000
+EVENT t_ms=149005 bits=2 observation=1556 saved=1 seq=335 flash_us=1000
+HEART t_us=149015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=149505 bits=8 observation=132628 saved=1 seq=336 flash_us=1000
+CMD t_us=149799000 rx_us=149798000 char=k access=0 alarm=0
+EVENT t_ms=149799 bits=256 observation=819 saved=1 seq=337 flash_us=1000
+EVENT t_ms=150005 bits=3 observation=1556 saved=1 seq=338 flash_us=1000
+HEART t_us=150015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=150505 bits=8 observation=132628 saved=1 seq=339 flash_us=1000
+CMD t_us=150799000 rx_us=150798000 char=k access=0 alarm=0
+EVENT t_ms=150799 bits=256 observation=819 saved=1 seq=340 flash_us=1000
+HEART t_us=151005000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=151505 bits=8 observation=131891 saved=1 seq=341 flash_us=1000
+CMD t_us=151799000 rx_us=151798000 char=k access=0 alarm=0
+EVENT t_ms=151799 bits=256 observation=819 saved=1 seq=342 flash_us=1000
+EVENT t_ms=152005 bits=1 observation=819 saved=1 seq=343 flash_us=1000
+HEART t_us=152015000 adc=819 fault=0 alarm=0 access=0
+EVENT t_ms=152505 bits=8 observation=131891 saved=1 seq=344 flash_us=1000
+CMD t_us=152799000 rx_us=152798000 char=k access=0 alarm=0
+EVENT t_ms=152799 bits=256 observation=819 saved=1 seq=345 flash_us=1000
+EVENT t_ms=153005 bits=2 observation=1556 saved=1 seq=346 flash_us=1000
+HEART t_us=153015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=153505 bits=8 observation=132628 saved=1 seq=347 flash_us=1000
+CMD t_us=153799000 rx_us=153798000 char=k access=0 alarm=0
+EVENT t_ms=153799 bits=256 observation=819 saved=1 seq=348 flash_us=1000
+EVENT t_ms=154005 bits=3 observation=1556 saved=1 seq=349 flash_us=1000
+HEART t_us=154015000 adc=1556 fault=0 alarm=0 access=0
+EVENT t_ms=154505 bits=8 observation=132628 saved=1 seq=350 flash_us=1000
+CMD t_us=154799000 rx_us=154798000 char=k access=0 alarm=0
+EVENT t_ms=154799 bits=256 observation=819 saved=1 seq=351 flash_us=1000
+HEART t_us=155005000 adc=819 fault=0 alarm=0 access=0
+HEART t_us=156005000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=156999000 rx_us=156998000 char=d access=0 alarm=0
+RECORD slot=0 seq=257 t_ms=121005 bits=2 observation=67092 crc=79755978
+HEART t_us=157017000 adc=819 fault=0 alarm=0 access=0
+RECORD slot=1 seq=258 t_ms=121505 bits=8 observation=67092 crc=334F9E8A
+RECORD slot=2 seq=259 t_ms=121798 bits=256 observation=66355 crc=4D62E600
+RECORD slot=3 seq=260 t_ms=122005 bits=3 observation=67092 crc=C12D7AC7
+RECORD slot=4 seq=261 t_ms=122505 bits=8 observation=67092 crc=3C5BB948
+RECORD slot=5 seq=262 t_ms=122798 bits=256 observation=66355 crc=A6C641B4
+RECORD slot=6 seq=263 t_ms=123505 bits=8 observation=66355 crc=2EC442BB
+RECORD slot=7 seq=264 t_ms=123798 bits=256 observation=66355 crc=B467D84A
+RECORD slot=8 seq=265 t_ms=123997 bits=128 observation=819 crc=084CBF20
+RECORD slot=9 seq=266 t_ms=124005 bits=1 observation=819 crc=DE8C0BC9
+RECORD slot=10 seq=267 t_ms=124505 bits=8 observation=131891 crc=95368CAF
+RECORD slot=11 seq=268 t_ms=124798 bits=256 observation=819 crc=AD057AE9
+RECORD slot=12 seq=269 t_ms=125005 bits=2 observation=1556 crc=C8047694
+RECORD slot=13 seq=270 t_ms=125505 bits=8 observation=132628 crc=CFF6106D
+RECORD slot=14 seq=271 t_ms=125798 bits=256 observation=819 crc=D26D3F16
+RECORD slot=15 seq=272 t_ms=126005 bits=3 observation=1556 crc=233FDE46
+RECORD slot=16 seq=273 t_ms=126505 bits=8 observation=132628 crc=9381BCC2
+RECORD slot=17 seq=274 t_ms=126798 bits=256 observation=819 crc=6AAA13CF
+RECORD slot=18 seq=275 t_ms=127505 bits=8 observation=131891 crc=7B5862A1
+RECORD slot=19 seq=276 t_ms=127799 bits=256 observation=819 crc=ED030576
+RECORD slot=20 seq=277 t_ms=128005 bits=1 observation=819 crc=3FF6C205
+RECORD slot=21 seq=278 t_ms=128505 bits=8 observation=131891 crc=DD7C4298
+RECORD slot=22 seq=279 t_ms=128799 bits=256 observation=819 crc=ACFAC9ED
+RECORD slot=23 seq=280 t_ms=129005 bits=2 observation=1556 crc=5860C7F5
+RECORD slot=24 seq=281 t_ms=129505 bits=8 observation=132628 crc=D0A97E64
+RECORD slot=25 seq=282 t_ms=129799 bits=256 observation=819 crc=CA6AC775
+RECORD slot=26 seq=283 t_ms=130005 bits=3 observation=1556 crc=AB92B518
+RECORD slot=27 seq=284 t_ms=130505 bits=8 observation=132628 crc=15732F2A
+RECORD slot=28 seq=285 t_ms=130799 bits=256 observation=819 crc=0E062051
+RECORD slot=29 seq=286 t_ms=131505 bits=8 observation=131891 crc=A30C9730
+RECORD slot=30 seq=287 t_ms=131799 bits=256 observation=819 crc=378C2A59
+RECORD slot=31 seq=288 t_ms=132005 bits=1 observation=819 crc=0A3F7F6B
+RECORD slot=32 seq=289 t_ms=132505 bits=8 observation=131891 crc=CBF99D6E
+RECORD slot=33 seq=290 t_ms=132799 bits=256 observation=819 crc=BBC9A071
+RECORD slot=34 seq=291 t_ms=133005 bits=2 observation=1556 crc=9DD325E8
+RECORD slot=35 seq=292 t_ms=133505 bits=8 observation=132628 crc=913901AC
+RECORD slot=36 seq=293 t_ms=133799 bits=256 observation=819 crc=8A4C0ED7
+RECORD slot=37 seq=294 t_ms=134005 bits=3 observation=1556 crc=9881D1DE
+RECORD slot=38 seq=295 t_ms=134505 bits=8 observation=132628 crc=A243D639
+RECORD slot=39 seq=296 t_ms=134799 bits=256 observation=819 crc=D24D892B
+RECORD slot=40 seq=297 t_ms=135505 bits=8 observation=131891 crc=99AC35B1
+RECORD slot=41 seq=298 t_ms=135799 bits=256 observation=819 crc=E99C08AE
+RECORD slot=42 seq=299 t_ms=136005 bits=1 observation=819 crc=19931B2F
+RECORD slot=43 seq=300 t_ms=136505 bits=8 observation=131891 crc=72089205
+RECORD slot=44 seq=301 t_ms=136799 bits=256 observation=819 crc=E6882F6C
+RECORD slot=45 seq=302 t_ms=137005 bits=2 observation=1556 crc=24222A83
+RECORD slot=46 seq=303 t_ms=137505 bits=8 observation=132628 crc=ACEB9312
+RECORD slot=47 seq=304 t_ms=137799 bits=256 observation=819 crc=60DE8AD1
+RECORD slot=48 seq=305 t_ms=138005 bits=3 observation=1556 crc=E420CEA0
+RECORD slot=49 seq=306 t_ms=138505 bits=8 observation=132628 crc=142CBFCB
+RECORD slot=50 seq=307 t_ms=138799 bits=256 observation=819 crc=0F59B0B0
+RECORD slot=51 seq=308 t_ms=139505 bits=8 observation=131891 crc=F1A57489
+RECORD slot=52 seq=309 t_ms=139799 bits=256 observation=819 crc=8023FFFC
+RECORD slot=53 seq=310 t_ms=140005 bits=1 observation=819 crc=719A5A17
+RECORD slot=54 seq=311 t_ms=140505 bits=8 observation=131891 crc=B05CB812
+RECORD slot=55 seq=312 t_ms=140799 bits=256 observation=819 crc=BBDC0977
+RECORD slot=56 seq=313 t_ms=141005 bits=2 observation=1556 crc=35403D7F
+RECORD slot=57 seq=314 t_ms=141505 bits=8 observation=132628 crc=7747F262
+RECORD slot=58 seq=315 t_ms=141799 bits=256 observation=819 crc=C4B44C88
+RECORD slot=59 seq=316 t_ms=142005 bits=3 observation=1556 crc=6CEF24BD
+RECORD slot=60 seq=317 t_ms=142505 bits=8 observation=132628 crc=562D235A
+RECORD slot=61 seq=318 t_ms=142799 bits=256 observation=819 crc=016E1DC6
+RECORD slot=62 seq=319 t_ms=143505 bits=8 observation=131891 crc=BEF4FD39
+RECORD slot=63 seq=320 t_ms=143799 bits=256 observation=819 crc=7AB61764
+RECORD slot=64 seq=321 t_ms=144005 bits=1 observation=819 crc=223FB574
+RECORD slot=65 seq=322 t_ms=144505 bits=8 observation=131891 crc=5BB43AF3
+RECORD slot=66 seq=323 t_ms=144799 bits=256 observation=819 crc=3B4FDBFF
+RECORD slot=67 seq=324 t_ms=145005 bits=2 observation=1556 crc=4373692C
+RECORD slot=68 seq=325 t_ms=145505 bits=8 observation=132628 crc=CBBAD0BD
+RECORD slot=69 seq=326 t_ms=145799 bits=256 observation=819 crc=C00403D5
+RECORD slot=70 seq=327 t_ms=146005 bits=3 observation=1556 crc=B0811BC1
+RECORD slot=71 seq=328 t_ms=146505 bits=8 observation=132628 crc=93BB5741
+RECORD slot=72 seq=329 t_ms=146799 bits=256 observation=819 crc=2048E9AB
+RECORD slot=73 seq=330 t_ms=147505 bits=8 observation=131891 crc=17223A3B
+RECORD slot=74 seq=331 t_ms=147799 bits=256 observation=819 crc=2B2436C3
+RECORD slot=75 seq=332 t_ms=148005 bits=1 observation=819 crc=D9F0FFFC
+RECORD slot=76 seq=333 t_ms=148505 bits=8 observation=131891 crc=18361DF9
+RECORD slot=77 seq=334 t_ms=148799 bits=256 observation=819 crc=C0809177
+RECORD slot=78 seq=335 t_ms=149005 bits=2 observation=1556 crc=4E1CA57F
+RECORD slot=79 seq=336 t_ms=149505 bits=8 observation=132628 crc=3FEBFCAC
+RECORD slot=80 seq=337 t_ms=149799 bits=256 observation=819 crc=8C184246
+RECORD slot=81 seq=338 t_ms=150005 bits=3 observation=1556 crc=272E46A7
+RECORD slot=82 seq=339 t_ms=150505 bits=8 observation=132628 crc=97902423
+RECORD slot=83 seq=340 t_ms=150799 bits=256 observation=819 crc=49C21308
+RECORD slot=84 seq=341 t_ms=151505 bits=8 observation=131891 crc=BA4F42D1
+RECORD slot=85 seq=342 t_ms=151799 bits=256 observation=819 crc=CBE84965
+RECORD slot=86 seq=343 t_ms=152005 bits=1 observation=819 crc=3BE75AE4
+RECORD slot=87 seq=344 t_ms=152505 bits=8 observation=131891 crc=47DB601F
+RECORD slot=88 seq=345 t_ms=152799 bits=256 observation=819 crc=5927B815
+HEART t_us=158005000 adc=819 fault=0 alarm=0 access=0
+RECORD slot=89 seq=346 t_ms=153005 bits=2 observation=1556 crc=9B8DBDFA
+RECORD slot=90 seq=347 t_ms=153505 bits=8 observation=132628 crc=56B1AD8F
+RECORD slot=91 seq=348 t_ms=153799 bits=256 observation=819 crc=A26C603F
+RECORD slot=92 seq=349 t_ms=154005 bits=3 observation=1556 crc=2692244E
+RECORD slot=93 seq=350 t_ms=154505 bits=8 observation=132628 crc=5CE23046
+RECORD slot=94 seq=351 t_ms=154799 bits=256 observation=819 crc=CDEB5A5E
+RECORD slot=95 seq=224 t_ms=109005 bits=2 observation=67092 crc=09E3DE94
+RECORD slot=96 seq=225 t_ms=109505 bits=8 observation=67092 crc=89176FEA
+RECORD slot=97 seq=226 t_ms=109798 bits=256 observation=66355 crc=317043E4
+RECORD slot=98 seq=227 t_ms=110005 bits=3 observation=67092 crc=1BE69604
+RECORD slot=99 seq=228 t_ms=110505 bits=8 observation=67092 crc=62B3C85E
+RECORD slot=100 seq=229 t_ms=110798 bits=256 observation=66355 crc=B58F37EE
+RECORD slot=101 seq=230 t_ms=111505 bits=8 observation=66355 crc=8A6A163D
+RECORD slot=102 seq=231 t_ms=111798 bits=256 observation=66355 crc=59480857
+RECORD slot=103 seq=232 t_ms=112005 bits=1 observation=66355 crc=1ED7C120
+RECORD slot=104 seq=233 t_ms=112505 bits=8 observation=66355 crc=6A26FC43
+RECORD slot=105 seq=234 t_ms=112798 bits=256 observation=66355 crc=CEC0432C
+RECORD slot=106 seq=235 t_ms=113005 bits=2 observation=67092 crc=34314C2A
+RECORD slot=107 seq=236 t_ms=113505 bits=8 observation=67092 crc=30E66081
+RECORD slot=108 seq=237 t_ms=113798 bits=256 observation=66355 crc=30CC210D
+RECORD slot=109 seq=238 t_ms=114005 bits=3 observation=67092 crc=8C696F95
+RECORD slot=110 seq=239 t_ms=114505 bits=8 observation=67092 crc=711FAC1A
+RECORD slot=111 seq=240 t_ms=114798 bits=256 observation=66355 crc=335D00F1
+RECORD slot=112 seq=241 t_ms=115505 bits=8 observation=66355 crc=C67657AE
+RECORD slot=113 seq=242 t_ms=115798 bits=256 observation=66355 crc=F1E4C9B2
+RECORD slot=114 seq=243 t_ms=116005 bits=1 observation=66355 crc=81FDBD58
+RECORD slot=115 seq=244 t_ms=116505 bits=8 observation=66355 crc=03AC06E0
+RECORD slot=116 seq=245 t_ms=116798 bits=256 observation=66355 crc=1F07D40D
+RECORD slot=117 seq=246 t_ms=117005 bits=2 observation=67092 crc=5DBBB689
+RECORD slot=118 seq=247 t_ms=117505 bits=8 observation=67092 crc=DD4F07F7
+RECORD slot=119 seq=248 t_ms=117798 bits=256 observation=66355 crc=B61E1612
+RECORD slot=120 seq=249 t_ms=118005 bits=3 observation=67092 crc=798EF5EE
+RECORD slot=121 seq=250 t_ms=118505 bits=8 observation=67092 crc=4E3640ED
+RECORD slot=122 seq=251 t_ms=118798 bits=256 observation=66355 crc=7C0C8941
+RECORD slot=123 seq=252 t_ms=119505 bits=8 observation=66355 crc=E80275D7
+RECORD slot=124 seq=253 t_ms=119798 bits=256 observation=66355 crc=19DABF4F
+RECORD slot=125 seq=254 t_ms=120005 bits=1 observation=66355 crc=AF899F21
+RECORD slot=126 seq=255 t_ms=120505 bits=8 observation=66355 crc=87854FB6
+RECORD slot=127 seq=256 t_ms=120798 bits=256 observation=66355 crc=320AA3FF
+HEART t_us=159005000 adc=819 fault=0 alarm=0 access=0
+HEART t_us=160005000 adc=819 fault=0 alarm=0 access=0
+HEART t_us=161005000 adc=819 fault=0 alarm=0 access=0
+CMD t_us=161999000 rx_us=161998000 char=s access=0 alarm=0
+STAT name=sample n=7949 min_us=2000 avg_us=2000 max_us=2000
+HEART t_us=162016000 adc=819 fault=0 alarm=0 access=0
+STAT name=recovery n=0 min_us=0 avg_us=0 max_us=0
+STAT name=command n=633 min_us=6000 avg_us=11966 max_us=14000
+STAT name=journal n=348 min_us=9000 avg_us=10002 max_us=12000
+STAT name=output n=287 min_us=6000 avg_us=8181 max_us=12000
+STAT name=loop n=130722 min_us=0 avg_us=102 max_us=33000
+STAT name=command_latency n=634 min_us=0 avg_us=94052 max_us=235000
+STAT name=loop_period n=130723 min_us=0 avg_us=1216 max_us=34000
+RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0
+CADENCE n=7949 skipped=0 late=0 finish_miss=0 release_max_us=18000 jitter_min_us=0 jitter_max_us=0 busy_permille=184
+RTOS free=1080 min_free=1080 stack_sensor_words=320 stack_service_words=482 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0

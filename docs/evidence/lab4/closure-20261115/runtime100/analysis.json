@@ -1,0 +1,26 @@
+{
+  "hal_ms": 250140,
+  "sensor_us": 29830300,
+  "service_us": 31805142,
+  "idle_us": 188475007,
+  "switches": 59028,
+  "bad_intervals": 0,
+  "cnt": 25089,
+  "total_us": 250110449,
+  "sensor_percent": 11.926850765039408,
+  "service_percent": 12.716438728235621,
+  "idle_percent": 75.35671050672497,
+  "vcd_report_start_ns": 250156399500,
+  "unattributed_startup_and_output_us": 45950.5,
+  "vcd_pir_rises": 30,
+  "rfc_lines_in_vcd": true,
+  "method": "TIM3 1MHz; uint16 differences at task selection, interval must be <65ms; task attribution includes interrupts and kernel work between hooks; diagnostic ELF; statistics include startup after timer starts",
+  "hashes": {
+    "uart.raw": "04ed83b0821bd9aceb6b34dc6570c92701d542c355d66426c391a65e4c6d080a",
+    "capture.vcd": "d39c6e012915d09c91dce612d09ad5d0dce8f790600cac9c8e53c99dd66e03c9",
+    "firmware.elf": "6dbd60bbe443498520439db07ef94c68452b5596f73a94aed74368f73edb0514",
+    "firmware.hex": "7b41bc4eedcfbee09d43430ed05b27a444539f1d32b11e398c61b8d38140df3d",
+    "mgload.chip.wasm": "eb568fd1e724ad22604d6324294e037201a7fb4b544f789b6a89867b45c41541",
+    "diagram.json": "766d0dca34dc45d7867cd30e95a8321d9f7bc2284190cb28260ceffc3b584522"
+  }
+}

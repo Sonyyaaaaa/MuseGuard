@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+firmware = 'firmware.hex'
+elf = 'firmware.elf'
+rfc2217ServerPort = 23416
+vcdFile = 'capture.vcd'
+
+[[chip]]
+name = 'mgload'
+binary = 'mgload.chip.wasm'

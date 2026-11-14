@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-08",
+  "bare": {
+    "kind": "bare-retry",
+    "uart_sha256": "c0244f83da680995511f58aa73f82fff93600bbc87d7a6bf605a887926e797e9",
+    "elf_sha256": "f6c7995acea914391cf02d18b7299953a3e5b01d6b7282f48c73ec4aa71ef4ea",
+    "interval_mcu_us": 3600084000,
+    "hearts": 3612,
+    "heart_gap_max_us": 1002000,
+    "pir_rises_ns": [
+      20000000000,
+      320000000000,
+      620000000000,
+      920000000000,
+      1220000000000,
+      1520000000000,
+      1820000000000,
+      2120000000000,
+      2420000000000,
+      2720000000000,
+      3020000000000,
+      3320000000000
+    ],
+    "journal_crc_valid_unique": 19,
+    "cadence": "CADENCE n=180004 skipped=0 late=0 finish_miss=0 release_max_us=15000 jitter_min_us=-15000 jitter_max_us=12000 busy_permille=106\r",
+    "resource": "RESOURCE stack=640 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0\r",
+    "rtos": null
+  },
+  "rtos": {
+    "kind": "rtos",
+    "uart_sha256": "6f0812788ce2623d53e6d46ec7db6ca0398dbac055ad30389adf2b402c29bbcc",
+    "elf_sha256": "ea0b2d79cbef504014e5bba4b70fdfa6b6061507f528a24c0a8b060cc6b33044",
+    "interval_mcu_us": 3600820000,
+    "hearts": 3612,
+    "heart_gap_max_us": 1000000,
+    "pir_rises_ns": [
+      20000000000,
+      320000000000,
+      620000000000,
+      920000000000,
+      1220000000000,
+      1520000000000,
+      1820000000000,
+      2120000000000,
+      2420000000000,
+      2720000000000,
+      3020000000000,
+      3320000000000
+    ],
+    "journal_crc_valid_unique": 19,
+    "cadence": "CADENCE n=180041 skipped=0 late=0 finish_miss=0 release_max_us=10000 jitter_min_us=0 jitter_max_us=0 busy_permille=106\r",
+    "resource": "RESOURCE stack=592 heap_peak=1032 rx_drop=0 ore=0 event_drop=0 flash_fail=0 clock_ambiguous=0\r",
+    "rtos": "RTOS free=1080 min_free=1080 stack_sensor_words=320 stack_service_words=480 stack_idle_words=116 sensor_lock_waits=0 sensor_wait_max_ms=0\r"
+  },
+  "diagram_sha256": "8693369905c6b4fb19d7f6919a1eef331bc40e1edab4c76ee8c7a2f5bda10a3c",
+  "generator_wasm_sha256": "7ca99fc7613ab8aae6ae1a831c10598f8af0d3de1d61f9d69e7818473c4f2eb6",
+  "note": "PIR edges identical; operator commands scheduled by HEART relative to reset, actual UART timestamps differ slightly; 1 ms firmware timing resolution; busy_permille is not CPU utilisation."
+}

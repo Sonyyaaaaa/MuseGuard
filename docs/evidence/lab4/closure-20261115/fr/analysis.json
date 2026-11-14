@@ -1,0 +1,1470 @@
+{
+  "end_ns": 195166698575,
+  "boots": 1,
+  "short_shock": [
+    {
+      "trial": 1,
+      "input_ns": 5000000000,
+      "events": 1,
+      "led_latency_ms": 9.822775
+    },
+    {
+      "trial": 2,
+      "input_ns": 6001000000,
+      "events": 1,
+      "led_latency_ms": 8.801275
+    },
+    {
+      "trial": 3,
+      "input_ns": 7002000000,
+      "events": 1,
+      "led_latency_ms": 7.779675
+    },
+    {
+      "trial": 4,
+      "input_ns": 8003000000,
+      "events": 1,
+      "led_latency_ms": 6.7591
+    },
+    {
+      "trial": 5,
+      "input_ns": 9004000000,
+      "events": 1,
+      "led_latency_ms": 5.737975
+    },
+    {
+      "trial": 6,
+      "input_ns": 10005000000,
+      "events": 1,
+      "led_latency_ms": 4.716775
+    },
+    {
+      "trial": 7,
+      "input_ns": 11006000000,
+      "events": 1,
+      "led_latency_ms": 3.694775
+    },
+    {
+      "trial": 8,
+      "input_ns": 12007000000,
+      "events": 1,
+      "led_latency_ms": 2.673775
+    },
+    {
+      "trial": 9,
+      "input_ns": 13008000000,
+      "events": 1,
+      "led_latency_ms": 1.655775
+    },
+    {
+      "trial": 10,
+      "input_ns": 14009000000,
+      "events": 1,
+      "led_latency_ms": 20.631525
+    },
+    {
+      "trial": 11,
+      "input_ns": 15010000000,
+      "events": 1,
+      "led_latency_ms": 19.611025
+    },
+    {
+      "trial": 12,
+      "input_ns": 16011000000,
+      "events": 1,
+      "led_latency_ms": 18.590025
+    },
+    {
+      "trial": 13,
+      "input_ns": 17012000000,
+      "events": 1,
+      "led_latency_ms": 17.568775
+    },
+    {
+      "trial": 14,
+      "input_ns": 18013000000,
+      "events": 1,
+      "led_latency_ms": 16.548075
+    },
+    {
+      "trial": 15,
+      "input_ns": 19014000000,
+      "events": 1,
+      "led_latency_ms": 15.527075
+    },
+    {
+      "trial": 16,
+      "input_ns": 20015000000,
+      "events": 1,
+      "led_latency_ms": 14.5096
+    },
+    {
+      "trial": 17,
+      "input_ns": 21016000000,
+      "events": 1,
+      "led_latency_ms": 13.485575
+    },
+    {
+      "trial": 18,
+      "input_ns": 22017000000,
+      "events": 1,
+      "led_latency_ms": 12.464575
+    },
+    {
+      "trial": 19,
+      "input_ns": 23018000000,
+      "events": 1,
+      "led_latency_ms": 11.447125
+    },
+    {
+      "trial": 20,
+      "input_ns": 24019000000,
+      "events": 1,
+      "led_latency_ms": 10.422975
+    },
+    {
+      "trial": 21,
+      "input_ns": 25000000000,
+      "events": 1,
+      "led_latency_ms": 9.405125
+    },
+    {
+      "trial": 22,
+      "input_ns": 26001000000,
+      "events": 1,
+      "led_latency_ms": 8.3818
+    },
+    {
+      "trial": 23,
+      "input_ns": 27002000000,
+      "events": 1,
+      "led_latency_ms": 7.361725
+    },
+    {
+      "trial": 24,
+      "input_ns": 28003000000,
+      "events": 1,
+      "led_latency_ms": 6.340875
+    },
+    {
+      "trial": 25,
+      "input_ns": 29004000000,
+      "events": 1,
+      "led_latency_ms": 5.32005
+    },
+    {
+      "trial": 26,
+      "input_ns": 30005000000,
+      "events": 1,
+      "led_latency_ms": 4.298725
+    },
+    {
+      "trial": 27,
+      "input_ns": 31006000000,
+      "events": 1,
+      "led_latency_ms": 3.278225
+    },
+    {
+      "trial": 28,
+      "input_ns": 32007000000,
+      "events": 1,
+      "led_latency_ms": 2.259725
+    },
+    {
+      "trial": 29,
+      "input_ns": 33008000000,
+      "events": 1,
+      "led_latency_ms": 1.239225
+    },
+    {
+      "trial": 30,
+      "input_ns": 34009000000,
+      "events": 1,
+      "led_latency_ms": 20.215975
+    }
+  ],
+  "short_detected": 30,
+  "short_led_max_ms": 20.631525,
+  "combinations": [
+    {
+      "trial": 1,
+      "mask": 1,
+      "access": false,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 2,
+      "mask": 2,
+      "access": false,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 3,
+      "mask": 3,
+      "access": false,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 4,
+      "mask": 4,
+      "access": false,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 5,
+      "mask": 5,
+      "access": false,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 6,
+      "mask": 6,
+      "access": false,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 7,
+      "mask": 7,
+      "access": false,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 8,
+      "mask": 1,
+      "access": false,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 9,
+      "mask": 2,
+      "access": false,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 10,
+      "mask": 3,
+      "access": false,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 11,
+      "mask": 4,
+      "access": false,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 12,
+      "mask": 5,
+      "access": false,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 13,
+      "mask": 6,
+      "access": false,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 14,
+      "mask": 7,
+      "access": false,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 15,
+      "mask": 1,
+      "access": false,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 16,
+      "mask": 2,
+      "access": false,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 17,
+      "mask": 3,
+      "access": false,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 18,
+      "mask": 4,
+      "access": false,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 19,
+      "mask": 5,
+      "access": false,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 20,
+      "mask": 6,
+      "access": false,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 21,
+      "mask": 7,
+      "access": false,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 22,
+      "mask": 1,
+      "access": false,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 23,
+      "mask": 2,
+      "access": false,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 24,
+      "mask": 3,
+      "access": false,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 25,
+      "mask": 4,
+      "access": false,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 26,
+      "mask": 5,
+      "access": false,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 27,
+      "mask": 6,
+      "access": false,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 28,
+      "mask": 7,
+      "access": false,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 29,
+      "mask": 1,
+      "access": false,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 30,
+      "mask": 2,
+      "access": true,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 31,
+      "mask": 3,
+      "access": true,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 32,
+      "mask": 4,
+      "access": true,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 33,
+      "mask": 5,
+      "access": true,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 34,
+      "mask": 6,
+      "access": true,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 35,
+      "mask": 7,
+      "access": true,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 36,
+      "mask": 1,
+      "access": true,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 37,
+      "mask": 2,
+      "access": true,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 38,
+      "mask": 3,
+      "access": true,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 39,
+      "mask": 4,
+      "access": true,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 40,
+      "mask": 5,
+      "access": true,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 41,
+      "mask": 6,
+      "access": true,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 42,
+      "mask": 7,
+      "access": true,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 43,
+      "mask": 1,
+      "access": true,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 44,
+      "mask": 2,
+      "access": true,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 45,
+      "mask": 3,
+      "access": true,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 46,
+      "mask": 4,
+      "access": true,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 47,
+      "mask": 5,
+      "access": true,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 48,
+      "mask": 6,
+      "access": true,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 49,
+      "mask": 7,
+      "access": true,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 50,
+      "mask": 1,
+      "access": true,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 51,
+      "mask": 2,
+      "access": true,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 52,
+      "mask": 3,
+      "access": true,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 53,
+      "mask": 4,
+      "access": true,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 54,
+      "mask": 5,
+      "access": true,
+      "actual_mask": 5,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 55,
+      "mask": 6,
+      "access": true,
+      "actual_mask": 6,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 56,
+      "mask": 7,
+      "access": true,
+      "actual_mask": 7,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 57,
+      "mask": 1,
+      "access": true,
+      "actual_mask": 1,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 58,
+      "mask": 2,
+      "access": true,
+      "actual_mask": 2,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 59,
+      "mask": 3,
+      "access": true,
+      "actual_mask": 3,
+      "alarm_values": [
+        false
+      ],
+      "pass_types": true
+    },
+    {
+      "trial": 60,
+      "mask": 4,
+      "access": true,
+      "actual_mask": 4,
+      "alarm_values": [
+        true
+      ],
+      "pass_types": true
+    }
+  ],
+  "combination_types_passed": 60,
+  "tilts": [
+    {
+      "trial": 1,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 2,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 3,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 4,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 5,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 6,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 7,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 8,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 9,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 10,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 11,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 12,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 13,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 14,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 15,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 16,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 17,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 18,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 19,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 20,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 21,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 22,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 23,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 24,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 25,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 26,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 27,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 28,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 29,
+      "access": true,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        false
+      ]
+    },
+    {
+      "trial": 30,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 31,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 32,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 33,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 34,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 35,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 36,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 37,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 38,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 39,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 40,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 41,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 42,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 43,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 44,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 45,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 46,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 47,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 48,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 49,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 50,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 51,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 52,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 53,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 54,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 55,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 56,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 57,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 58,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 59,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    },
+    {
+      "trial": 60,
+      "access": false,
+      "events": 1,
+      "latency_ms": [
+        505
+      ],
+      "alarm": [
+        true
+      ]
+    }
+  ],
+  "tilt_detected": 60,
+  "crc_records": 128,
+  "crc_valid": 128,
+  "unique_sequences": 128,
+  "raw_events": 351,
+  "vcd_decoded_events": 351,
+  "rfc_lines_present_in_vcd": true,
+  "hashes": {
+    "uart.raw": "1db2e2384ab80a682bce45b2edcb13cb8f80a8a16fd48076c298172794919435",
+    "capture.vcd": "762edf83ab7f9ca9488c3eb8fd6d4505e737004a637c0356283c09ae59d140c0",
+    "firmware.elf": "ea0b2d79cbef504014e5bba4b70fdfa6b6061507f528a24c0a8b060cc6b33044",
+    "firmware.hex": "77722c766bdbe99c0aceacb7ad100647086dd40f38a0579e510b824a3d3dcc59",
+    "mgload.chip.c": "317b12ab5fb748e004dbb5f0f086af5676e562ed06abf3855ec6baf0e5e7f5a8",
+    "mgload.chip.wasm": "5a7340545b603711c26b49651fa2ba1b7c1b0f18008bdb0b396cdf7868ebfb3d",
+    "startup-not-ready.chip.c": "7c728b5b2822d9ee1e3bc60d0c6b8169ed923ab9c89fe22d4772842720573b00",
+    "startup-not-ready.chip.wasm": "4292afc7edb6edfcb3af6eaf849a60a9ed156fb45a6d66b6a7c053ec95dfcab2"
+  }
+}

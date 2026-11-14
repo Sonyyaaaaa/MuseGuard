@@ -1,0 +1,1 @@
+PASS policy: 30 wrap-shifted trials; ACCESS TILT, prior alarm, ACK preserves tilt latch/reference, no retrigger during unchanged tilt; first-command 60000ms expiry/no renewal; 3840 periodic host updates

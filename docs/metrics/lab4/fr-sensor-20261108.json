@@ -1,0 +1,15 @@
+{
+  "elf_sha256": "ea0b2d79cbef504014e5bba4b70fdfa6b6061507f528a24c0a8b060cc6b33044",
+  "uart1_sha256": "ff1653e3ee9ab323ee093c6fd0886472d05197c22bc1ddc131600043fa69faf5",
+  "uart2_sha256": "d1d24b56a88a1be4ed894fcea9a79b39320711c875a0b4d28086ff2ac1add95f",
+  "vcd_sha256": "f3772e40881fddf7ac7179615deabb048204903dfd004ca50ac0a0ea368d4aca",
+  "vcd_end_ns": 111622197150,
+  "vcd_decoded_events": [
+    "t_ms=24740 bits=4",
+    "t_ms=77760 bits=8"
+  ],
+  "event_light_uart_ms": 134440,
+  "crc_valid_rows": 14,
+  "crc_valid_unique_sequences": 8,
+  "limitations": "First collector timed out during deliberately paused simulation; tilt verified by VCD UART and CRC-valid later journal, light is beyond VCD buffer and verified by second UART only."
+}

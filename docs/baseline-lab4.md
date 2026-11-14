@@ -1,6 +1,6 @@
 # Базова лінія MuseGuard для ЛР4
 
-ЛР4 не реалізована. Базова прошивка ЛР3 є bare metal, C031C6 48 MHz, ADC/PIR/MPU6050, UART 115200 8N1. Версія у BOOT: source `f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4`, git `15280fb5e0e1-dirty`. Source manifest зберігається у metrics, локальний run-manifest і повні VCD у Lab03/Work.
+Цей документ фіксує базову лінію ЛР3; актуальні результати ЛР4 наведено в comparison.md і lab4-report.md. Базова прошивка ЛР3 є bare metal, C031C6 48 MHz, ADC/PIR/MPU6050, UART 115200 8N1. Версія у BOOT: source `f8a557c75edecf2461b712bfe0667b9c0069caccdc3f814856416e294387d3e4`, git `15280fb5e0e1-dirty`. Source manifest зберігається у metrics, локальний run-manifest і повні VCD у Lab03/Work.
 
 ## Незмінні умови порівняння
 
@@ -17,7 +17,7 @@
 | S3 | той самий ELF, `z`, `d`, потік `n`, PIR під час обробки backlog, зміни режиму й записи | ≥30 фронтів PIR; тисячі sample | S3 UART/VCD, drop/ORE, latencies |
 | F1 | `f`, пауза, `v`, перевірити FAULT і RECOVERED | окремий лог | програмна ін'єкція, не SDA short |
 | F2 | ступінчасті UART bursts 1/8/32/128/512 символів `n` | stats після кожного рівня | межа rx ring і response |
-| F3 | diagram.lab3-fault.json, SDA-GND на старті, розімкнути switch | Wokwi timeout повторюється раз/с, RECOVERED t33029ms, ID104 | SDA-fault-recovery UART/VCD; фізична плата не перевірена |
+| F3 | diagram.lab3-fault.json, SDA-GND на старті, розімкнути switch | Wokwi timeout повторюється раз/с, RECOVERED t33029ms, ID104 | SDA-fault-recovery UART/VCD |
 | F4 | reset MCU після `d`; потім відключення живлення під час запису | ≥30 actual power cuts з CRC | host byte-cut тест не замінює це |
 
 Для веб-Wokwi F1, Upload Firmware and Start Simulation. Після Stop зберегти оригінальний VCD до повторного запуску. Analyzer має 3 000 000 transitions capacity, тому годинний S2 не має суцільного VCD усієї години; тривалість підтверджує UART. Скрипт `tools/analyze_lab3.py VCD --output PREFIX` обчислює ширини probes і PIR→початок UART EVENT та консервативну межу PIR→кінець наступного SAMPLE, який почався після фронту. `tools/clip_vcd.py` лише обрізає справжній запис і додає source hash/offset у header.
@@ -34,7 +34,7 @@ VCD S3: PIR→початок EVENT n30, min/avg/max15.144/26.167/40.765 мс. К
 
 Вищий пріоритет sensor task і окремий UART worker можуть зменшити max release lateness при burst traffic до ≤2 мс, якщо TX блокує лише свою задачу й ISR не маскуються. Черга команд сама не збільшує пропускну здатність UART. Той самий 127-byte backlog має бути перевірений при тому самому потоці.
 
-ОС не збільшить flash і не прибере зупинку виконання з єдиного flash bank під час erase. Потрібно повторити зовнішні probes, а не обіцяти фізичний дедлайн за симулятором. Для RAM планується порівняння залишку після окремих task stacks з поточними static RAM 2404 B і єдиним MSP reserve 2048 B; це план перевірки, не вимір FreeRTOS.
+ОС не збільшить flash і не прибере зупинку виконання з єдиного flash bank під час erase. Порівняння потребує тих самих GPIO probes та врахування їхнього впливу на вимір. Для RAM планується порівняння залишку після окремих task stacks з поточними static RAM 2404 B і єдиним MSP reserve 2048 B; це план перевірки, не вимір FreeRTOS.
 
 ## Критерії наступного порівняння
 
@@ -46,6 +46,6 @@ P20 fixture tests/fixtures/phase20: незмінний baseline ELF, C input dri
 
 Runtime SDA на baseline ELF: почати зі справної шини, замкнути switch після HEART fault0, отримати FAULT, розімкнути, чекати фактичного RECOVERED і id104. Порівняти sample timeout22ms, recovery max22ms, release-to-RECOVERED1658.604ms, stack664B. Ціль H4 стосується ADC/PIR deadline, не обіцянки миттєвої готовності IMU.
 
-Startup із підключеною тестовою I²C-моделлю: NACK до 5 с, потім ACK; RECOVERED t_ms=5029, перший повний кадр 5.029333–5.030698 с, завершення SAMPLE 5.031062 с. Повторити [fixture](../tests/fixtures/startup-not-ready/README.md) та зберегти UART/VCD. Boot-with-SDA-low є іншим збоєм; жоден із двох тестів не встановлює фізичний час готовності MPU6050.
+Startup із підключеною тестовою I²C-моделлю: NACK до 5 с, потім ACK; RECOVERED t_ms=5029, перший повний кадр 5.029333–5.030698 с, завершення SAMPLE 5.031062 с. Повторити [fixture](../tests/fixtures/startup-not-ready/README.md) та зберегти UART/VCD. Boot-with-SDA-low є іншим збоєм; час готовності MPU6050 у цьому fixture задається тестовою моделлю.
 
-Діагностику mallinfo і NVIC reset повторювати окремим link із tools/diagnostics/heap-reset-probe.c, власним ELF hash та DIAG marker. Поточні results: allocated1032/free0B; із ACCESS/alarm1 reset повертає GUARD/alarm0, CRC-valid seq1–5 лишаються. Не підставляти її timings або stack648B у baseline. Toolbar Restart у web-проєкті запускає default sketch Hello STM32, тому повторний baseline старт робити саме Upload Firmware. Фізичні power cut, струм, wear і електричні рівні є іншою перевіркою після переходу з формиB до плати.
+Діагностику mallinfo і NVIC reset повторювати окремим link із tools/diagnostics/heap-reset-probe.c, власним ELF hash та DIAG marker. Поточні results: allocated1032/free0B; із ACCESS/alarm1 reset повертає GUARD/alarm0, CRC-valid seq1–5 лишаються. Не підставляти її timings або stack648B у baseline. Toolbar Restart у web-проєкті запускає default sketch Hello STM32, тому повторний baseline старт робити саме Upload Firmware.

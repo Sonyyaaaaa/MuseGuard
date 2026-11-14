@@ -1,0 +1,92 @@
+HEART t_us=94007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=95007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=96007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=97007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=98007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=99007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=100007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=101007000 adc=1001 fault=0 alarm=1 access=0
+CMD t_us=101990000 rx_us=101989000 char=d access=0 alarm=1
+HEART t_us=102007000 adc=1001 fault=0 alarm=1 access=0
+RECORD slot=64 seq=1 t_ms=37 bits=512 observation=0 crc=F7CB6CF3
+RECORD slot=65 seq=2 t_ms=38 bits=16 observation=1001 crc=88A9E521
+RECORD slot=66 seq=3 t_ms=60 bits=32 observation=1001 crc=EB736CD1
+RECORD slot=67 seq=4 t_ms=24740 bits=4 observation=132073 crc=D73F8208
+RECORD slot=68 seq=5 t_ms=50714 bits=256 observation=1001 crc=54C7B891
+RECORD slot=69 seq=6 t_ms=77760 bits=8 observation=132073 crc=F6F72193
+HEART t_us=103007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=104007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=105007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=106007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=107007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=108007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=109007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=110007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=111007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=112007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=113007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=114007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=115007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=116007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=117007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=118007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=119007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=120007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=121007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=122007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=123007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=124007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=125007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=126007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=127007000 adc=1001 fault=0 alarm=1 access=0
+HEART t_us=128007000 adc=1001 fault=0 alarm=1 access=0
+CMD t_us=128057000 rx_us=128056000 char=k access=0 alarm=0
+EVENT t_ms=128057 bits=256 observation=1001 saved=1 seq=7 flash_us=2000
+HEART t_us=129007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=130007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=131007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=132007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=133007000 adc=1001 fault=0 alarm=0 access=0
+HEART t_us=134007000 adc=1001 fault=0 alarm=0 access=0
+EVENT t_ms=134440 bits=2 observation=4063 saved=1 seq=8 flash_us=1000
+HEART t_us=135007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=136007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=137007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=138007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=139007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=140007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=141007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=142007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=143007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=144007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=145007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=146007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=147007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=148007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=149007000 adc=4063 fault=0 alarm=0 access=0
+HEART t_us=150007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=151007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=152007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=153007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=154007000 adc=32 fault=0 alarm=0 access=0
+CMD t_us=154600000 rx_us=154599000 char=d access=0 alarm=0
+RECORD slot=64 seq=1 t_ms=37 bits=512 observation=0 crc=F7CB6CF3
+RECORD slot=65 seq=2 t_ms=38 bits=16 observation=1001 crc=88A9E521
+RECORD slot=66 seq=3 t_ms=60 bits=32 observation=1001 crc=EB736CD1
+RECORD slot=67 seq=4 t_ms=24740 bits=4 observation=132073 crc=D73F8208
+RECORD slot=68 seq=5 t_ms=50714 bits=256 observation=1001 crc=54C7B891
+RECORD slot=69 seq=6 t_ms=77760 bits=8 observation=132073 crc=F6F72193
+RECORD slot=70 seq=7 t_ms=128057 bits=256 observation=1001 crc=59D0F0A4
+RECORD slot=71 seq=8 t_ms=134440 bits=2 observation=4063 crc=867F46F8
+HEART t_us=155007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=156007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=157007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=158007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=159007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=160007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=161007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=162007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=163007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=164007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=165007000 adc=32 fault=0 alarm=0 access=0
+HEART t_us=166007000 adc=32 fault=0 alarm=0 access=0

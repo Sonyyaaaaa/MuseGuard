@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "author": "MuseGuard",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "pullscl",
+      "top": -70,
+      "left": 260,
+      "rotate": 90,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "pullsda",
+      "top": -70,
+      "left": 310,
+      "rotate": 90,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-logic-analyzer",
+      "id": "logic",
+      "top": 400,
+      "left": 30,
+      "attrs": {
+        "channelNames": "INPUT,SDA,UART_TX,PIR,LED,SAMPLE,FLASH,COMMAND",
+        "bufferSize": "5000000"
+      }
+    },
+    {
+      "type": "chip-startup-not-ready",
+      "id": "fixture",
+      "top": 0,
+      "left": 330,
+      "attrs": {}
+    },
+    {
+      "type": "chip-mgload",
+      "id": "stim",
+      "top": 150,
+      "left": 330,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "pullscl:1",
+      "nucleo:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "pullscl:2",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "pullsda:1",
+      "nucleo:3V3.1",
+      "red",
+      []
+    ],
+    [
+      "pullsda:2",
+      "nucleo:PB9",
+      "blue",
+      []
+    ],
+    [
+      "logic:GND",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "logic:D1",
+      "nucleo:PB9",
+      "blue",
+      []
+    ],
+    [
+      "logic:D2",
+      "nucleo:PA2",
+      "grey",
+      []
+    ],
+    [
+      "logic:D3",
+      "nucleo:PA10",
+      "orange",
+      []
+    ],
+    [
+      "logic:D5",
+      "nucleo:PA6",
+      "grey",
+      []
+    ],
+    [
+      "logic:D6",
+      "nucleo:PA7",
+      "grey",
+      []
+    ],
+    [
+      "logic:D7",
+      "nucleo:PA8",
+      "grey",
+      []
+    ],
+    [
+      "fixture:SCL",
+      "nucleo:PB8",
+      "green",
+      []
+    ],
+    [
+      "fixture:SDA",
+      "nucleo:PB9",
+      "blue",
+      []
+    ],
+    [
+      "stim:TX",
+      "nucleo:PA3",
+      "green",
+      []
+    ],
+    [
+      "stim:PIR",
+      "nucleo:PA10",
+      "orange",
+      []
+    ],
+    [
+      "logic:D4",
+      "nucleo:PA5",
+      "purple",
+      []
+    ],
+    [
+      "logic:D0",
+      "stim:MARK",
+      "green",
+      []
+    ],
+    [
+      "stim:OUT",
+      "nucleo:PA0",
+      "purple",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

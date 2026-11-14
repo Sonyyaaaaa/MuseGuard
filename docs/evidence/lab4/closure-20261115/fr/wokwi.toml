@@ -1,0 +1,14 @@
+[wokwi]
+version = 1
+firmware = 'firmware.hex'
+elf = 'firmware.elf'
+rfc2217ServerPort = 23415
+vcdFile = 'capture.vcd'
+
+[[chip]]
+name = 'startup-not-ready'
+binary = 'startup-not-ready.chip.wasm'
+
+[[chip]]
+name = 'mgload'
+binary = 'mgload.chip.wasm'
